@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Outfit:wght@400;500&family=Raleway:ital,wght@1,100&display=swap');
+
+.about-body {
+    overflow: hidden;
+    max-width: 50%;
+    display: block !important;
+}
+
+.word-from-pres {
+    display: flex;
+    width: 70%;
+    height: 30%;
+    padding: 5%;
+    border-radius: 25px;
+    margin: 5% auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10%;
+    padding-top: 12%;
+}
+
+.pres-image {
+    height: 355px;
+    width: 250px;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    bottom: 130px;
+    left: -30px;
+}
+
+.pres-message {
+    font-family: 'Domine', serif;
+    font-family: 'Outfit', sans-serif;
+    padding: 0 20px;
+    font-weight: 100;
+    font-size: 1.25rem;
+}
+
+.pres-bg {
+    width: 1700px;
+    height: 225px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #363062 0%, #8d8bb5 30%, #363062 100%);
+    overflow: visible;
+    box-shadow:
+            0 1px 1px hsla(0deg, 0%, 0%, 0.05),
+            0 2px 2px hsla(0deg, 0%, 0%, 0.05),
+            0 4px 4px hsla(0deg, 0%, 0%, 0.05),
+            0 8px 8px hsla(0deg, 0%, 0%, 0.05),
+            0 16px 16px hsla(0deg, 0%, 0%, 0.05);
+}
+
+.pres-text {
+    font-family: 'Domine', serif;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    top: -200px;
+    left: 0px;
+    color: white;
+    margin: 0px;
+}
+
+@media (max-width: 1024px) {
+    /* Your smartphone styles go here */
+
+    /* For example, adjust the padding and font size */
+    .word-from-pres {
+        margin-top: 10%;
+        display: block;
+        align-items: center;
+
+    }
+
+    .pres-bg {
+        width: 275px;
+        margin: auto;
+    }
+
+    .pres-message {
+        margin-top: 7%;
+    }
+
+
+    /* You can add more styles as needed for your smartphone design */
+}
+
+@media (max-width: 535px) {
+
+    .pres-message {
+        font-size: 1rem;
+    }
+    /* You can add more styles as needed for your smartphone design */
+}
