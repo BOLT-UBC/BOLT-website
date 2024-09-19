@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import styles from './events.module.css';
 
-import img1 from '../../../assets/events/1.jpg';
-import img2 from '../../../assets/events/2.jpg';
-import img3 from '../../../assets/events/3.jpg';
+import img1 from '../../../assets/images/1.jpg';
+import img2 from '../../../assets/images/1.jpg';
+import img3 from '../../../assets/images/1.jpg';
 
 function EventsMobile() {
     return (

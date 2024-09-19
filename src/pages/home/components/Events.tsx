@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { motion } from 'framer-motion';
 import styles from './events.module.css';
 
-import img1 from '../../../assets/events/1.jpg';
-import img3 from '../../../assets/events/3.jpg';
-import img6 from '../../../assets/events/6.jpg';
+import img1 from '../../../assets/images/1.jpg';
+import img3 from '../../../assets/images/3.jpg';
+import img6 from '../../../assets/images/6.jpg';
 
 const Events: FC = () => {
     return (
