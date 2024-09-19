@@ -1,15 +1,9 @@
-// import Navbar from '../../components/navbar/navbar';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import BoltUBCTitle from './components/BoltUBCTitle.tsx';
 import Sponsors from './components/Sponsors.tsx';
-// import Events from './components/Events/Events';
-// import OurMission from './components/OurMission/OurMission';
+
 import './style.css';
 
-// import BoltUBCTitleMobile from './components/BoltUBCTitleMobile/BoltUBCTitleMobile';
-// import SponsorsMobile from './components/SponsorsMobile/sponsorsMobile';
-// import EventsMobile from './components/EventsMobile/EventsMobile';
-// import OurMissionMobile from './components/OurMissionMobile/OurMissionMobile';
 import {FC} from "react";
 import BoltUBCTitleMobile from "./components/BoltUBCTitleMobile.tsx";
 import SponsorsMobile from "./components/SponsorsMobile.tsx";

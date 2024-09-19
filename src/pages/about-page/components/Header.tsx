@@ -1,7 +1,7 @@
 import Navbar from '../../../global-components/Navbar.tsx';
 import "./styles.css";
 import logo from '../../../assets/logos/bolt.png';
-// import FadeShapes from '../../pages/About-page/about-page-components/fade-shapes/shapes';
+import FadeShapes from "../../../global-components/FadeShapes.tsx";
 import { motion } from "framer-motion"
 
 function Header(props) {
@@ -29,7 +29,7 @@ function Header(props) {
                     </div>
                 </div>
             </div>
-            {/*<FadeShapes />*/}
+            <FadeShapes />
             <Navbar />
         </div >
     );
