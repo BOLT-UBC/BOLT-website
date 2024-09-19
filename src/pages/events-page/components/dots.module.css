@@ -1,0 +1,19 @@
+.dots{
+    border-radius: 50%;
+    background-color: #d0bcff;
+    width: 46px;
+    height: 46px;
+    position: relative;
+    left: calc(20% - 21px);
+}
+
+.dotsInner{
+    border-radius: 50%;
+    background-color: #9e7fe6;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    animation-delay: 20ms;
+}
