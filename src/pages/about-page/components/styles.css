@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Outfit:wght@400;500&family=Raleway:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Outfit:wght@400;500&family=Raleway:ital,wght@1,100&display=swap');
+
+.header-body {
+    display: block;
+    align-items: start;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 8%;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.header {
+    text-align: start;
+    padding-left: 3%;
+    display: flex;
+    /* Align text to the left */
+}
+
+.title {
+    color: #623CE8;
+    font-size: 5rem;
+    font-weight: 500;
+    padding-top: 5%;
+    white-space: nowrap;
+    font-family: 'Domine', serif;
+    font-family: 'Outfit', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.title-text {
+    color: #9A81F1;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-left: 13.5%;
+    font-family: 'Domine', serif;
+    font-family: 'Outfit', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.title-text.one {
+    white-space: nowrap;
+}
+
+.title-text-block {
+    display: block;
+}
+
+.header-text {
+    display: inline;
+}
+
+.bolt-logo {
+    width: 100px;
+}
+
+@media (max-width: 400px) {
+    /* .title-text-block {
+        display: block;
+        width: 60px;
+    } */
+    .title-text {
+        font-size: 1.5rem !important;
+    }
+    .title {
+        font-size: 3.5rem !important;
+    }
+    .bolt-logo {
+        width: 60px !important;
+        height: 90px !important;
+    }
+}
+
+@media (max-width: 535px) {
+    .body-header {
+        margin-top: 10%;
+    }
+    .title-text {
+        font-size: 2rem;
+    }
+    .title {
+        font-size: 4rem;
+    }
+    .bolt-logo {
+        width: 80px;
+        height: 110px;
+    }
+}
+
+.header-body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.window {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+            0 1px 1px hsla(0deg, 0%, 0%, 0.045),
+            0 2px 2px hsla(0deg, 0%, 0%, 0.045),
+            0 4px 4px hsla(0deg, 0%, 0%, 0.045),
+            0 8px 8px hsla(0deg, 0%, 0%, 0.045),
+            0 16px 16px hsla(0deg, 0%, 0%, 0.045);
+    flex-direction: column;
+    margin: 5%;
+    background-color: white;
+    z-index: 1;
+}
+
+.windows {
+    background: white;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    overflow: hidden;
+    margin: 5%;
+    width: 1200px !important;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    gap: 15px;
+}
+
+.windows.Finance {
+    margin-left: 225px;
+}
+
+.profile-holder {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    /* box-shadow: 5px 10px #888888; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5%;
+    background: white;
+    /* box-shadow: 0px -3px 1px hsl(0deg 0% 0% / 0.035),
+      0 3px 3px hsl(0deg 0% 0% / 0.035), 0 4px 4px hsl(0deg 0% 0% / 0.035),
+      0 8px 8px hsl(0deg 0% 0% / 0.035), 0 16px 16px hsl(0deg 0% 0% / 0.035); */
+}
+
+.profile-holder:hover {
+    /* box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075); */
+}
+
+.Finance {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Development,
+.Team {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-nav {
+    background: #fdfdfd;
+    padding: 5px 5px 0;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid #eeeeee;
+    height: 50px;
+    width: 100%;
+}
+
+.tabs {
+    flex-grow: 2;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 128px;
+    flex-grow: 1;
+    user-select: none;
+    overflow: hidden;
+}
+
+.card-ul,
+.card-li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #623CE8;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: 'Domine', serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card-ul {
+    display: flex;
+    width: 100%;
+}
+
+.card-li {
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    padding: 10px 15px;
+    position: relative;
+    background: white;
+    cursor: pointer;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    user-select: none;
+    flex-shrink: 1;
+    /* Allow text to shrink */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    transition: all 0.1s ease-in-out 0s;
+
+}
+
+.underline {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--accent);
+    z-index: 100;
+}
+
+li.selected {
+    background: white;
+    color: #623CE8;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: 'Domine', serif;
+    font-family: 'Outfit', sans-serif;
+    border: 1px solid #9A81F1;
+    background-color: white;
+}
+
+.card-li button {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: #000;
+    margin-left: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+}
+
+.add-item {
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    align-self: center;
+}
+
+.add-item:disabled {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+}
+
+.profile-picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: auto;
+    height: 250px;
+}
+
+.circle-background {
+    width: 150px !important;
+    height: 150px !important;
+    overflow: hidden;
+    margin: 0 auto;
+    margin: 15px 20px 0px 15px;
+    border: 5px solid #9A81F1;
+    border-radius: 100%;
+    margin-bottom: 15%;
+}
+
+.circle-image {
+    width: 150px !important;
+    height: 150px !important;
+    transition: all 0.4s ease-in-out 0s;
+    border-radius: 100%;
+    background-color: #9A81F1;
+}
+
+.circle-backround img {
+    width: 100%;
+    transition: 3s all ease-in-out;
+}
+
+.circle-background:hover img {
+    transform: scale(1.1);
+}
+
+.text {
+    font-family: 'Domine', serif;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: auto;
+}
+
+.profile-title {
+    font-size: 1rem;
+    text-align: center;
+    color: #9E8EFF;
+}
+
+.team-window {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    background-color: white;
+    overflow: hidden !important;
+}
+
+
+
+@media (max-width: 1248px) {
+    .Finance, .Team, .Marketing, .Development {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 225px;
+    }
+
+}
+
+@media (max-width: 758px) {
+    .card-li {
+        font-size: 0.75rem !important;
+    }
+    .Finance, .Team, .Marketing, .Development {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 425px;
+    }
+    .windows.Finance {
+        margin-left: 425px;
+    }
+}
+
+@media (max-width: 535px) {
+    .word-from-pres {
+        margin-top: 65px;
+    }
+    .Development {
+        text-overflow: ellipsis;
+    }
+    .window {
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .card-li {
+        font-size: 0.55rem !important;
+    }
+}
+
+
+/* Additional CSS styles for text lines, font, etc. */
