@@ -1,0 +1,19 @@
+.line {
+    border-left: 4px dotted #ccc;
+    position: relative;
+    top: 120px;
+    margin-left: 70px;
+
+}
+
+@media only screen and (max-width: 480px) {
+    .line {
+        margin-left: 45px;
+    }
+}
+
+@media only screen and (max-width: 992px) and (max-width: 992px) {
+    .line {
+        margin-left: 45px;
+    }
+}

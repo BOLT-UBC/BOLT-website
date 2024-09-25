@@ -1,0 +1,84 @@
+
+* {
+    box-sizing: content-box;
+}
+.App {
+    font-family: outfit;
+    text-align: center;
+    padding-right: 100px;
+}
+
+.timeline {
+    text-align: left;
+}
+
+
+.event-display {
+    display: flex;
+    text-align: center;
+}
+
+.dynamic-text {
+    color: #ab87ff;
+    font-size: 50px;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dynamic-image {
+    width: 300px;
+    text-align: left;
+}
+
+.section-wrapper {
+    padding-bottom: 30px;
+    padding-right: 1000px;
+}
+
+.dynamic-paragraph {
+    width: 20px;
+}
+
+.event-card {
+    flex-basis: 225px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.event-card:hover {
+    background-color: #d2c2ff;
+}
+
+.event-card:active {
+    box-shadow: 0 5px rgb(165, 165, 165);
+    transform: translateY(4px);
+}
+
+.event-card > img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+.event-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+
