@@ -17,10 +17,6 @@ const Navbar: FC = () => {
         width: '30px',
     };
 
-    window.onbeforeunload = function (): void {
-        const page: HTMLElement | null = document.getElementById("page");
-    };
-
     return (
         <div id="page">
             <div className={styles.nav_bar} id="NavBar">

@@ -29,8 +29,6 @@ const Profile: React.FC<ProfileProps> = (props) => {
         <motion.div
             className="profile-holder"
             whileHover={{ scale: 1.09 }}
-            onHoverStart={e => { }}
-            onHoverEnd={e => { }}
         >
             <div className="profile-card">
                 <div className="profile-icon">

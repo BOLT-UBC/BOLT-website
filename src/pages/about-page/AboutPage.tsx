@@ -16,7 +16,7 @@ const AboutPage: FC = () => {
                 animate={{ scale: 1.01 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.75 }}
-                mode="wait">
+            >
                 <motion.div
                     initial={{
                         opacity: '0'

@@ -1,13 +1,9 @@
 import { FC, useState, useEffect } from 'react';
-import { motion, useTransform, useViewportScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 import styles from './our-mission.module.css';
 import dog from '../../../assets/logos/bolt_dog_no_background.png';
 
 const OurMission: FC = () => {
-    const { scrollY } = useViewportScroll();
-
-    const fasterScroll = useTransform(scrollY, [0, 1000], [0, -100]);
-    const slowerScroll = useTransform(scrollY, [0, 1000], [0, 300]);
 
     const [isVisible, setIsVisible] = useState<boolean>(false);
 
@@ -29,7 +25,7 @@ const OurMission: FC = () => {
 
     return (
         <div className={styles.MissionContentBorder}>
-            <div style={{ position: 'absolute', width: '100%', height: '100%', top: '0', y: slowerScroll }}>
+            <div style={{ position: 'absolute', width: '100%', height: '100%', top: '0'}}>
                 <div style={{ position: 'relative', width: '100%', height: '100%' }}>
                     {isVisible && (
                         <motion.div
@@ -69,7 +65,7 @@ const OurMission: FC = () => {
                     )}
                 </div>
             </div>
-            <div style={{ width: '85%', margin: '0 auto', y: fasterScroll }}>
+            <div style={{ width: '85%', margin: '0 auto'}}>
                 <div style={{ display: 'flex' }}>
                     <h1 className={isVisible ? `fade-in-left visible ${styles.missionTitle}` : `fade-in-left ${styles.missionTitle}`}>Our Mission</h1>
                     <img src={dog} className={isVisible ? `fade-in-bottom visible ${styles.missionDog}` : `fade-in-bottom ${styles.missionDog}`} />

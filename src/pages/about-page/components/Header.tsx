@@ -4,8 +4,15 @@ import "../styles.css";
 import logo from '../../../assets/logos/bolt.png';
 import FadeShapes from "../../../global-components/FadeShapes.tsx";
 import { motion } from "framer-motion"
+import { ReactNode } from 'react';
 
-function Header(props) {
+interface HeaderProps {
+    title: ReactNode;
+    titleLineOne: ReactNode;
+    titleLineTwo: ReactNode;
+}
+
+function Header(props: HeaderProps) {
     return (
         <div className="body-header">
             <div className="title-text-block">

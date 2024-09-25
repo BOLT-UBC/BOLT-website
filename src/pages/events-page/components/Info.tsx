@@ -71,7 +71,6 @@ function Info({ image, description, multiplyer, title }: InfoProps): JSX.Element
                                     ease: 'easeIn'
                                 }}
                                 exit={{
-                                    delay: 0,
                                     opacity: '0',
                                 }}
                     >
