@@ -25,7 +25,7 @@ const BoltUBCTitleMobile: FC = () => {
                     margin: '0 auto',
                     borderRadius: '500px',
                     backgroundColor: '#623CE8',
-                    translateY: '15%',
+                    translateY: '440%',
                     color: 'white',
                     textAlign: 'center',
                 }}

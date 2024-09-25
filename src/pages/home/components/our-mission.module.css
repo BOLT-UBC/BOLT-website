@@ -327,8 +327,10 @@
     background-color: #F5E7FF;
     width: 100px;
     height: 100px;
+    overflow-x: hidden;
 }
 
 .MissionBackground1Mobile {
     display: none;
+    overflow-x: hidden;
 }
