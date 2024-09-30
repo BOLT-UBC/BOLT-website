@@ -1,7 +1,7 @@
 import { FC, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './our-mission.module.css';
-import dog from '/public/assets/logos/bolt_dog_no_background.png';
+import dog from 'assets/logos/bolt_dog_no_background.png';
 
 const OurMissionMobile: FC = () => {
 

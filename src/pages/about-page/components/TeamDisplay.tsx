@@ -1,8 +1,6 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import Profile from './Profile.tsx';
 import "../styles.css"
-import "../styles.css"
-import teams from '/public/assets/teams/teamInfo.json';
 
 interface Executive {
     profilepic: string;
@@ -24,7 +22,20 @@ interface TeamDisplayProps {
 }
 
 const TeamDisplay: FC<TeamDisplayProps> = (props) => {
-    const specificTeam: Team | undefined = (teams as Teams).teams.find(team => team.team_name === props.teamName);
+    const [teams, setTeams] = useState<Teams | null>(null);
+
+    useEffect(() => {
+        fetch('/assets/teams/teamInfo.json')
+            .then(response => response.json())
+            .then(data => setTeams(data))
+            .catch(error => console.error('Error fetching team data:', error));
+    }, []);
+
+    if (!teams) {
+        return <div className="windows">Loading...</div>;
+    }
+
+    const specificTeam: Team | undefined = teams.teams.find(team => team.team_name === props.teamName);
 
     if (specificTeam) {
         const teamName: string = specificTeam.team_name;
