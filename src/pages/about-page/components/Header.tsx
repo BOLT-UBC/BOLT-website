@@ -2,7 +2,7 @@ import Navbar from '../../../global-components/Navbar.tsx';
 import "./styles.css";
 import "../styles.css";
 import logo from '/assets/logos/bolt.png';
-import FadeShapes from "../../../global-components/FadeShapes.tsx";
+// import FadeShapes from "../../../global-components/FadeShapes.tsx";
 import { motion } from "framer-motion"
 import { ReactNode } from 'react';
 
@@ -15,6 +15,7 @@ interface HeaderProps {
 function Header(props: HeaderProps) {
     return (
         <div className="body-header">
+            {/*<FadeShapes />*/}
             <div className="title-text-block">
                 <div className='header-text'>
                     <div className="header">
@@ -37,7 +38,6 @@ function Header(props: HeaderProps) {
                     </div>
                 </div>
             </div>
-            <FadeShapes />
             <Navbar />
         </div >
     );
