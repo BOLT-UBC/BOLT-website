@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Profile from './Profile.tsx';
 import "../styles.css"
 import "../styles.css"
-import teams from './../../../../public/assets/teams/teamInfo.json';
+import teams from '/public/assets/teams/teamInfo.json';
 
 interface Executive {
     profilepic: string;

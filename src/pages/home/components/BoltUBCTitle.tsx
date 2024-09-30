@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import styles from './bolt-ubc-title.module.css';
-import logo from '../../../../public/assets/logos/bolt_dog.png';
+import logo from '/public/assets/logos/bolt_dog.png';
 
 const BoltUBCTitle: FC = () => {
     const { scrollY } = useViewportScroll();

@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import img1 from '../../../../public/assets/images/1.jpg';
-import img2 from '../../../../public/assets/images/2.jpg';
-import img3 from '../../../../public/assets/images/3.jpg';
-import img4 from '../../../../public/assets/images/4.jpg';
-import img5 from '../../../../public/assets/images/5.jpg';
-import img6 from '../../../../public/assets/images/6.jpg';
-import img7 from '../../../../public/assets/images/7.png';
-import img8 from '../../../../public/assets/images/8.png';
+import img1 from '/public/assets/images/1.jpg';
+import img2 from '/public/assets/images/2.jpg';
+import img3 from '/public/assets/images/3.jpg';
+import img4 from '/public/assets/images/4.jpg';
+import img5 from '/public/assets/images/5.jpg';
+import img6 from '/public/assets/images/6.jpg';
+import img7 from '/public/assets/images/7.png';
+import img8 from '/public/assets/images/8.png';
 import styles from "./info.module.css";
 
 interface InfoProps {

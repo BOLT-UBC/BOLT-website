@@ -15,7 +15,7 @@ const Profile: React.FC<ProfileProps> = (props) => {
     useEffect(() => {
         const fetchImage = async () => {
             try {
-                const image = await import(`../../../../public/assets/profile-photos/${props.profilepic}`);
+                const image = await import(`/public/assets/profile-photos/${props.profilepic}`);
                 setProfileImage(image.default);
             } catch (error) {
                 console.error('Error loading image:', error);
