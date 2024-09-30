@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styles from './navbar.module.css';
-import logo from '../assets/logos/bolt.png';
+import logo from '/assets/logos/bolt.png';
 
 const Navbar: FC = () => {
     const gap: React.CSSProperties = {
@@ -15,10 +15,6 @@ const Navbar: FC = () => {
 
     const logo_style: React.CSSProperties = {
         width: '30px',
-    };
-
-    window.onbeforeunload = function (): void {
-        const page: HTMLElement | null = document.getElementById("page");
     };
 
     return (

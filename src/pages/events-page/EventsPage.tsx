@@ -18,7 +18,7 @@ const EventsPage: React.FC = () => {
             <Row>
                 <Col>
                     <div className="event-page" style={{ width: '100%', height: '100%', position: 'absolute', marginTop: '100px', marginBottom: "200px" }}>
-                        <Header className="header" title="Events" titleLineOne="" titleLineTwo="" />
+                        <Header title="Events" titleLineOne="" titleLineTwo="" />
                         <Navbar />
                         <Timeline />
                         {/* <Footer /> */}

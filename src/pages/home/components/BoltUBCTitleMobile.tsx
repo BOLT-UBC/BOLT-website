@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
 import styles from './bolt-ubc-title.module.css';
-import logo from '../../../assets/logos/bolt_dog.png';
+import logo from '/assets/logos/bolt_dog.png';
 
 const BoltUBCTitleMobile: FC = () => {
 
