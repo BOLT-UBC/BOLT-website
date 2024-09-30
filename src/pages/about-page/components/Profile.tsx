@@ -1,7 +1,7 @@
 import "./styles.css"
 import "../styles.css"
 import { motion } from "framer-motion";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 interface ProfileProps {
     name: string;
@@ -13,16 +13,7 @@ const Profile: React.FC<ProfileProps> = (props) => {
     const [profileImage, setProfileImage] = useState<string | null>(null);
 
     useEffect(() => {
-        const fetchImage = async () => {
-            try {
-                const image = await import(`/assets/profile-photos/${props.profilepic}`);
-                setProfileImage(image.default);
-            } catch (error) {
-                console.error('Error loading image:', error);
-            }
-        };
-
-        fetchImage();
+        setProfileImage(`/assets/profile-photos/${props.profilepic}`);
     }, [props.profilepic]);
 
     return (
