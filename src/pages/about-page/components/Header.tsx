@@ -1,7 +1,7 @@
 import Navbar from '../../../global-components/Navbar.tsx';
 import "./styles.css";
 import "../styles.css";
-import logo from 'assets/logos/bolt.png';
+import logo from '/assets/logos/bolt.png';
 import FadeShapes from "../../../global-components/FadeShapes.tsx";
 import { motion } from "framer-motion"
 import { ReactNode } from 'react';

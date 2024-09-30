@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import './styles.css';
 import { motion } from "framer-motion";
-import alexy from "assets/profile-photos/alexy-no-back.png";
+import alexy from "/assets/profile-photos/alexy-no-back.png";
 import TeamsPage from './components/TeamsPage.tsx'
 import Header from "./components/Header.tsx";
 
