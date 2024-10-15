@@ -1,7 +1,5 @@
 .fb-window {
     border: 3px solid #250094;
-    width: 500px;  /* Fixed width */
-    height: 300px; /* Fixed height */
     padding: 8px;
     background-color: #E8E0FF;
     display: flex;
