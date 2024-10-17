@@ -1,0 +1,27 @@
+.fb-window {
+    border: 3px solid #250094;
+    padding: 8px;
+    background-color: #E8E0FF;
+    display: flex;
+    flex-direction: column;
+}
+  
+.fb-window-header {
+    border: 3px solid #250094;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 8px;
+    text-align: left;
+    background-color: #7E65FE;
+    padding: 3px 10px;
+}
+  
+.fb-window-content {
+    border: 3px solid #250094;
+    background-color: white;
+    flex-grow: 1;
+    font-size: 18px;
+    padding: 3px 10px;
+    overflow: hidden;
+}
+  

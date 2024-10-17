@@ -2,6 +2,7 @@ import { FC } from "react";
 import "./styles.css";
 import Background from "./components/Background";
 import Banner from "./components/Banner";
+import Window from "./components/Window";
 import Folder from "./components/Folder";
 import Button from "./components/Button";
 
@@ -11,6 +12,13 @@ const FirstBytePage: FC = () => {
     <div className="fb-body">
       <Banner />
       <Background />
+      <Window
+        windowName="Window Name!"
+        styles={{ width: "600px", height: "400px" }}
+      >
+        <p>This window has custom width and height.</p>
+        <button>Click Me</button>
+      </Window>
       <div className="fb-sponsors">
         <Folder
           sponsorName="mastercard"
