@@ -17,7 +17,6 @@ const FirstBytePage: FC = () => {
         styles={{ width: "600px", height: "400px" }}
       >
         <p>This window has custom width and height.</p>
-        <button>Click Me</button>
       </Window>
       <div className="fb-sponsors">
         <Folder
