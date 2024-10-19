@@ -19,7 +19,7 @@ export function ClientOnly({ page }: { page: string }) {
   }
 
   if (page === 'events') {
-    return <About />;
+    return <Events />;
   }
 
   return <h1>404: Page Not Found</h1>;

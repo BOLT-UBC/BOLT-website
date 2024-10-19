@@ -11,8 +11,7 @@ export default function RootLayout({
                 <title>Vite + React + TS</title>
             </head>
             <body>
-                <div id="root"></div>
-                <script type="module" src='app/[[...slug]]/page.tsx'></script>
+                {children}
             </body>
         </html>
     )
