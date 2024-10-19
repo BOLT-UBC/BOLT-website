@@ -5,6 +5,7 @@ import logo from '../../../../app/bolt.png';
 // import FadeShapes from "../../../global-components/FadeShapes.tsx";
 import { motion } from "framer-motion"
 import { ReactNode } from 'react';
+import Image from 'next/Image';
 
 interface HeaderProps {
     title: ReactNode;
@@ -24,7 +25,7 @@ function Header(props: HeaderProps) {
                             initial={{ x: -200 }}
                             animate={{ x: 10 }}
                             transition={{ duration: 1.5, type: "spring" }}>
-                            <img className="bolt-logo" src={logo} />
+                            <Image src={logo} alt="Logo" width={25} height={40} />
                             <div className="title">
                                 {props.title}
                             </div>
