@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styles from './navbar.module.css';
-import logo from '/assets/logos/bolt.png';
+import logo from '../../app/bolt.png';
 
 const Navbar: FC = () => {
     const gap: React.CSSProperties = {
