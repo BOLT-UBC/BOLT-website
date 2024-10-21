@@ -1,0 +1,15 @@
+.fb-title {
+    display: flex;
+    width: 100%;
+}
+
+.fb-logo {
+    max-width: 50%;
+}
+
+.fb-name{
+    max-width: 50%;
+    word-spacing:100em;
+    font-size: 30px;
+    text-shadow: 4px 4px #7E65FE;
+}
