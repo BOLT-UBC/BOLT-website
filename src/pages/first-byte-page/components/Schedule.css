@@ -1,0 +1,23 @@
+.schedule-frame {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 15px;
+    margin: 0 10px;
+}
+
+.schedule-frame::-webkit-scrollbar {
+    width: 15px;
+    height: 90%;
+}
+  
+.schedule-frame::-webkit-scrollbar-track {
+    background: #C9BEEA99;
+    margin: 10px 0;
+}
+   
+.schedule-frame::-webkit-scrollbar-thumb {
+    background: #7E65FE;
+    border: 2px solid black; 
+}
+  
