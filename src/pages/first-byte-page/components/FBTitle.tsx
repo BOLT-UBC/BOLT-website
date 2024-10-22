@@ -5,9 +5,9 @@ const FBTitle: FC = () => {
   return (
     <>
       <div className="fb-title">
-        <img className="fb-logo" src="/assets/logos/fb-logo.png" />
+        <img className="fb-logo" src="/assets/first-byte/fb-logo.png" />
         <div className="fb-name">
-          <h1>First Byte</h1>
+          <h1>FIRST BYTE</h1>
         </div>
       </div>
     </>
