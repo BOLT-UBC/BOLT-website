@@ -1,0 +1,32 @@
+.task-frame {
+    width: 92%;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 3px 3px #7E65FE80;
+    padding: 10px;
+    color: black;
+    height: 30%;
+    margin: 10px auto;
+}
+
+.task-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.task-name {
+    text-align: left;
+}
+
+.task-time {
+    text-align: right;
+}
+
+.task-desc {
+    font-size: 15px;
+    color: #6a6a6a;
+
+}
