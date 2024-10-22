@@ -6,19 +6,20 @@
 
 .judge-description {
     width: 90%;
-    font-size: 1.2rem;
+    font-size: 0.96rem;
     color: #585858;
 }
 
 .judge-pfp-container {
     position: relative;
-    height: 220px;
-    width: 220px;  
+    height: 175px;
+    width: 175px;  
     perspective: 1000px; 
-    margin: 2rem;
+    margin-top: 1.0rem;
+    margin-bottom: 1.5rem;
 }
 
-.judge-pfp-coin {
+.judge-pfp-spinner {
     position: absolute;
     height: 100%; 
     width: 100%; 
@@ -27,7 +28,7 @@
 }
 
 .judge-card-content:hover {
-    .judge-pfp-coin {
+    .judge-pfp-spinner {
         transform: rotateY(180deg); 
     }
    

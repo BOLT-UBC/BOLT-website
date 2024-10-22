@@ -18,21 +18,19 @@ const JudgeCard: FC<iJudge> = ({
 }) => {
   return (
     <div className="judge-card">
-      <Window
-        windowName="Judges"
-        styles={{ height: "600px", width: "520px", margin: "0.5rem" }}
-      >
+      <Window windowName="Judges" styles={{ height: "480px", width: "416px" }}>
         <div className="judge-card-content">
           <DecoratedNameBar
             name={name}
             styles={{
-              height: "45px",
+              height: "36px",
               width: "90%",
-              marginTop: "1.5rem",
+              marginTop: "1.2rem",
+              fontSize: "1.6rem",
             }}
           />
           <div className="judge-pfp-container">
-            <div className="judge-pfp-coin">
+            <div className="judge-pfp-spinner">
               <img
                 className="judge-pfp-front"
                 src={pixelProfilepic}
