@@ -1,19 +1,21 @@
 .fb-body {
     font-family: "PixelFont";
-    padding-top: 63.5px;
+    padding-top: 4rem;
     display: flex;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .fb-container {
-    margin: 2.5%;
+    margin: auto;
     flex-grow: 1;
     background-color:  #988ed066;
     border-radius: 20px;
     padding: 2.5%;
     color: white;
     display: flex;
-    max-width: 1100px;
+    max-width: 70%;
+    max-height: 80%;
 }
 
 .fb-column-left, .fb-column-right {
