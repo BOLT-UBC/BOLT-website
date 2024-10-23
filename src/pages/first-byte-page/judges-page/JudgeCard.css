@@ -12,8 +12,8 @@
 
 .judge-pfp-container {
     position: relative;
-    height: 175px;
-    width: 175px;  
+    aspect-ratio: 1 / 1;
+    width: 40%;
     perspective: 1000px; 
     margin-top: 1.0rem;
     margin-bottom: 1.5rem;
