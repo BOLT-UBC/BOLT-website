@@ -1,0 +1,22 @@
+.fb-title {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.fb-logo {
+    width: 40%;
+}
+
+.fb-name{
+    word-spacing:100em;
+    font-size: 2.5rem;
+    text-shadow: 4px 4px #7E65FE;
+    letter-spacing: 7px;
+    margin: auto 0;
+}
+
+.fb-name h1{
+    margin: 0;
+}

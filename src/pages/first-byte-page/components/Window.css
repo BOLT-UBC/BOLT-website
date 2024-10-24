@@ -1,27 +1,22 @@
 .fb-window {
-    border: 3px solid #250094;
-    padding: 8px;
-    background-color: #E8E0FF;
+    border: 2px solid #000000;
     display: flex;
     flex-direction: column;
 }
   
 .fb-window-header {
-    border: 3px solid #250094;
+    border: 2px solid #000000;
     color: white;
-    font-size: 30px;
-    margin-bottom: 8px;
+    font-size: 2rem;
     text-align: left;
     background-color: #7E65FE;
-    padding: 3px 10px;
+    padding: 0.3rem 1rem;
 }
   
 .fb-window-content {
-    border: 3px solid #250094;
-    background-color: white;
+    border: 3px solid #000000;
+    background-color: #E8E0FF;
     flex-grow: 1;
-    font-size: 18px;
-    padding: 3px 10px;
+    font-size: 1rem;
     overflow: hidden;
 }
-  
