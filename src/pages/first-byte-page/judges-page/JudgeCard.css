@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;   
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 307.5px;
+    height: 286px
 }
 
 .judge-description {
@@ -51,4 +55,11 @@
 .judge-pfp-back {
     backface-visibility: hidden; 
     transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+    .judge-card-content{    
+        width: 410px;
+        height: 380px;
+    }
 }

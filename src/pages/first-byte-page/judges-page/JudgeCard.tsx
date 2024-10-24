@@ -18,14 +18,13 @@ const JudgeCard: FC<iJudge> = ({
 }) => {
   return (
     <div className="judge-card">
-      <Window windowName="Judges" styles={{ height: "480px", width: "416px" }}>
+      <Window windowName="Judges">
         <div className="judge-card-content">
           <DecoratedNameBar
             name={name}
             styles={{
-              height: "36px",
-              width: "90%",
-              marginTop: "1.2rem",
+              height: "10%",
+              width: "80%",
               fontSize: "1.6rem",
             }}
           />
