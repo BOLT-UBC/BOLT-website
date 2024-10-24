@@ -21,3 +21,10 @@
     border: 2px solid black; 
 }
   
+@-moz-document url-prefix() {
+    .schedule-frame {
+        scrollbar-width: auto; 
+        scrollbar-color: #000000 #C9BEEA99; 
+    }
+
+}
