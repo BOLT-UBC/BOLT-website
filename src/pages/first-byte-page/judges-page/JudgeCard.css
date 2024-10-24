@@ -63,3 +63,17 @@
         height: 380px;
     }
 }
+
+@media (min-width: 2100px) {
+    .judge-card-content{    
+        width: 717px;
+        height: 665px;
+    }
+}
+
+@media (min-width: 3700px) {
+    .judge-card-content{    
+        width: 1255px;
+        height: 1164px;
+    }
+}
