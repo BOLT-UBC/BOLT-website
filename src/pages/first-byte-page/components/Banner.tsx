@@ -26,7 +26,7 @@ const Banner: FC = () => {
       <a className="banner-text" href="#home">
         Home
       </a>
-      <a className="banner-text" href="#judges">
+      <a className="banner-text" href="/judges">
         Judges
       </a>
       <a className="banner-text" href="#sponsors">
