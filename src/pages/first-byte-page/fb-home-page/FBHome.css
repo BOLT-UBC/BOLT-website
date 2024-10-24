@@ -4,11 +4,13 @@
     flex-grow: 1;
     background-color:  #988ed066;
     border-radius: 20px;
-    padding: 2.5%;
+    padding: 2rem;
     color: white;
     display: flex;
-    max-width: 70%;
-    max-height: 80%;
+    /* HELLA SUS */
+    min-width: 1400px;
+    max-width: 1400px;
+    height: 80%;
 }
 
 .fb-column-left, .fb-column-right {
@@ -28,8 +30,9 @@
 
 .fb-redirect-row {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 1.2rem;
     height: 25%;
+    width: 100%;
 
 }
 
