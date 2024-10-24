@@ -10,7 +10,12 @@ interface UsefulLinkProps {
 const UsefulLink: FC<UsefulLinkProps> = ({ thumbnail, title, link }) => {
   return (
     <>
-      <a className="link-content" href={link}>
+      <a
+        className="link-content"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={link}
+      >
         <img src={thumbnail} className="link-thumbnail" />
         <h4 className="link-name"> {title}</h4>
       </a>

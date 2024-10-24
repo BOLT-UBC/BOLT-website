@@ -10,7 +10,12 @@ interface FolderProps {
 const Folder: FC<FolderProps> = ({ folderName, folderLogo, folderLink }) => {
   return (
     <>
-      <a className="sponsor-display" href={folderLink}>
+      <a
+        className="sponsor-display"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={folderLink}
+      >
         <img className="sponsor-logo" src={folderLogo} />
         <h1 className="sponsor-label folder-text">{folderName}</h1>
         <img

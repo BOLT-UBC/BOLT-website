@@ -7,6 +7,8 @@
 
 .fb-logo {
     width: 40%;
+    height: auto;
+    aspect-ratio: 1 / 1;
 }
 
 .fb-name{
@@ -19,4 +21,10 @@
 
 .fb-name h1{
     margin: 0;
+}
+
+@-moz-document url-prefix() {
+    .fb-name{
+        width: 80%;
+    }
 }
