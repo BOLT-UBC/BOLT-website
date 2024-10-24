@@ -1,0 +1,54 @@
+.judge-card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.judge-description {
+    width: 90%;
+    font-size: 0.96rem;
+    color: #585858;
+}
+
+.judge-pfp-container {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: 40%;
+    perspective: 1000px; 
+    margin-top: 1.0rem;
+    margin-bottom: 1.5rem;
+}
+
+.judge-pfp-spinner {
+    position: absolute;
+    height: 100%; 
+    width: 100%; 
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease; 
+}
+
+.judge-card-content:hover {
+    .judge-pfp-spinner {
+        transform: rotateY(180deg); 
+    }
+   
+}
+
+.judge-pfp-front, .judge-pfp-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #585858;
+    background-color: #D7C9FF;
+}
+
+.judge-pfp-front {
+    backface-visibility: hidden;
+}
+
+.judge-pfp-back {
+    backface-visibility: hidden; 
+    transform: rotateY(180deg);
+}
