@@ -1,0 +1,24 @@
+.link-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.link-thumbnail {
+    width: 80%;
+    height: 60%;
+    border: 3px solid black;
+    box-shadow: 3px 3px #7E65FE80;
+}
+
+.link-name {
+    color: rgb(62, 62, 62);
+    margin: 0.5rem auto;
+    font-size: 0.8rem;
+    font-size: 1rem;
+}

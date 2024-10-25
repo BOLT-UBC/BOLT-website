@@ -1,0 +1,16 @@
+.fb-decorated-name-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    border: 4px solid black;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    box-shadow: 2px 3px 0px black;
+}
+
+.fb-search-icon {
+    height: 80%;
+    width: auto;
+}

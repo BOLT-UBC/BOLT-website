@@ -2,7 +2,7 @@ import { FC } from "react";
 import "./styles.css";
 import Background from "./components/Background";
 import Banner from "./components/Banner";
-import Window from "./components/Window";
+import FBHome from "./fb-home-page/FBHome";
 
 //fb stands for first-byte
 const FirstBytePage: FC = () => {
@@ -10,13 +10,7 @@ const FirstBytePage: FC = () => {
     <div className="fb-body">
       <Banner />
       <Background />
-      <Window
-        windowName="Window Name!"
-        styles={{ width: "600px", height: "400px" }}
-      >
-        <p>This window has custom width and height.</p>
-        <button>Click Me</button>
-      </Window>
+      <FBHome />
     </div>
   );
 };
