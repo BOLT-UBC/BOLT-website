@@ -14,6 +14,7 @@ const FBHome: FC = () => {
         <Window
           windowName="Useful Links"
           styles={{ width: "100%", height: "100%" }}
+          classNames="fb-window"
         >
           <div className="links-frame">
             <UsefulLink
@@ -68,7 +69,8 @@ const FBHome: FC = () => {
         </div>
         <Window
           windowName="Schedule"
-          styles={{ width: "100%", height: "100%" }}
+          styles={{ width: "100%" }}
+          classNames="fb-window schedule-display"
         >
           <Schedule />
         </Window>

@@ -30,3 +30,35 @@
     color: #6a6a6a;
 
 }
+
+@media (min-width: 768px) {
+    .task-row{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .task-desc {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .task-row{
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+    }
+    .task-desc {
+        font-size: 1rem;
+    }
+}
+
+/* @media (min-width: 1536px) {
+    .fb-name{
+        font-size: 3.8rem;
+    }
+}
+
+@media (min-width: 2100px) {
+    .fb-name{
+        font-size: 2.8rem;
+    }
+} */

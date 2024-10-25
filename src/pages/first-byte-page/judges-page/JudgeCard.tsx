@@ -18,7 +18,7 @@ const JudgeCard: FC<iJudge> = ({
 }) => {
   return (
     <div className="judge-card">
-      <Window windowName="Judges">
+      <Window windowName="Judges" classNames="fb-window">
         <div className="judge-card-content">
           <DecoratedNameBar
             name={name}

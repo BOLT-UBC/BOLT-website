@@ -21,6 +21,10 @@
     overflow: hidden;
 }
 
+.schedule-display {
+    height: 100%;
+}
+
 @media (min-width: 475px) {
 
 }
@@ -33,11 +37,17 @@
     .fb-window-header {
         font-size: 1.2rem;
     }
+    .schedule-display {
+        height: 300px;
+    }
 }
 
 @media (min-width: 1024px) {
     .fb-window-header {
         font-size: 1.5rem;
+    }
+    .schedule-display {
+        height: 390px;
     }
 }
 
@@ -45,8 +55,26 @@
     .fb-window-header {
         font-size: 2rem;
     }
+    .schedule-display {
+        height: 500px;
+    }
 }
 
 @media (min-width: 1536px) {
-    
+    .fb-window-header {
+        font-size: 1.4rem;
+    }
+    .schedule-display {
+        height: 600px;
+    }
+}
+
+@media (min-width: 2100px) {
+    .schedule-display {
+        height: 100%;
+    }
+}
+
+@media (min-width: 3700px) {
+
 }
