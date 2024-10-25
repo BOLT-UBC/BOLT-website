@@ -1,8 +1,15 @@
 /* WE NEED TO ADD QUERY FOR HEIGHTS SO THAT BANNER DOESN"T OVERLAP WITH CONTENTS */
 .fb-body {
     font-family: "PixelFont";
-    padding-top: 2rem;
+    padding-top: 4.9rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .fb-body {
+        padding-top: 4rem;
+    }
 }

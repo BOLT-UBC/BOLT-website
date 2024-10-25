@@ -20,3 +20,33 @@
     font-size: 1rem;
     overflow: hidden;
 }
+
+@media (min-width: 475px) {
+
+}
+
+@media (min-width: 640px) {
+    
+}
+
+@media (min-width: 768px) {
+    .fb-window-header {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fb-window-header {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .fb-window-header {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    
+}

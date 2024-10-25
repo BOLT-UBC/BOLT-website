@@ -13,7 +13,7 @@ const FBHome: FC = () => {
         <FBTitle />
         <Window
           windowName="Useful Links"
-          styles={{ width: "100%", height: "366px" }}
+          styles={{ width: "100%", height: "100%" }}
         >
           <div className="links-frame">
             <UsefulLink
