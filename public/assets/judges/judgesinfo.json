@@ -3,7 +3,7 @@
         "name": "Ramit Arora",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
         "pixelProfilepic": "/assets/judges/RamitAroraPix.png",
-        "realProfilepic":  "/assets/judges/RamitAroraIrl.jpge"
+        "realProfilepic":  "/assets/judges/RamitAroraIrl.jpeg"
     },
     {
         "name": "Arushi Singh",
@@ -22,17 +22,5 @@
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
         "pixelProfilepic": "/assets/judges/DimaBykovPix.png",
         "realProfilepic":  "/assets/judges/DimaBykovIrl.jpeg"
-    },
-    {
-        "name": "Judge2 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
-    },
-    {
-        "name": "ExtraJudge LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
     }
 ] 
