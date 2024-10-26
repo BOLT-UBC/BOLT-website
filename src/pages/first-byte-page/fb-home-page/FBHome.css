@@ -79,6 +79,7 @@
     .fb-container {
         flex-direction: row;
         max-height: 450px;
+        margin-top: calc(2rem * 0.75);
     }
     .fb-column-left {
         width: 60%;
@@ -136,6 +137,7 @@
 @media (min-width: 2100px) {
     .fb-container {
         max-height: 1050px;
+        margin-top: calc(2rem * 1.75);
     }
     .fb-container .fb-window-header {
         font-size: 2.25rem;
@@ -155,6 +157,7 @@
 @media (min-width: 3700px) {
     .fb-container {
         max-height: 6050px;
+        margin-top: calc(2rem * 3.06);
     }
     .fb-container .fb-window-header {
         font-size: 3.375rem;
@@ -163,3 +166,4 @@
         font-size: 3rem;
     }
 }
+

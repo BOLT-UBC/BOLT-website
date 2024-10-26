@@ -1,7 +1,7 @@
 /* WE NEED TO ADD QUERY FOR HEIGHTS SO THAT BANNER DOESN"T OVERLAP WITH CONTENTS */
 .fb-body {
     font-family: "PixelFont";
-    padding-top: 4.9rem;
+    padding-top: 3.4rem;
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
@@ -10,6 +10,21 @@
 
 @media (min-width: 768px) {
     .fb-body {
-        padding-top: 4rem;
+        padding-top: 4.5rem;
+        padding-bottom: calc(2rem * 0.75);
+    }
+}
+
+@media (min-width: 2100px) {
+    .fb-body {
+        padding-top: 7.9rem;
+        padding-bottom: calc(2rem * 1.75);
+    }
+}
+
+@media (min-width: 3700px) {
+    .fb-body {
+        padding-top: 13.5rem;
+        padding-bottom: calc(2rem * 3.06);
     }
 }
