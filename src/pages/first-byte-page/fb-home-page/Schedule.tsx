@@ -32,7 +32,7 @@ const Schedule: FC = () => {
           DescName="Yappity yap yap time to leave bai bai hope you had fun"
         />
         <Task
-          TaskName="Winners Announcemed & Closing Remarks"
+          TaskName="Awards & Closing Remarks"
           TimeName="5:15 PM"
           DescName="Yappity yap yap time to leave bai bai hope you had fun"
         />

@@ -19,10 +19,12 @@
 
 .task-name {
     text-align: left;
+    max-width: 60%;
 }
 
 .task-time {
     text-align: right;
+    width: 40%;
 }
 
 .task-desc {
