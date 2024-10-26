@@ -12,7 +12,7 @@ const Schedule: FC = () => {
           DescName="Check in, grab your stuff, and get ready to roll"
         />
         <Task
-          TaskName="Openning"
+          TaskName="Opening"
           TimeName="1:00 PM"
           DescName="A warm welcome to get everyone pumped for the day!"
         />
