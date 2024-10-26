@@ -56,7 +56,7 @@ const FBHome: FC = () => {
             <Folder
               folderName="Case Package"
               folderLogo="/assets/first-byte/fb-logo.png"
-              folderLink="https://www.google.com"
+              folderLink="/assets/first-byte/first byte case package.zip"
             ></Folder>
           </div>
           <div className="fb-half">
