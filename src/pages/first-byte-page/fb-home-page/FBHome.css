@@ -113,8 +113,14 @@
     }
 }
 
+@media (min-width: 2400px) {
+    .fb-container {
+        max-height: 6050px;
+    }
+}
+
 @media (min-width: 3700px) {
     .fb-container {
-        max-height: 1250px;
+        max-height: 2250px;
     }
 }

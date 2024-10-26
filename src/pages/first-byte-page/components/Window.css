@@ -56,7 +56,7 @@
         font-size: 2rem;
     }
     .schedule-display {
-        height: 500px;
+        height: 450px;
     }
 }
 
@@ -71,10 +71,18 @@
 
 @media (min-width: 2100px) {
     .schedule-display {
-        height: 100%;
+        height: 700px
+    }
+}
+
+@media (min-width: 2490px) {
+    .schedule-display {
+        height: 1000px
     }
 }
 
 @media (min-width: 3700px) {
-
+    .schedule-display {
+        height: 1460px
+    }
 }
