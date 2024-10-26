@@ -1,28 +1,42 @@
-'use client'
- 
-import React from 'react'
-import dynamic from 'next/dynamic'
- 
-const Home = dynamic(() => import('../../src/pages/home/Home'), { ssr: false });
-const About = dynamic(() => import('../../src/pages/about-page/AboutPage'), { ssr: false });
-const Events = dynamic(() => import('../../src/pages/events-page/EventsPage'), { ssr: false });
-const FirstBytePage = dynamic(() => import('../../src/pages/first-byte-page/FirstBytePage'), { ssr: false });
+"use client";
 
+import React from "react";
+import dynamic from "next/dynamic";
+
+const Home = dynamic(() => import("../../src/pages/home/Home"), { ssr: false });
+const About = dynamic(() => import("../../src/pages/about-page/AboutPage"), {
+  ssr: false,
+});
+const Events = dynamic(() => import("../../src/pages/events-page/EventsPage"), {
+  ssr: false,
+});
+const FirstBytePage = dynamic(
+  () => import("../../src/pages/first-byte-page/FirstBytePage"),
+  { ssr: false }
+);
+const JudgesPage = dynamic(
+  () => import("../../src/pages/first-byte-page/judges-page/JudgesPage"),
+  { ssr: false }
+);
 export function ClientOnly({ page }: { page: string }) {
-  if (page === 'home') {
-    return <Home />; 
+  if (page === "home") {
+    return <Home />;
   }
 
-  if (page === 'aboutus') {
+  if (page === "aboutus") {
     return <About />;
   }
 
-  if (page === 'events') {
+  if (page === "events") {
     return <Events />;
   }
 
-  if (page === '') {
+  if (page === "") {
     return <FirstBytePage />;
+  }
+
+  if (page === "judges") {
+    return <JudgesPage />;
   }
 
   return <h1>404: Page Not Found</h1>;
