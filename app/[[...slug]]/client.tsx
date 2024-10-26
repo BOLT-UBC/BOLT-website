@@ -3,8 +3,6 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
  
-// const App = dynamic(() => import('../../src/App'), { ssr: false })
- 
 const Home = dynamic(() => import('../../src/pages/home/Home'), { ssr: false });
 const About = dynamic(() => import('../../src/pages/about-page/AboutPage'), { ssr: false });
 const Events = dynamic(() => import('../../src/pages/events-page/EventsPage'), { ssr: false });

@@ -23,7 +23,6 @@ const Navbar: FC = () => {
             <div className={styles.nav_bar} id="NavBar">
                 <div className={styles.nav_bar_content} id="NavBarContents">
                     <div className={styles.NavBarHome}>
-                        {/* <img src={logo.src} style={logo_style} alt="Logo" /> */}
                         <Image src={logo} alt="Logo" width={25} height={40} />
                         <a href={'/'} style={{ textDecoration: 'none', color: 'inherit' }}>
                             <p className={styles.selected_text_style}>Home</p>

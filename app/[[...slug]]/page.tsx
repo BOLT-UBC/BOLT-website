@@ -4,39 +4,36 @@ import { ClientOnly } from './client'
  
 export function generateStaticParams() {
     return [
-      { slug: [''] }, // This will handle the base URL (e.g., "/")
-      { slug: ['aboutus'] }, // Static export for "/about"
-      { slug: ['home'] }, // Static export for "/contact"
-      { slug: ['events'] }, // Static export for "/contact"
-      { slug: ['firstbyte'] }, // Static export for "/contact"
+      { slug: [''] },
+      { slug: ['aboutus'] },
+      { slug: ['home'] },
+      { slug: ['events'] },
+      { slug: ['firstbyte'] },
     ];
   }
-  
  
   export default function Page({ params }: { params: { slug?: string[] } }) {
     const { slug } = params;
-  
-    // Determine which page to render based on the slug
+
     if (!slug || slug.length === 0) {
-      return <ClientOnly page='' />; // Render Home page on base URL
+      return <ClientOnly page='' />;
     }
   
     if (slug[0] === 'aboutus') {
-      return <ClientOnly page="aboutus" />; // Render About page
+      return <ClientOnly page="aboutus" />;
     }
   
     if (slug[0] === 'home') {
-      return <ClientOnly page="home" />; // Render Home page
+      return <ClientOnly page="home" />;
     }
 
     if (slug[0] === 'events') {
-        return <ClientOnly page="events" />; // Render Home page
+        return <ClientOnly page="events" />;
       }
 
     if (slug[0] === 'first-byte') {
-      return <ClientOnly page="first-byte" />; // Render Home page
+      return <ClientOnly page="first-byte" />;
     }
-  
-    // If no matching slug, return 404 or fallback
+
     return <h1>404: Page Not Found</h1>;
   }
