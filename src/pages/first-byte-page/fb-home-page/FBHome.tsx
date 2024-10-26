@@ -18,34 +18,34 @@ const FBHome: FC = () => {
         >
           <div className="links-frame">
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="To Be Added"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful1.png"
+              title="General DSCI Guide"
+              link="https://python.datasciencebook.ca/viz.html"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="To Be Added"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful2.png"
+              title="Pandas Documentation"
+              link="https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="To Be Added"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful3.png"
+              title="Visualization Guide"
+              link="https://www.geeksforgeeks.org/data-visualization-with-python/"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="To Be Added"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful4.png"
+              title="Case Comp Tips"
+              link="https://www.efinancialmodels.com/winning-presentations-creating-an-impactful-case-comp-slide-deck/"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="To Be Added"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful5.png"
+              title="Public Speaking Tips"
+              link="https://www.youtube.com/watch?v=-FOCpMAww28"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="To Be Added"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful6.png"
+              title="Slide Deck Tips"
+              link="https://www.youtube.com/c/TheAnalystAcademy"
             />
           </div>
         </Window>
