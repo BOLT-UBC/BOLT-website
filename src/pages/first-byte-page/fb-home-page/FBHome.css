@@ -27,6 +27,8 @@
 
 .fb-column-right {
     width: 100%;
+    margin-top: 2rem;
+
 }
 
 .fb-redirect-row {
@@ -121,6 +123,6 @@
 
 @media (min-width: 3700px) {
     .fb-container {
-        max-height: 2250px;
+        max-height: 6050px;
     }
 }
