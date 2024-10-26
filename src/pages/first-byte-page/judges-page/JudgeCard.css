@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;   
     width: 307.5px;
-    height: 286px;
+    height: 200px;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
@@ -16,6 +16,7 @@
     width: 90%;
     font-size: calc(0.96rem  * 0.75);
     color: #585858;
+    text-align: center;
 }
 
 .judge-pfp-container {
@@ -65,7 +66,7 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
         width: 410px;
-        height: 380px;
+        height: 260px;
     }
     
     .judge-description {
@@ -87,7 +88,7 @@
 @media (min-width: 2100px) {
     .judge-card-content{    
         width: 717px;
-        height: 665px;
+        height: 445px;
         padding-top: 1.75rem;
         padding-bottom: 1.75rem;
     }
@@ -110,7 +111,7 @@
 @media (min-width: 3700px) {
     .judge-card-content{    
         width: 1255px;
-        height: 1164px;
+        height: 764px;
         padding-top: 3.06rem;
         padding-bottom: 3.06rem;
     }
