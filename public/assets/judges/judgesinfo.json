@@ -1,9 +1,27 @@
 [
     {
-        "name": "Judge1 LAST NAME",
+        "name": "Ramit Arora",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
+        "pixelProfilepic": "/assets/judges/RamitAroraPix.png",
+        "realProfilepic":  "/assets/judges/RamitAroraIrl.jpge"
+    },
+    {
+        "name": "Arushi Singh",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
+        "pixelProfilepic": "/assets/judges/ArushiSinghPix.png",
+        "realProfilepic":  "/assets/judges/ArushiSinghIrl.jpeg"
+    },
+    {
+        "name": "Doruk Yavuz",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
+        "pixelProfilepic": "/assets/judges/DorukYavuzPix.png",
+        "realProfilepic":  "/assets/judges/DorukYavuzIrl.jpeg"
+    },
+    {
+        "name": "Dima Bykov",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
+        "pixelProfilepic": "/assets/judges/DimaBykovPix.png",
+        "realProfilepic":  "/assets/judges/DimaBykovIrl.jpeg"
     },
     {
         "name": "Judge2 LAST NAME",
@@ -12,25 +30,7 @@
         "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
     },
     {
-        "name": "Judge3 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
-    },
-    {
-        "name": "Judge1 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
-    },
-    {
-        "name": "Judge2 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
-    },
-    {
-        "name": "Judge3 LAST NAME",
+        "name": "ExtraJudge LAST NAME",
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
         "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
         "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
