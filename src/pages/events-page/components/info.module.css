@@ -1,8 +1,8 @@
-/* :global(body) {
+body {
     overflow-x: hidden !important;
     width: 100%;
     /* margin-bottom: 500px; */
-/* } */
+}
 
 .positioning {
     position: relative;

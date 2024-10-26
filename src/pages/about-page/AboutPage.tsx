@@ -1,10 +1,9 @@
 import { FC } from 'react';
 import './styles.css';
 import { motion } from "framer-motion";
-import alexy from "../../../public/assets/profile-photos/alexy-no-back.png";
-import TeamsPage from './components/TeamsPage'
-import Header from "./components/Header";
-import Image from "next/Image";
+import alexy from "/assets/profile-photos/alexy-no-back.png";
+import TeamsPage from './components/TeamsPage.tsx'
+import Header from "./components/Header.tsx";
 
 const AboutPage: FC = () => {
     const isVisible: boolean = true;
@@ -106,7 +105,7 @@ const AboutPage: FC = () => {
                 </motion.div>
                 <div className="word-from-pres">
                     <div className='pres-bg'>
-                        <Image src={alexy} alt="pre-image" width={200} height={300} />
+                        <img src={alexy} className="pres-image" alt="pres-image" />
                         <motion.h2
                             initial={{ opacity: 0 }}
                             animate={{ x: 50, opacity: 1 }}

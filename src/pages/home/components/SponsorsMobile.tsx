@@ -1,11 +1,11 @@
 import { useState, useEffect, FC } from 'react';
 import { motion } from 'framer-motion';
 import styles from './sponsors.module.css';
-import ams from '../../../../public/assets/sponsors/ams.png';
-import cus from '../../../../public/assets/sponsors/cus.png';
-import mastercard from '../../../../public/assets/sponsors/mastercard.png';
-import CPABC from '../../../../public/assets/sponsors/CPABC.png';
-import uoft from '../../../../public/assets/sponsors/uoft.png';
+import ams from '/assets/sponsors/ams.png';
+import cus from '/assets/sponsors/cus.png';
+import mastercard from '/assets/sponsors/mastercard.png';
+import CPABC from '/assets/sponsors/CPABC.png';
+import uoft from '/assets/sponsors/uoft.png';
 
 const SponsorsMobile: FC = () => {
     const [isVisible, setIsVisible] = useState<boolean>(false);

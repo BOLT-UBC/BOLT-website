@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import styles from './navbar.module.css';
-import logo from '../../app/bolt.png';
-import Image from 'next/Image';
+import logo from '/assets/logos/bolt.png';
 
 const Navbar: FC = () => {
     const gap: React.CSSProperties = {
@@ -23,7 +22,7 @@ const Navbar: FC = () => {
             <div className={styles.nav_bar} id="NavBar">
                 <div className={styles.nav_bar_content} id="NavBarContents">
                     <div className={styles.NavBarHome}>
-                        <Image src={logo} alt="Logo" width={25} height={40} />
+                        <img src={logo} style={logo_style} alt="Logo" />
                         <a href={'/'} style={{ textDecoration: 'none', color: 'inherit' }}>
                             <p className={styles.selected_text_style}>Home</p>
                         </a>
