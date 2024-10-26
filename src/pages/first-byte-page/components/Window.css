@@ -7,7 +7,7 @@
 .fb-window-header {
     border: 2px solid #000000;
     color: white;
-    font-size: 2rem;
+    font-size: 0.9rem;
     text-align: left;
     background-color: #7E65FE;
     padding: 0.3rem 1rem;
@@ -25,45 +25,25 @@
     height: 100%;
 }
 
-@media (min-width: 475px) {
-
-}
-
-@media (min-width: 640px) {
-    
-}
-
 @media (min-width: 768px) {
-    .fb-window-header {
-        font-size: 1.2rem;
-    }
     .schedule-display {
         height: 280px;
     }
 }
 
 @media (min-width: 1024px) {
-    .fb-window-header {
-        font-size: 1.5rem;
-    }
     .schedule-display {
         height: 350px;
     }
 }
 
 @media (min-width: 1280px) {
-    .fb-window-header {
-        font-size: 2rem;
-    }
     .schedule-display {
         height: 420px;
     }
 }
 
 @media (min-width: 1536px) {
-    .fb-window-header {
-        font-size: 1.4rem;
-    }
     .schedule-display {
         height: 600px;
     }

@@ -25,7 +25,6 @@ const JudgeCard: FC<iJudge> = ({
             styles={{
               height: "10%",
               width: "80%",
-              fontSize: "1.6rem",
             }}
           />
           <div className="judge-pfp-container">

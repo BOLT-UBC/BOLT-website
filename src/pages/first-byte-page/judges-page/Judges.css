@@ -11,24 +11,30 @@
     border-radius: 2rem;
 }
 
-html {
-    font-size: 12px;
-}
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
+@media (max-width: 768px) {
+    .judges {
+        gap: 0.75rem; 
+        margin-top: calc(2rem * 0.75);
+        border-radius: calc(2rem * 0.75);
+        padding: calc(3rem * 0.75);
     }
 }
 
 @media (min-width: 2100px) {
-    html {
-        font-size: 28px;
+    .judges {
+        gap: 1.75rem; 
+        margin-top: calc(2rem * 1.75);
+        border-radius: calc(2rem * 1.75);
+        padding: calc(3rem * 1.75);
     }
 }
 
 @media (min-width: 3700px) {
-    html {
-        font-size: 49px;
+    .judges {
+        gap: 3.06rem;
+        margin-top: calc(2rem * 3.06);
+        border-radius: calc(2rem * 3.06);
+        padding: calc(3rem * 3.06);
     }
 }
