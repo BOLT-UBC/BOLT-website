@@ -22,5 +22,17 @@
         "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
         "pixelProfilepic": "/assets/judges/DimaBykovPix.png",
         "realProfilepic":  "/assets/judges/DimaBykovIrl.jpeg"
+    },
+    {
+        "name": "Paul Yi",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
+        "pixelProfilepic": "/assets/judges/PaulYiPix.png",
+        "realProfilepic":  "/assets/judges/PaulYi.jpg"
+    },
+    {
+        "name": "Francis Lee",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
+        "pixelProfilepic": "/assets/judges/FrancisLeePix.png",
+        "realProfilepic":  "/assets/judges/FrancisLee.jpg"
     }
 ] 
