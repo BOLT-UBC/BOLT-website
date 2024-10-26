@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import styles from './bolt-ubc-title.module.css';
-import logo from '../../../../app/bolt.png';
+import logo from '../../../../public/assets/logos/bolt_dog.png';
+import Image from 'next/Image'
 
 const BoltUBCTitle: FC = () => {
     const { scrollY } = useViewportScroll();
@@ -9,7 +10,11 @@ const BoltUBCTitle: FC = () => {
 
     return (
         <div className={styles.BoltUBCBorder}>
-            <img src={logo} className={styles.main_dog_image} alt="Bolt Dog Logo" />
+            <Image 
+                src={logo} // Use your logo source
+                className={styles.main_dog_image} // Apply your CSS class
+                alt="Bolt Dog Logo" // Provide alt text
+            />  
             <div className={styles.first_text_position}>
                 <div>
                     <h1 className={styles.ubc}><h1 className={styles.bolt}>BOLT</h1> UBC</h1>
