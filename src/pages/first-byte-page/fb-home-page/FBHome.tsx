@@ -19,32 +19,32 @@ const FBHome: FC = () => {
           <div className="links-frame">
             <UsefulLink
               thumbnail="/assets/background-images/TempBackground.jpg"
-              title="I am resouce 1"
+              title="To Be Added"
               link="https://www.google.com"
             />
             <UsefulLink
               thumbnail="/assets/background-images/TempBackground.jpg"
-              title="Blah Blah Blah"
+              title="To Be Added"
               link="https://www.google.com"
             />
             <UsefulLink
               thumbnail="/assets/background-images/TempBackground.jpg"
-              title="What the sigma"
+              title="To Be Added"
               link="https://www.google.com"
             />
             <UsefulLink
               thumbnail="/assets/background-images/TempBackground.jpg"
-              title="Just think about it"
+              title="To Be Added"
               link="https://www.google.com"
             />
             <UsefulLink
               thumbnail="/assets/background-images/TempBackground.jpg"
-              title="How are you doing"
+              title="To Be Added"
               link="https://www.google.com"
             />
             <UsefulLink
               thumbnail="/assets/background-images/TempBackground.jpg"
-              title="Whats good bro"
+              title="To Be Added"
               link="https://www.google.com"
             />
           </div>
