@@ -23,7 +23,7 @@
     position: relative;
     max-width: 40%;
     z-index: 3;
-    height: 70%;
+    height: 2rem;
     aspect-ratio: 1 / 1;
 
 }
@@ -35,4 +35,22 @@
     z-index: 3;
     font-size: 1.1rem;
 
+}
+
+@media (min-width: 475px) {
+    .sponsor-logo {
+        height: 3rem;  
+    }
+}
+
+@media (min-width: 640px) {
+    .sponsor-logo {
+        height: 5rem;  
+    }
+}
+
+@media (min-width: 768px) {
+    .sponsor-logo {
+        height: 70%;  
+    }
 }

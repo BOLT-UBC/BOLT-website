@@ -38,12 +38,12 @@ const FBHome: FC = () => {
               link="https://www.efinancialmodels.com/winning-presentations-creating-an-impactful-case-comp-slide-deck/"
             />
             <UsefulLink
-              thumbnail="/assets/first-byte/usefullinks/useful5.png"
+              thumbnail="/assets/first-byte/usefullinks/useful6.png"
               title="Public Speaking Tips"
               link="https://www.youtube.com/watch?v=-FOCpMAww28"
             />
             <UsefulLink
-              thumbnail="/assets/first-byte/usefullinks/useful6.png"
+              thumbnail="/assets/first-byte/usefullinks/useful5.png"
               title="Slide Deck Tips"
               link="https://www.youtube.com/c/TheAnalystAcademy"
             />
