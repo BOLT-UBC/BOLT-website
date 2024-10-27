@@ -11,7 +11,7 @@
     /* HELLA SUS */
     width: 80%;
     height: 100%;
-    gap: 2rem;
+    gap: 0;
 }
 
 .fb-half .sponsor-label {
@@ -80,6 +80,7 @@
         flex-direction: row;
         max-height: 450px;
         margin-top: calc(2rem * 0.75);
+        gap: 2rem;
     }
     .fb-column-left {
         width: 60%;
