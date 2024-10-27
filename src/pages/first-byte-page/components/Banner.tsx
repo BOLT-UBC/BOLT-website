@@ -29,9 +29,6 @@ const Banner: FC = () => {
       <a className="banner-text" href="/fb/judges">
         Judges
       </a>
-      <a className="banner-text" href="/fb/sponsors">
-        Sponsors
-      </a>
     </nav>
   );
 };

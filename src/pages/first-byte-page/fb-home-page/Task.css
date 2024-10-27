@@ -14,19 +14,71 @@
     width: 100%;
     justify-content: space-between;
     margin-bottom: 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 .task-name {
     text-align: left;
+    max-width: 60%;
 }
 
 .task-time {
     text-align: right;
+    width: 40%;
 }
 
 .task-desc {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #6a6a6a;
 
+}
+
+@media (min-width: 768px) {
+    .task-row{
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    .task-desc {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .task-row{
+        margin-bottom: 0.8rem;
+        font-size: 1.05rem;
+    }
+    .task-desc {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .task-row{
+        margin-bottom: 1.1rem;
+        font-size: 1.6rem;
+    }
+    .task-desc {
+        font-size: 1.35rem;
+    }
+}
+
+
+@media (min-width: 2100px) {
+    .task-row{
+        font-size: 2rem;
+    }
+    .task-desc {
+        font-size: 1.69rem;
+    }
+} 
+
+
+@media (min-width: 3700px) {
+    .task-row{
+        font-size: 3rem;
+    }
+    .task-desc {
+        font-size:  2.5rem;
+    }
 }

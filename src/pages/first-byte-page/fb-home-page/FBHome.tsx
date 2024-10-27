@@ -13,38 +13,39 @@ const FBHome: FC = () => {
         <FBTitle />
         <Window
           windowName="Useful Links"
-          styles={{ width: "100%", height: "366px" }}
+          styles={{ width: "100%", height: "100%" }}
+          classNames="fb-window"
         >
           <div className="links-frame">
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="I am resouce 1"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful1.png"
+              title="General DSCI Guide"
+              link="https://python.datasciencebook.ca/viz.html"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="Blah Blah Blah"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful2.png"
+              title="Pandas Documentation"
+              link="https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="What the sigma"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful3.png"
+              title="Visualization Guide"
+              link="https://www.geeksforgeeks.org/data-visualization-with-python/"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="Just think about it"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful4.png"
+              title="Case Comp Tips"
+              link="https://www.efinancialmodels.com/winning-presentations-creating-an-impactful-case-comp-slide-deck/"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="How are you doing"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful5.png"
+              title="Public Speaking Tips"
+              link="https://www.youtube.com/watch?v=-FOCpMAww28"
             />
             <UsefulLink
-              thumbnail="/assets/background-images/TempBackground.jpg"
-              title="Whats good bro"
-              link="https://www.google.com"
+              thumbnail="/assets/first-byte/usefullinks/useful6.png"
+              title="Slide Deck Tips"
+              link="https://www.youtube.com/c/TheAnalystAcademy"
             />
           </div>
         </Window>
@@ -55,7 +56,7 @@ const FBHome: FC = () => {
             <Folder
               folderName="Case Package"
               folderLogo="/assets/first-byte/fb-logo.png"
-              folderLink="https://www.google.com"
+              folderLink="/assets/first-byte/first byte case package.zip"
             ></Folder>
           </div>
           <div className="fb-half">
@@ -68,7 +69,8 @@ const FBHome: FC = () => {
         </div>
         <Window
           windowName="Schedule"
-          styles={{ width: "100%", height: "100%" }}
+          styles={{ width: "100%" }}
+          classNames="fb-window schedule-display"
         >
           <Schedule />
         </Window>

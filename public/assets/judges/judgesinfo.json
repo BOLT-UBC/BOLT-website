@@ -1,38 +1,38 @@
 [
     {
-        "name": "Judge1 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
+        "name": "Ramit Arora",
+        "description" : "Lead Product Manager at Microsoft",
+        "pixelProfilepic": "/assets/judges/RamitAroraPix.png",
+        "realProfilepic":  "/assets/judges/RamitAroraIrl.jpeg"
     },
     {
-        "name": "Judge2 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
+        "name": "Arushi Singh",
+        "description" : "Lifecycle Engagement Manager at Descript",
+        "pixelProfilepic": "/assets/judges/ArushiSinghPix.png",
+        "realProfilepic":  "/assets/judges/ArushiSinghIrl.jpeg"
     },
     {
-        "name": "Judge3 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
+        "name": "Doruk Yavuz",
+        "description" : "Data Scientist / AI Engineer at KPMG",
+        "pixelProfilepic": "/assets/judges/DorukYavuzPix.png",
+        "realProfilepic":  "/assets/judges/DorukYavuzIrl.jpeg"
     },
     {
-        "name": "Judge1 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
+        "name": "Dima Bykov",
+        "description" : "Lead Product Manager at BC Cancer",
+        "pixelProfilepic": "/assets/judges/DimaBykovPix.png",
+        "realProfilepic":  "/assets/judges/DimaBykovIrl.jpg"
     },
     {
-        "name": "Judge2 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
+        "name": "Paul Yi",
+        "description" : "Associate Consultant at MasterCard",
+        "pixelProfilepic": "/assets/judges/PaulYiPix.png",
+        "realProfilepic":  "/assets/judges/PaulYi.jpg"
     },
     {
-        "name": "Judge3 LAST NAME",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
-        "pixelProfilepic": "/assets/judges/SamplePixelPFP.png",
-        "realProfilepic":  "/assets/judges/SampleRealPFP.jpg"
+        "name": "Francis Lee",
+        "description" : "Sr Associate Product Manager at Workday",
+        "pixelProfilepic": "/assets/judges/FrancisLeePix.png",
+        "realProfilepic":  "/assets/judges/FrancisLee.jpg"
     }
 ] 

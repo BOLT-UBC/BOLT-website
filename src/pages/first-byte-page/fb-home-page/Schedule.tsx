@@ -7,19 +7,39 @@ const Schedule: FC = () => {
     <>
       <div className="schedule-frame">
         <Task
-          TaskName="Arrival"
-          TimeName="9:00 AM"
-          DescName="Yappity yap yap time to check in at the address (dwadwadwa)"
+          TaskName="Registration"
+          TimeName="12:45 PM"
+          DescName="Check in, grab your stuff, and get ready to roll"
         />
         <Task
-          TaskName="Lunch"
-          TimeName="12:00 PM"
-          DescName="Lunch Time! We will be providing food!!! Yum yum in my tum tum AY PAYAPYAYPYPAPYAYPAPYAYPAYPAYPAPYAYPAYPA PYAYPAPYAPY A YPYAYPYPAY PAYPAYAPA YPYPAPY"
+          TaskName="Opening"
+          TimeName="1:00 PM"
+          DescName="A warm welcome to get everyone pumped for the day!"
         />
         <Task
-          TaskName="Closing Ceremony"
-          TimeName="5:00 PM"
-          DescName="Yappity yap yap time to leave bai bai hope you had fun"
+          TaskName="Breakout Room Presentations"
+          TimeName="1:15 PM"
+          DescName="Small groups share ideas—let’s see what everyone’s working on!"
+        />
+        <Task
+          TaskName="Breaks & Snacks"
+          TimeName="3:15 PM"
+          DescName="Take a breather, grab a snack, and mingle."
+        />
+        <Task
+          TaskName="Finalist Presentations"
+          TimeName="4:15 PM"
+          DescName="Our star projects hit the spotlight—don’t miss it!"
+        />
+        <Task
+          TaskName="Awards & Closing Remarks"
+          TimeName="5:15 PM"
+          DescName="Celebrating wins and wrapping things up."
+        />
+        <Task
+          TaskName="Networking"
+          TimeName="5:45 PM"
+          DescName="Wrap up with some good chats and new connections."
         />
       </div>
     </>

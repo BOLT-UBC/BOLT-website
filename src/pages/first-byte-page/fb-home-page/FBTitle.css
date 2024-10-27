@@ -2,7 +2,8 @@
     display: flex;
     width: 100%;
     height: auto;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    justify-content: center;
 }
 
 .fb-logo {
@@ -13,10 +14,12 @@
 
 .fb-name{
     word-spacing:100em;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     text-shadow: 4px 4px #7E65FE;
     letter-spacing: 7px;
     margin: auto 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .fb-name h1{
@@ -26,5 +29,39 @@
 @-moz-document url-prefix() {
     .fb-name{
         width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .fb-container {
+        flex-direction: row;
+    }
+    .fb-title {
+        justify-content: left;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .fb-name{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .fb-name{
+        font-size: 3.8rem;
+    }
+}
+
+@media (min-width: 2100px) {
+    .fb-name{
+        font-size: 5.5rem;
+    }
+}
+
+@media (min-width: 3700px) {
+    .fb-name{
+        font-size: 8.25rem;
     }
 }

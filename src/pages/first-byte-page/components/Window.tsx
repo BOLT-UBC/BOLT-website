@@ -5,12 +5,18 @@ interface WindowProps {
   windowName: string;
   children: ReactNode;
   styles?: CSSProperties;
+  classNames: string;
 }
 
-const Window: FC<WindowProps> = ({ windowName, children, styles }) => {
+const Window: FC<WindowProps> = ({
+  windowName,
+  children,
+  styles,
+  classNames,
+}) => {
   return (
     <>
-      <div className="fb-window" style={styles}>
+      <div className={classNames} style={styles}>
         <div className="fb-window-header">{windowName}</div>
         <div className="fb-window-content">{children}</div>
       </div>

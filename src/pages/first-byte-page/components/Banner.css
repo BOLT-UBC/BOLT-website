@@ -8,9 +8,9 @@
     z-index: 10;
     width: 100vw;
     height: fit-content;
-    font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .banner-text {
@@ -32,4 +32,28 @@
     transition-property: all;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 768px) {
+    .fb-banner {
+        font-size: calc(1.5rem * 0.75);
+        padding-top: calc(1.5rem * 0.75);
+        padding-bottom: calc(1.5rem * 0.75);
+    }
+}
+
+@media (min-width: 2100px) {
+    .fb-banner {
+        font-size: calc(1.5rem * 1.75);
+        padding-top: calc(1.5rem * 1.75);
+        padding-bottom: calc(1.5rem * 1.75);
+    }
+}
+
+@media (min-width: 3700px) {
+    .fb-banner {
+        font-size: calc(1.5rem * 3.06);
+        padding-top: calc(1.5rem * 3.06);
+        padding-bottom: calc(1.5rem * 3.06);
+    }
 }
