@@ -23,10 +23,10 @@ const Banner: FC = () => {
 
   return (
     <nav className={`fb-banner ${isVisible}`}>
-      <a className="banner-text" href="/fb">
+      <a className="banner-text" href="/">
         Home
       </a>
-      <a className="banner-text" href="/fb/judges">
+      <a className="banner-text" href="/Judges">
         Judges
       </a>
     </nav>
