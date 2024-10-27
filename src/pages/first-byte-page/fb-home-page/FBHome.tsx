@@ -61,7 +61,7 @@ const FBHome: FC = () => {
           </div>
           <div className="fb-half">
             <Folder
-              folderName="2053 Main Mall"
+              folderName="HA491"
               folderLogo="/assets/first-byte/fb-location-sprite.png"
               folderLink="https://www.google.com/maps/place/UBC+Sauder+School+of+Business/@49.2648239,-123.2537939,16z/data=!3m1!4b1!4m6!3m5!1s0x548672b5db6faaeb:0x7d0e6eae5fc5e75!8m2!3d49.2648239!4d-123.2537939!16zL20vMDhydHh5?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D"
             ></Folder>
