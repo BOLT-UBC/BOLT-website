@@ -7,6 +7,7 @@ const Home = dynamic(() => import('../../src/pages/home/Home'), { ssr: false });
 const About = dynamic(() => import('../../src/pages/about-page/AboutPage'), { ssr: false });
 const Events = dynamic(() => import('../../src/pages/events-page/EventsPage'), { ssr: false });
 const FirstBytePage = dynamic(() => import('../../src/pages/first-byte-page/FirstBytePage'), { ssr: false });
+const JudgesPage = dynamic(() => import('src/pages/first-byte-page/judges-page/JudgesPage'), { ssr: false });
 
 export function ClientOnly({ page }: { page: string }) {
   if (page === 'home') {
@@ -23,6 +24,10 @@ export function ClientOnly({ page }: { page: string }) {
 
   if (page === '') {
     return <FirstBytePage />;
+  }
+
+  if (page === 'judges') {
+    return <JudgesPage />;
   }
 
   return <h1>404: Page Not Found</h1>;

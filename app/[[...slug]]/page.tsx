@@ -1,4 +1,4 @@
-import '../../src/app.css'
+import '../../src/pages/first-byte-page/styles.css'
 import { ClientOnly } from './client'
 
  
@@ -9,6 +9,7 @@ export function generateStaticParams() {
       { slug: ['home'] },
       { slug: ['events'] },
       { slug: ['firstbyte'] },
+      { slug: ['judges'] },
     ];
   }
  
@@ -33,6 +34,10 @@ export function generateStaticParams() {
 
     if (slug[0] === 'first-byte') {
       return <ClientOnly page="first-byte" />;
+    }
+
+    if (slug[0] === 'judges') {
+      return <ClientOnly page="judges" />;
     }
 
     return <h1>404: Page Not Found</h1>;
