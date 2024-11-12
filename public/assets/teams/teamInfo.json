@@ -1,21 +1,71 @@
 {
   "teams": [
     {
-      "team_name": "Team 1",
+      "team_name": "BOLT",
       "executives": [
         {
           "name": "Bradley Wong",
-          "title": "Vice-President",
+          "title": "Co-President",
           "profilepic": "Bradley.jpg"
         },
         {
-          "name": "Angie Sun",
+          "name": "Antarip Kashyap",
+          "title": "Co-President",
+          "profilepic": "Antarip.jpg"
+        }
+      ]
+    },
+    {
+      "team_name": "First/Second Year Rep",
+      "executives": [
+        {
+          "name": "Jenise Yang",
+          "title": "First Year Rep (Events)",
+          "profilepic": "Jenise Yang.jpg"
+        },
+        {
+          "name": "Natania Huang",
+          "title": "First Year Rep (CR)",
+          "profilepic": "Natania Huang.jpg"
+        },
+        {
+          "name": "Julianna Huang",
+          "title": "First Year Rep",
+          "profilepic": "julianna-huang.PNG"
+        },
+        {
+          "name": "Chloe Lee",
+          "title": "Second Year Rep",
+          "profilepic": "Chloe Lee.jpg"
+        },
+        {
+          "name": "Carys Fong",
+          "title": "First Year Rep",
+          "profilepic": "Carys.jpg"
+        }
+      ]
+    },
+    {
+      "team_name": "Team 1",
+      "executives": [
+        {
+          "name": "Rania Salimi",
+          "title": "VP Team 1",
+          "profilepic": "Rania.PNG"
+        },
+        {
+          "name": "Yash Katireddy",
           "title": "Events Director",
-          "profilepic": "AngieSunPicture.jpg"
+          "profilepic": "Yash.png"
+        },
+        {
+          "name": "Sarp Ata Kaan",
+          "title": "Events Director",
+          "profilepic": "Sarp.jpg"
         },
         {
           "name": "Berke Ozgur",
-          "title": "Events Director",
+          "title": "Advising Director",
           "profilepic": "Berke.png"
         },
         {
@@ -24,14 +74,24 @@
           "profilepic": "Lindy.jpg"
         },
         {
-          "name": "Claire Li",
+          "name": "Rohan Patel",
           "title": "Events Executive",
-          "profilepic": "Claire 1.png"
+          "profilepic": "Rohan.png"
         },
         {
-          "name": "Andrew Shigatomi",
+          "name": "Jove Wan",
           "title": "CR Executive",
-          "profilepic": "Andrew_Shigetomi.png"
+          "profilepic": "Jove.jpg"
+        },
+        {
+          "name": "Eleanor Lam",
+          "title": "CR Executive",
+          "profilepic": "Eleanor Lam.jpg"
+        },
+        {
+          "name": "Aamna Mushtaq",
+          "title": "Events Executive",
+          "profilepic": "Aamna.png"
         }
       ]
     },
@@ -39,39 +99,79 @@
       "team_name": "Team 2",
       "executives": [
         {
-          "name": "Antarip Kashyap",
-          "title": "Vice-President",
-          "profilepic": "Antarip.jpg"
-        },
-        {
           "name": "Nav Thukral",
-          "title": "CR Director",
-          "profilepic": "Nav.jpg"
+          "title": "VP Team 2",
+          "profilepic": "Nav(2).jpg"
         },
         {
-          "name": "Rania Salimi",
-          "title": "Events Director",
-          "profilepic": "Rania bolt .jpg"
+          "name": "Andrew Andrew",
+          "title": "VP Marketing",
+          "profilepic": "Andrew.jpeg"
         },
         {
-          "name": "Duncan Harrop",
-          "title": "Advising Director",
-          "profilepic": "Duncan.jpg"
-        },
-        {
-          "name": "Stallone Pinto",
-          "title": "Advising Director",
-          "profilepic": "Stallone.jpg"
-        },
-        {
-          "name": "Rohan Patel",
+          "name": "Serenity Liu",
           "title": "Events Executive",
-          "profilepic": "Rohan.png"
+          "profilepic": "Serenity.jpg" 
         },
         {
-          "name": "Sejal Kurrha",
+          "name": "Kiwi Mottahed",
+          "title": "Events Director",
+          "profilepic": "Kiwi mottahed.jpg"
+        },
+        {
+          "name": "Calista Budi",
           "title": "CR Executive",
-          "profilepic": "Sejal.png"
+          "profilepic": "Calista Valencia.JPG"
+        },
+        {
+          "name": "Joel Bonnie",
+          "title": "Advising Director",
+          "profilepic": "Joel.png"
+        }
+      ]
+    },
+    {
+      "team_name": "Marketing",
+      "executives": [
+        {
+          "name": "Andrew Andrew",
+          "title": "VP Marketing",
+          "profilepic": "Andrew.png"
+        },
+        {
+          "name": "Mina Hu",
+          "title": "Marketing Director (Advisor)",
+          "profilepic": "Mina.jpg"
+        },
+        {
+          "name": "Leo Shang",
+          "title": "Marketing Executive",
+          "profilepic": "Leo Shang.bmp"
+        },
+        {
+          "name": "Min Li Wang",
+          "title": "Marketing Director",
+          "profilepic": "Min_li.jpeg"
+        },
+        {
+          "name": "Trina Ho",
+          "title": "Marketing Executive",
+          "profilepic": "Trina.jpg"
+        },
+        {
+          "name": "Justin Pilson",
+          "title": "Marketing Strategist",
+          "profilepic": "Justin.png"
+        },
+        {
+          "name": "Alizah Irfan",
+          "title": "Marketing Designer",
+          "profilepic": "Alizah.png"
+        },
+        {
+          "name": "Bhavya",
+          "title": "Marketing Executive",
+          "profilepic": "Bhavya.JPG"
         }
       ]
     },
@@ -84,39 +184,39 @@
           "profilepic": "Tina.png"
         },
         {
-          "name": "Marcus Kam",
-          "title": "Backend Director",
-          "profilepic": "marcuspfp.jpg"
+          "name": "Angela Felicia",
+          "title": "Developer",
+          "profilepic": "Angela.jpg"
         },
         {
-          "name": "Giju Kim",
+          "name": "Jacob Wu",
+          "title": "Developer",
+          "profilepic": "Jacob.png"
+        },
+        {
+          "name": "Parth Patel",
+          "title": "Developer",
+          "profilepic": "Parth Patel.jpeg"
+        },
+        {
+          "name": "Andrew Ahn",
+          "title": "Developer",
+          "profilepic": "Andrew.jpg"
+        },
+        {
+          "name": "David Liu",
           "title": "Junior Developer",
-          "profilepic": "Giju 1.png"
-        }
-      ]
-    },
-    {
-      "team_name": "Marketing",
-      "executives": [
-        {
-          "name": "Margo Bel",
-          "title": "Design & Strategy Marketing Director",
-          "profilepic": "Margo.png"
+          "profilepic": "davidliu.png"
         },
         {
-          "name": "Andrew",
-          "title": "Marketing Executive",
-          "profilepic": "Andrew.png"
+          "name": "David",
+          "title": "Junior Developer",
+          "profilepic": "TODO"
         },
         {
-          "name": "Mina Hu",
-          "title": "Strategy Marketing Director",
-          "profilepic": "Mina.jpg"
-        },
-        {
-          "name": "Anna Luo",
-          "title": "Design Marketing Director",
-          "profilepic": "Anna.jpg"
+          "name": "Kez",
+          "title": "Junior Developer",
+          "profilepic": "Kez.jpg"
         }
       ]
     },
@@ -125,13 +225,23 @@
       "executives": [
         {
           "name": "Kyle Gomez",
-          "title": "Finance Executive",
-          "profilepic": "ubc bolt dog copy.png"
+          "title": "Finance Director",
+          "profilepic": "Kyle.jpg"
         },
         {
-          "name": "Aseem Arora",
-          "title": "Treasurer",
-          "profilepic": "Aseem.jpg"
+          "name": "Adrian Chan",
+          "title": "Finance Director (Interim)",
+          "profilepic": "Adrian chang.jpg"
+        },
+        {
+          "name": "Helen Meng",
+          "title": "Finance Executive",
+          "profilepic": "Helen Meng.png"
+        },
+        {
+          "name": "Alejandro Garcia",
+          "title": "Finance Executive",
+          "profilepic": "Alejandro garcia.jpeg"
         }
       ]
     }
