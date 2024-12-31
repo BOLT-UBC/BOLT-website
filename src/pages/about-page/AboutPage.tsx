@@ -1,9 +1,8 @@
 import { FC } from 'react';
 import './styles.css';
 import { motion } from "framer-motion";
-import alexy from "/assets/profile-photos/alexy-no-back.png";
-// import antarip from "/assets/profile-photos/Antarip-bg-removed.png";
-// import Bradely from "/assets/profile-photos/Bradely.jpg";
+import antarip from "/assets/profile-photos/Antarip-bg-removed.png";
+import bradely from "/assets/profile-photos/Bradley-no-bg.png";
 import TeamsPage from './components/TeamsPage.tsx'
 import Header from "./components/Header.tsx";
 
@@ -111,13 +110,13 @@ const AboutPage: FC = () => {
                 <div className="word-from-pres">
                     <div className='pres-bg-container'>
                         <div className='pres-bg'>
-                            <img src={alexy} className="pres-image" alt="pres-image" />
+                            <img src={bradely} className="pres-image" alt="pres-image" />
                             <motion.h2
                                 initial={{ opacity: 0 }}
                                 animate={{ x: 50, opacity: 1 }}
                                 transition={{ delay: 0, duration: 1.25 }}
                                 className="pres-text">
-                                Antarip Kashyap
+                                Bradely Wong
                             </motion.h2>
                             <motion.h3
                                 initial={{ opacity: 0 }}
@@ -128,13 +127,13 @@ const AboutPage: FC = () => {
                             </motion.h3>
                         </div>
                         <div className='pres-bg' style={{ transform: 'scaleX(-1)'}}>
-                            <img src={alexy} className="pres-image" alt="pres-image"/>
+                            <img src={antarip} className="pres-image image-flipped" alt="pres-image"/>
                             <motion.h2
                                 initial={{ opacity: 0 }}
                                 animate={{ x: 50, opacity: 1 }}
                                 transition={{ delay: 0, duration: 1.25 }}
                                 className="pres-text pres-text-right">
-                                Bradely Wong
+                                Antarip Kashyap
                             </motion.h2>
                             <motion.h3
                                 initial={{ opacity: 0 }}

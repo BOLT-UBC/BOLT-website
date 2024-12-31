@@ -1,156 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine&family=Outfit:wght@400;500&family=Raleway:ital,wght@1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Outfit:wght@400;500&family=Raleway:ital,wght@1,100&display=swap");
 
 .about-body {
-    overflow: hidden;
-    max-width: 100%;
-    display: block !important;
-    position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  display: block !important;
+  position: relative;
 }
 
 /* Background Circles */
 .bg-circle-large {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #FBF4FF;
-    width: 500px;
-    height: 500px;
-    top: 350px;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    z-index: -10;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fbf4ff;
+  width: 500px;
+  height: 500px;
+  top: 350px;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
 }
 
 .bg-circle-small {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #F5E7FF;
-    width: 200px;
-    height: 200px;
-    top: 300px;
-    right: 12%;
-    transform: translate(-10%, -10%);
-    z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f5e7ff;
+  width: 200px;
+  height: 200px;
+  top: 300px;
+  right: 12%;
+  transform: translate(-10%, -10%);
+  z-index: -1;
 }
 
 .bg-circle-medium {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #E5D4FF;
-    width: 400px;
-    height: 400px;
-    top: 210px;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    z-index: -10;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #e5d4ff;
+  width: 400px;
+  height: 400px;
+  top: 210px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
 }
 
 .word-from-pres {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 70%;
-    height: auto;
-    padding: 5%;
-    border-radius: 25px;
-    margin: 5% auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 13%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 70%;
+  height: auto;
+  padding: 5%;
+  border-radius: 25px;
+  margin: 5% auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 13%;
 }
 
 .pres-image {
-    height: 355px;
-    width: 250px;
-    margin: auto;
-    border-radius: 20px;
-    position: relative;
-    bottom: 130px;
-    left: -30px;
-    object-fit: cover;
+  height: 355px;
+  width: 250px;
+  margin: auto;
+  border-radius: 20px;
+  position: relative;
+  bottom: 130px;
+  left: -30px;
+  object-fit: cover;
+}
+
+.image-flipped {
+  transform: scaleX(-1) !important;
 }
 
 .pres-message {
-    font-family: 'Outfit', sans-serif;
-    padding: 0 100px;
-    font-weight: 100;
-    font-size: 1.25rem;
-    background-color: #F5E7FF;
-    border-radius: 24px;
-    padding: 2rem;
+  font-family: "Outfit", sans-serif;
+  padding: 0 100px;
+  font-weight: 100;
+  font-size: 1.25rem;
+  background-color: #f5e7ff;
+  border-radius: 24px;
+  padding: 2rem;
 }
 
 .pres-bg-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 .pres-bg {
-    width: 400px;
-    padding-inline: 20px;
-    height: 225px;
-    border-radius: 20px;
-    background: linear-gradient(to right, #363062 0%, #8d8bb5 30%, #363062 100%);
-    overflow: visible;
-    box-shadow:
-        0 1px 1px hsla(0deg, 0%, 0%, 0.05),
-        0 2px 2px hsla(0deg, 0%, 0%, 0.05),
-        0 4px 4px hsla(0deg, 0%, 0%, 0.05),
-        0 8px 8px hsla(0deg, 0%, 0%, 0.05),
-        0 16px 16px hsla(0deg, 0%, 0%, 0.05);
+  width: 400px;
+  padding-inline: 20px;
+  height: 225px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #363062 0%, #8d8bb5 30%, #363062 100%);
+  overflow: visible;
+  box-shadow: 0 1px 1px hsla(0deg, 0%, 0%, 0.05),
+    0 2px 2px hsla(0deg, 0%, 0%, 0.05), 0 4px 4px hsla(0deg, 0%, 0%, 0.05),
+    0 8px 8px hsla(0deg, 0%, 0%, 0.05), 0 16px 16px hsla(0deg, 0%, 0%, 0.05);
 }
 
 .pres-text {
-    font-family: 'Outfit', sans-serif;
-    position: relative;
-    top: -200px;
-    left: 20px;
-    color: white;
-    margin: 0px;
+  font-family: "Outfit", sans-serif;
+  position: relative;
+  top: -200px;
+  left: 20px;
+  color: white;
+  margin: 0px;
 }
 
 .pres-text-right {
-    left: 70px;
-    transform: scaleX(-1) !important;
+  left: 70px;
+  transform: scaleX(-1) !important;
 }
 
 @media (max-width: 1024px) {
-    /* Your smartphone styles go here */
+  /* Your smartphone styles go here */
 
-    /* For example, adjust the padding and font size */
-    .word-from-pres {
-        width: 90%;
-        margin-top: 10%;
-        display: block;
-    }
+  /* For example, adjust the padding and font size */
+  .word-from-pres {
+    width: 90%;
+    margin-top: 10%;
+    display: block;
+  }
 
-    .pres-bg-container {
-        flex-direction: column;
-        gap: 160px;
-    }
+  .pres-bg-container {
+    flex-direction: column;
+    gap: 160px;
+  }
 
-    .pres-bg {
-        width: 275px;
-        margin: auto;
-    }
+  .pres-bg {
+    width: 275px;
+    margin: auto;
+  }
 
-    .pres-message {
-        margin-top: 7%;
-        padding: 2rem 1rem;
-    }
+  .pres-message {
+    margin-top: 7%;
+    padding: 2rem 1rem;
+  }
 
-    .bg-circle-large,
-    .bg-circle-medium,
-    .bg-circle-small {
-        transform: scale(0.7);
-    }
+  .bg-circle-large,
+  .bg-circle-medium,
+  .bg-circle-small {
+    transform: scale(0.7);
+  }
 }
 
 @media (max-width: 535px) {
-    .pres-message {
-        font-size: 1rem;
-    }
-    /* You can add more styles as needed for your smartphone design */
+  .pres-message {
+    font-size: 1rem;
+  }
+  /* You can add more styles as needed for your smartphone design */
 }
