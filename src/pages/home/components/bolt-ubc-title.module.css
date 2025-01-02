@@ -53,6 +53,13 @@
         color: white;
 
     }
+
+    .becomeourpartner {
+        font-size: 20px;
+        margin: 0;
+        position: relative;
+        top: 5px;
+        }
 } 
 
 /* horizontal display */
@@ -111,4 +118,11 @@
         color: white;
 
     }
+
+    .becomeourpartner {
+        font-size: 20px;
+        margin: 0;
+        position: relative;
+        top: 5px;
+        }
 }
