@@ -3,11 +3,14 @@ import BoltUBCTitle from './components/BoltUBCTitle.tsx';
 // import Sponsors from './components/Sponsors.tsx';
 // import Events from "./components/Events.tsx";
 // import OurMission from "./components/OurMission.tsx";
+import Navbar from "../../global-components/Navbar.tsx";
+// import Sponsors from './components/Sponsors.tsx';
+// import Events from "./components/Events.tsx";
+// import OurMission from "./components/OurMission.tsx";
 
 import './style.css';
 
 import {FC} from "react";
-import Navbar from "../../global-components/Navbar.tsx";
 
 const Home: FC = () => {
     const { scrollY } = useViewportScroll();
@@ -38,8 +41,11 @@ const Home: FC = () => {
                 <BoltUBCTitle />
                 {/* <Sponsors />
                 <OurMission /> */}
+                {/* <Sponsors />
+                <OurMission /> */}
                 {/* <Events /> */}
                 <div style={{ height: '100px' }}></div>
+                {/* <Events /> */}
             </div>
             </body>
         );
