@@ -1,17 +1,13 @@
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import BoltUBCTitle from './components/BoltUBCTitle.tsx';
-import Sponsors from './components/Sponsors.tsx';
+// import Sponsors from './components/Sponsors.tsx';
+// import Events from "./components/Events.tsx";
+// import OurMission from "./components/OurMission.tsx";
+import Navbar from "../../global-components/Navbar.tsx";
 
 import './style.css';
 
 import {FC} from "react";
-import BoltUBCTitleMobile from "./components/BoltUBCTitleMobile.tsx";
-import SponsorsMobile from "./components/SponsorsMobile.tsx";
-import Events from "./components/Events.tsx";
-import EventsMobile from "./components/EventsMobile.tsx";
-import OurMissionMobile from "./components/OurMissionMobile.tsx";
-import OurMission from "./components/OurMission.tsx";
-import Navbar from "../../global-components/Navbar.tsx";
 
 const Home: FC = () => {
     const { scrollY } = useViewportScroll();
@@ -46,11 +42,11 @@ const Home: FC = () => {
             </div>
             <div className="context">
                 <Navbar />
-                <BoltUBCTitleMobile />
+                {/* <BoltUBCTitleMobile />
                 <SponsorsMobile />
-                <OurMissionMobile />
+                <OurMissionMobile /> */}
                 <div style={{ height: '50px' }}></div>
-                <EventsMobile />
+                {/* <EventsMobile /> */}
                 <div style={{ height: '100px' }}></div>
             </div>
             </body>
@@ -78,10 +74,10 @@ const Home: FC = () => {
             <div className="context">
                 <Navbar />
                 <BoltUBCTitle />
-                <Sponsors />
-                <OurMission />
+                {/* <Sponsors />
+                <OurMission /> */}
                 <div style={{ height: '100px' }}></div>
-                <Events />
+                {/* <Events /> */}
             </div>
             </body>
         );

@@ -16,7 +16,7 @@
       ]
     },
     {
-      "team_name": "First/Second Year Rep",
+      "team_name": "1st/2nd Year Rep",
       "executives": [
         {
           "name": "Jenise Yang",
@@ -180,18 +180,23 @@
       "executives": [
         {
           "name": "Tina Yu",
-          "title": "Senior Developer",
+          "title": "VP Dev",
           "profilepic": "Tina.png"
+        },
+        {
+          "name": "Jacob Wu",
+          "title": "Tech Lead",
+          "profilepic": "Jacob.png"
+        },
+        {
+          "name": "Leo Shang",
+          "title": "UI/UX Designer",
+          "profilepic": "Leo Shang.bmp"
         },
         {
           "name": "Angela Felicia",
           "title": "Developer",
           "profilepic": "Angela.jpg"
-        },
-        {
-          "name": "Jacob Wu",
-          "title": "Developer",
-          "profilepic": "Jacob.png"
         },
         {
           "name": "Parth Patel",
@@ -204,19 +209,19 @@
           "profilepic": "Andrew.jpg"
         },
         {
+          "name": "Kezia Rijadi",
+          "title": "Developer",
+          "profilepic": "Kez.jpg"
+        },
+        {
           "name": "David Liu",
           "title": "Junior Developer",
           "profilepic": "davidliu.png"
         },
         {
-          "name": "David",
+          "name": "Julianna Huang",
           "title": "Junior Developer",
-          "profilepic": "TODO"
-        },
-        {
-          "name": "Kez",
-          "title": "Junior Developer",
-          "profilepic": "Kez.jpg"
+          "profilepic": "julianna-huang.PNG"
         }
       ]
     },
