@@ -1,0 +1,68 @@
+.fb-window {
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+}
+  
+.fb-window-header {
+    border: 2px solid #000000;
+    color: white;
+    font-size: 0.9rem;
+    text-align: left;
+    background-color: #7E65FE;
+    padding: 0.3rem 1rem;
+}
+  
+.fb-window-content {
+    border: 3px solid #000000;
+    background-color: #E8E0FF;
+    flex-grow: 1;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.schedule-display {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .schedule-display {
+        height: 280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .schedule-display {
+        height: 350px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .schedule-display {
+        height: 420px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .schedule-display {
+        height: 600px;
+    }
+}
+
+@media (min-width: 2100px) {
+    .schedule-display {
+        height: 700px
+    }
+}
+
+@media (min-width: 2490px) {
+    .schedule-display {
+        height: 1000px
+    }
+}
+
+@media (min-width: 3700px) {
+    .schedule-display {
+        height: 1460px
+    }
+}

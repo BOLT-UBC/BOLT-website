@@ -1,0 +1,135 @@
+.judge-card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    width: 307.5px;
+    height: 200px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.judge-card .fb-window-header, .fb-decorated-name-bar {
+    font-size: calc(1.6rem * 0.75);
+}
+
+.judge-description {
+    width: 90%;
+    font-size: calc(0.96rem  * 0.75);
+    color: #585858;
+    text-align: center;
+}
+
+.judge-pfp-container {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: 40%;
+    perspective: 1000px; 
+    margin-top: 0.75rem;
+    margin-bottom: calc(1.5rem*0.75);
+}
+
+.judge-pfp-spinner {
+    position: absolute;
+    height: 100%; 
+    width: 100%; 
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease; 
+}
+
+.judge-card-content:hover {
+    .judge-pfp-spinner {
+        transform: rotateY(180deg); 
+    }
+}
+
+.judge-pfp-front, .judge-pfp-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: calc(5px*0.75) solid #585858;
+    background-color: #D7C9FF;
+}
+
+.judge-pfp-front {
+    backface-visibility: hidden;
+}
+
+.judge-pfp-back {
+    backface-visibility: hidden; 
+    transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+    .judge-card-content{    
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 410px;
+        height: 260px;
+    }
+    
+    .judge-description {
+        font-size: 0.96rem;
+    }
+
+    .judge-pfp-container {
+        margin-top: 1.0rem;
+        margin-bottom: 1.5rem;
+    }
+    .judge-pfp-front, .judge-pfp-back {
+        border: 5px solid #585858;
+    }
+    .judge-card .fb-window-header, .fb-decorated-name-bar  {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 2100px) {
+    .judge-card-content{    
+        width: 717px;
+        height: 445px;
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+    }
+    .judge-description {
+        font-size: calc(0.96rem*1.75);
+    }
+    .judge-pfp-container {
+        margin-top: 1.75rem;
+        margin-bottom: calc(1.5rem*1.75);
+    }
+
+    .judge-pfp-front, .judge-pfp-back {
+        border: calc(5px*1.75) solid #585858;
+    }
+    .judge-card .fb-window-header, .fb-decorated-name-bar  {
+        font-size: calc(1.6rem * 1.75);
+    }
+}
+
+@media (min-width: 3700px) {
+    .judge-card-content{    
+        width: 1255px;
+        height: 764px;
+        padding-top: 3.06rem;
+        padding-bottom: 3.06rem;
+    }
+
+    .judge-description {
+        font-size: calc(0.96rem *3.06);
+    }
+
+    .judge-pfp-container {
+        margin-top: 3.06rem;
+        margin-bottom: calc(1.5rem*3.06);
+    }
+
+    .judge-pfp-front, .judge-pfp-back {
+        border: calc(5px*3.06) solid #585858;
+    }
+
+    .judge-card .fb-window-header, .fb-decorated-name-bar {
+        font-size: calc(1.6rem * 3.06);
+    }
+}

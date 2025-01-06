@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Ramit Arora",
+        "description" : "Lead Product Manager at Microsoft",
+        "pixelProfilepic": "/assets/judges/RamitAroraPix.png",
+        "realProfilepic":  "/assets/judges/RamitAroraIrl.jpeg"
+    },
+    {
+        "name": "Arushi Singh",
+        "description" : "Lifecycle Engagement Manager at Descript",
+        "pixelProfilepic": "/assets/judges/ArushiSinghPix.png",
+        "realProfilepic":  "/assets/judges/ArushiSinghIrl.jpeg"
+    },
+    {
+        "name": "Doruk Yavuz",
+        "description" : "Data Scientist / AI Engineer at KPMG",
+        "pixelProfilepic": "/assets/judges/DorukYavuzPix.png",
+        "realProfilepic":  "/assets/judges/DorukYavuzIrl.jpeg"
+    },
+    {
+        "name": "Dima Bykov",
+        "description" : "Lead Product Manager at BC Cancer",
+        "pixelProfilepic": "/assets/judges/DimaBykovPix.png",
+        "realProfilepic":  "/assets/judges/DimaBykovIrl.jpg"
+    },
+    {
+        "name": "Paul Yi",
+        "description" : "Associate Consultant at MasterCard",
+        "pixelProfilepic": "/assets/judges/PaulYiPix.png",
+        "realProfilepic":  "/assets/judges/PaulYi.jpg"
+    },
+    {
+        "name": "Francis Lee",
+        "description" : "Sr Associate Product Manager at Workday",
+        "pixelProfilepic": "/assets/judges/FrancisLeePix.png",
+        "realProfilepic":  "/assets/judges/FrancisLee.jpg"
+    }
+] 
