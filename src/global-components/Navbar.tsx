@@ -28,7 +28,6 @@ const Navbar: FC = () => {
                         </a>
                     </div>
                     <div className={styles.nav_bar_rest}>
-                        <div style={borderLine} className={styles.hideForMobile}></div>
                         <div className={styles.NavBarContentParts}>
                             <a href={'/aboutus'} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <p className={styles.nav_bar_text}>
@@ -36,10 +35,13 @@ const Navbar: FC = () => {
                                 </p>
                             </a>
                         </div>
+                    </div>
+                    <div className={styles.nav_bar_rest}>
                         <div className={styles.NavBarContentParts}>
-                            <div style={gap} className={styles.hideForMobile}></div>
-                            <a href={'/events'} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                <p className={styles.nav_bar_text}>Events</p>
+                            <a href={'/firstbyte'} style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <p className={styles.nav_bar_text}>
+                                    FirstByte
+                                </p>
                             </a>
                         </div>
                     </div>

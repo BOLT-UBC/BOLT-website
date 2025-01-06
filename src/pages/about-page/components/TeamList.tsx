@@ -6,6 +6,7 @@ export interface Team {
 }
 
 export const allTeams: Team[] = [
+    { icon: "", label: "1st/2nd Year Rep" },
     { icon: "", label: "Team 1" },
     { icon: "", label: "Team 2" },
     { icon: "", label: "Development" },

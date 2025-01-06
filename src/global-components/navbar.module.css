@@ -74,7 +74,7 @@
         padding: 20px;
         border-radius: 25px;
         width: 85%;
-        height: 240px;
+        height: 170px;
         cursor: pointer;
     }
 
@@ -177,7 +177,7 @@
     .nav_bar_logo_animate {
         z-index: 2;
         display: block;
-        width: 45px;
+        width: 20px;
         position: relative;
         left: 50%;
         transform: translate(-50%);
@@ -193,7 +193,7 @@
     .nav_bar:hover {
         padding: 20px;
         border-radius: 25px;
-        width: 400px;
+        width: 250px;
         cursor: pointer;
     }
 

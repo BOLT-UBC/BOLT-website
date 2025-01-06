@@ -9,10 +9,10 @@ const BoltUBCTitle: FC = () => {
 
     return (
         <div className={styles.BoltUBCBorder}>
-            <img src={logo} className={styles.main_dog_image} alt="Bolt Dog Logo" />
-            <div className={styles.first_text_position}>
-                <div>
-                    <h1 className={styles.ubc}><h1 className={styles.bolt}>BOLT</h1> UBC</h1>
+            <div className={styles.homeContainer}>
+                <img src={logo} className={styles.main_dog_image} alt="Bolt Dog Logo" /> 
+                <div className={styles.pageRightContainer}>
+                    <h1 className={styles.ubc}><span className={styles.bolt}>BOLT</span> UBC</h1>
                     <p className={styles.catchPhrase}>Unleash the power of data analytics!</p>
                     <motion.div
                         initial={{
@@ -20,8 +20,8 @@ const BoltUBCTitle: FC = () => {
                             height: '35px'
                         }}
                         animate={{
-                            width: '250px',
-                            padding: '10px'
+                            width: '230px',
+                            padding: '8px'
                         }}
                         style={{
                             margin: '0 auto',
