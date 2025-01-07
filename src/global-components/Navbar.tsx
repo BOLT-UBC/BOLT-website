@@ -3,15 +3,6 @@ import styles from './navbar.module.css';
 import logo from '/assets/logos/bolt.png';
 
 const Navbar: FC = () => {
-    const gap: React.CSSProperties = {
-        width: '20px',
-    }
-
-    const borderLine: React.CSSProperties = {
-        width: '20px',
-        borderRight: '2px solid #515151',
-        opacity: 0.5,
-    }
 
     const logo_style: React.CSSProperties = {
         width: '30px',
