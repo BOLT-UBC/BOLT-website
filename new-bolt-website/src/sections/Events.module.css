@@ -1,6 +1,63 @@
 .Events {
     color: white;
-    background-color: darkolivegreen;
-    width: 100vw; 
-    height: 100vh;
-  }
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.bridgeContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bridgeImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eventsLayout {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.allEventsContainer {
+    width: 45%;
+    transform: scale(0.85);
+    transform-origin: bottom left;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.nextEventsContainer {
+    width: 45%;
+    transform: scale(0.85);
+    transform-origin: bottom right;
+}
+
+.dividerContainer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.dividerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
