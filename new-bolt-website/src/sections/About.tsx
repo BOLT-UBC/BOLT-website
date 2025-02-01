@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import clouds from '../assets/images/CloudsLong.png'
+import moon from '../assets/images/Moon.png';
 import mountainImage from '../assets/images/left-mountain.png';
 import mountainImage2 from '../assets/images/right-mountain.png';
 import stars from '../assets/images/Stars.png';
@@ -13,6 +14,13 @@ const About: React.FC = () => {
       <p className={styles.description}>
         Bolt provides an enriching platform that fosters collaboration, presents intellectually stimulating challenges, and facilitates hands-on experiences. This unique opportunity is open to students from diverse backgrounds, inviting them to immerse themselves in the dynamic realm of business technology.
       </p>
+      <Parallax className={styles.moonParallax} translateX={[-50, 50]} translateY={[-50, 50]}>
+        <img
+          src={moon}
+          alt="Moon"
+          className={styles.moon}
+        />
+      </Parallax>
       <img
         src={mountainImage}
         alt="Left Mountain"
@@ -30,11 +38,13 @@ const About: React.FC = () => {
           className={styles.clouds}
         />
       </Parallax>
-      <img
-        src={stars}
-        alt="Stars"
-        className={styles.stars}
-      />
+      <Parallax className={styles.starsParallax} rotate={[-30, 30]} translateX={[-10, 10]} translateY={[20, -20]}>
+        <img
+          src={stars}
+          alt="Stars"
+          className={styles.stars}
+        />
+      </Parallax>
     </div>
   );
 };

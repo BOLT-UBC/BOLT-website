@@ -22,12 +22,14 @@
 }
 
 .cloudsParallax {
-  bottom: 340vh;
+  bottom: 360vh;
   position: relative;
+  z-index: 2;
 }
 
 .clouds {
   height: 80%;
+  z-index: 2;
 }
 
 .description {
@@ -37,7 +39,6 @@
   max-width: 600px;
   padding-bottom: 5%;
   padding-left: 20%;
-  padding-top: 0%;
 }
 
 .title {
@@ -49,23 +50,41 @@
   padding-top: 7%;
 }
 
+.moon {
+  height: 50%;
+  z-index: 10;
+}
+
+.moonParallax {
+  bottom: 60vh;
+  left: 130vh;
+  position: relative;
+  z-index: 10;
+}
+
 .mountainImage {
-  bottom: 50vh;
+  bottom: 70vh;
   height: 150%;
   position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .mountainImage2 {
-  bottom: 200vh;
+  bottom: 220vh;
   height: 150%;
   position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .stars {
-  bottom: 496vh;
   height: 150%;
-  position: relative;
   width: 100%;
+}
+
+.starsParallax {
+  bottom: 516vh;
+  position: relative;
+  z-index: 0;
 }
