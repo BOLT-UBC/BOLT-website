@@ -1,6 +1,71 @@
-.About {
-    color: white;
-    background-color: darkgoldenrod;
-    width: 100vw; 
-    height: 100vh;
-  }
+@font-face {
+  font-family: 'Roboto-Mono';
+  src: url('/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Yerk';
+  src: url('/src/assets/fonts/Yerk/Yerk-Regular.ttf') format('truetype');
+}
+
+.about {
+  align-items: flex-start;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+  overflow: hidden;
+  text-align: left;
+  width: 100vw;
+}
+
+.cloudsParallax {
+  bottom: 340vh;
+  position: relative;
+}
+
+.clouds {
+  height: 80%;
+}
+
+.description {
+  font-family: 'Roboto-Mono', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-top: 0%;
+}
+
+.title {
+  font-family: 'Yerk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 20%;
+  padding-top: 7%;
+}
+
+.mountainImage {
+  bottom: 50vh;
+  height: 150%;
+  position: relative;
+  width: 100%;
+}
+
+.mountainImage2 {
+  bottom: 200vh;
+  height: 150%;
+  position: relative;
+  width: 100%;
+}
+
+.stars {
+  bottom: 496vh;
+  height: 150%;
+  position: relative;
+  width: 100%;
+}
