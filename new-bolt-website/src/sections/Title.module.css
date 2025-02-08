@@ -1,6 +1,45 @@
+@font-face {
+  font-family: 'Roboto-Mono';
+  src: url('/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Yerk';
+  src: url('/src/assets/fonts/Yerk/Yerk-Regular.ttf') format('truetype');
+}
+
 .Title {
     color: white;
     background-color: transparent;
     width: 100vw; 
     height: 100vh;
-  }
+}
+
+.title {
+  font-family: 'Yerk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 20%;
+  padding-top: 7%;
+}
+
+.name {
+  height: 35%;
+  z-index: 10;
+  position: absolute;
+  top: 25vh;
+  left: 50vw;
+}
+
+.stars {
+  height: 100%;
+}
+
+.byte {
+  height: 115%;
+  position: absolute; 
+  top: -10vh;
+  left: -8vw;
+  opacity: 1;
+}

@@ -1,6 +1,14 @@
 .Events {
     color: white;
-    background-color: darkolivegreen;
+    background-color: transparent;
     width: 100vw; 
     height: 100vh;
   }
+
+.bridge {
+  position: absolute;
+  z-index: 4;
+  right: -10vw;
+  width: 120%;
+  top: 291vh;
+}

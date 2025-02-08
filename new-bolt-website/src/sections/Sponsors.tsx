@@ -4,9 +4,15 @@ import sponsorsImage from "../assets/images/Sponsors.png";
 
 const Sponsors: React.FC = () => {
   return (
-    <div className="flex items-center justify-center">
-      <img src={sponsorsImage} alt="Sponsors" className="w-24 h-auto" />
-    </div>
+    <>
+      <div className={styles.Sponsors}>
+        <img 
+          src={sponsorsImage} 
+          alt="Sponsors" 
+          className={styles.buildings}
+        />
+      </div>
+    </>
   );
 };
 

@@ -14,7 +14,7 @@ const About: React.FC = () => {
       <p className={styles.description}>
         Bolt provides an enriching platform that fosters collaboration, presents intellectually stimulating challenges, and facilitates hands-on experiences. This unique opportunity is open to students from diverse backgrounds, inviting them to immerse themselves in the dynamic realm of business technology.
       </p>
-      <Parallax className={styles.moonParallax} translateX={[-50, 50]} translateY={[-50, 50]}>
+      <Parallax className={styles.moonParallax} translateX={[-20, 20]} translateY={[-50, 50]}>
         <img
           src={moon}
           alt="Moon"
@@ -38,7 +38,7 @@ const About: React.FC = () => {
           className={styles.clouds}
         />
       </Parallax>
-      <Parallax className={styles.starsParallax} rotate={[-30, 30]} translateX={[-10, 10]} translateY={[20, -20]}>
+      <Parallax className={styles.starsParallax} rotate={[-30, 30]} translateX={[-20, 20]} translateY={[5, -5]}>
         <img
           src={stars}
           alt="Stars"

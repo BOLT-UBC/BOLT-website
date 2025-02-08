@@ -1,7 +1,12 @@
 .Sponsors {
-    color: white;
-    background-color: purple;
-    width: 100vw; 
-    height: 100vh;
-    z-index: 5;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buildings {
+  width: 100vw;
+  z-index: 3;
+  position: absolute;
+  top: 190vh;
+}
