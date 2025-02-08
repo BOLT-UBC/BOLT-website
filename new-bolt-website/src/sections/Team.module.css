@@ -1,6 +1,13 @@
 .Team {
-    color: white;
-    background-color: darkblue;
-    width: 100vw; 
-    height: 100vh;
-  }
+  color: white;
+  width: 100vw; 
+  height: 100vh;
+  background: url('/assets/background/train-platform.svg');
+  background-size: 100%
+}
+
+.escalator {
+  position: absolute;
+  right: 0;
+  max-height: 75vh;
+}

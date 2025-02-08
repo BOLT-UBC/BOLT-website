@@ -1,6 +1,53 @@
 .Title {
-    color: white;
-    background-color: darkred;
-    width: 100vw; 
-    height: 100vh;
-  }
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: left;
+  position: relative;
+}
+
+.titleContent {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.titleContent img {
+  max-width: 500px;
+  height: auto;
+}
+
+.titleContent > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContent > div > div:first-of-type {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.titleContent > div > div:last-of-type {
+  display: flex;
+  gap: 1rem;
+}
+
+.titleContent > div > div:last-of-type > div {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  user-select: none; 
+}
+
+.titleContent > div > div:last-of-type > div:hover {
+  background: rgba(255, 255, 255, 0.15);
+}

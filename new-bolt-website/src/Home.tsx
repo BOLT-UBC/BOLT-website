@@ -4,13 +4,18 @@ import About from './sections/About.tsx';
 import Events from './sections/Events.tsx';
 import Sponsors from './sections/Sponsors.tsx';
 import Team from './sections/Team.tsx';
+import styles from "./Home.module.css"
 
 const Home: React.FC = () => {
-  return <div>
+  return <div className={styles.page}>
             <Title />
-            <About />
-            <Sponsors />
-            <Events />
+            <div className={styles.assetWrapper}>
+              <About />
+              <div className={styles.sponsorsWrapper}>
+                <Sponsors />
+                <Events />
+              </div>
+            </div>
             <Team />
         </div>;
 };

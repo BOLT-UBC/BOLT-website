@@ -8,11 +8,12 @@
 
 .scrollContainer {
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
   gap: 2rem;
   padding: 1rem;
   top: 6rem;
-  width: 80%;
+  bottom: 4rem;
+  width: 90%;
   height: 50%;
   scrollbar-width: thin;
   scrollbar-color: #623CE8 transparent;
