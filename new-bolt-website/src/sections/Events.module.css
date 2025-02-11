@@ -12,3 +12,21 @@
   width: 120%;
   top: 291vh;
 }
+
+.allEvents {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  top: 334vh;
+  left: 5vw;
+  width: 40%;
+}
+
+.nextEvent {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  top: 332vh;
+  right: 5vw;
+  width: 40%;
+}
