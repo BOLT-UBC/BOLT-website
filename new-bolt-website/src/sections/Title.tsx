@@ -9,7 +9,7 @@ const Title: React.FC = () => {
 
   return (
     <>
-      <div className={styles.Title}>
+      <div className={styles.Title} id="Home">
         <img src={byte} alt="Byte" className={styles.byte} />
         <img src={boltUBC} alt="Bolt UBC" className={styles.name} />
         <div className={styles.buttonContainer}>

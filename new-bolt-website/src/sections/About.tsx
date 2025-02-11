@@ -9,7 +9,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 const About: React.FC = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="About">
       <h1 className={styles.title}>ABOUT US</h1>
       <p className={styles.description}>
         Bolt provides an enriching platform that fosters collaboration, presents intellectually stimulating challenges, and facilitates hands-on experiences. This unique opportunity is open to students from diverse backgrounds, inviting them to immerse themselves in the dynamic realm of business technology.

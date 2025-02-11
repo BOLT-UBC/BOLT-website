@@ -5,7 +5,7 @@ import sponsorsImage from "../assets/images/Sponsors.png";
 const Sponsors: React.FC = () => {
   return (
     <>
-      <div className={styles.Sponsors}>
+      <div className={styles.Sponsors} id="Sponsors">
         <img 
           src={sponsorsImage} 
           alt="Sponsors" 

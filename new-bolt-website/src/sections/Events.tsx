@@ -35,7 +35,7 @@ const Events: React.FC = () => {
 
   return (
     <>
-      <div className={styles.Events}>
+      <div className={styles.Events} id="Events">
         <img src={bridge} alt="Bridge" className={styles.bridge} />
 
         <div className={`${styles.eventContainer} ${styles.left}`}>

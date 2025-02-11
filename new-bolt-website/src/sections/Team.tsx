@@ -19,7 +19,7 @@ const Team: React.FC = () => {
   }, []);
 
   return (
-    <div className={styles.Team}>
+    <div className={styles.Team} id="Team">
       <div className={styles.teamTitle}>With 💜 from the BOLT UBC Team</div>
       <div className={styles.scrollContainer}>
         <div className={styles.scrollTrack}>
