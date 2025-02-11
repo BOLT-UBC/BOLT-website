@@ -44,3 +44,11 @@
   opacity: 1;
   z-index: 1;
 }
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 36vw;
+  left: 50vw;
+}

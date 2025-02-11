@@ -1,9 +1,73 @@
+@font-face {
+  font-family: 'Roboto-Mono';
+  src: url('/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf') format('truetype');
+}
+
 .Events {
-    color: white;
-    background-color: transparent;
-    width: 100vw; 
-    height: 100vh;
-  }
+  color: white;
+  background-color: transparent;
+  width: 100vw; 
+  height: 100vh;
+}
+
+.eventContainer {
+  position: absolute;
+  z-index: 5;
+  width: 40%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 2rem;
+}
+
+.eventContent {
+  margin-top: 5.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  z-index: 6;
+  min-height: 63%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.event {
+  font-family: 'Roboto-Mono', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.event img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.event div {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Position variants */
+.left {
+  top: 329vh;
+  left: 5vw;
+}
+
+.right {
+  top: 329vh;
+  right: 5vw;
+}
 
 .bridge {
   position: absolute;
@@ -13,20 +77,80 @@
   top: 291vh;
 }
 
-.allEvents {
+.eventImage {
   position: absolute;
-  bottom: 0;
-  z-index: 5;
-  top: 334vh;
-  left: 5vw;
-  width: 40%;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.nextEventInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nextEventImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 1rem;
 }
 
 .nextEvent {
+  background-image: url('/src/assets/images/event-icons/background.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.eventName {
+  font-family: 'Roboto-Mono', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding: 1rem;
+}
+
+.scrollButtonContainer {
   position: absolute;
-  bottom: 0;
-  z-index: 5;
-  top: 332vh;
-  right: 5vw;
-  width: 40%;
+  bottom: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 7;
+}
+
+.scrollButton {
+  background-color: transparent;
+  border: 2px solid #493b7b;
+  background-color: #614EA5;
+  font-weight: 700;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.scrollButton:hover {
+  background-color: #493b7b;
 }
