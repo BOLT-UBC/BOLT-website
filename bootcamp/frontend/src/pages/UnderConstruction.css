@@ -1,0 +1,55 @@
+.ip-background {
+  background-image: url("assets/ConstructionBG.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.ip-content {
+  padding: 2.5rem 2rem;
+  position: relative;
+  font-family: "Righteous", sans-serif;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.631);
+  text-align: center;
+}
+
+.ip-content h1 {
+  margin: 0;
+  color: #fdf9f7;
+  text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.631);
+  font-size: 3rem;
+}
+
+@media (min-width: 475px) {
+}
+
+@media (min-width: 768px) {
+  .ip-content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
+
+@media (min-width: 2100px) {
+  .ip-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 2400px) {
+}
+
+@media (min-width: 3700px) {
+}
