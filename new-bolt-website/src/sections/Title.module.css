@@ -8,6 +8,18 @@
   src: url('/src/assets/fonts/Yerk/Yerk-Regular.ttf') format('truetype');
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .Title {
     color: white;
     background-color: transparent;
@@ -39,10 +51,11 @@
 .byte {
   height: 115%;
   position: absolute; 
-  top: -10vh;
+  top: -6vh;
   left: -8vw;
   opacity: 1;
-  z-index: 1;
+  z-index: 4;
+  animation: float 6s ease-in-out infinite;
 }
 
 .buttonContainer {

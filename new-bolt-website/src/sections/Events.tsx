@@ -3,35 +3,14 @@ import styles from "./Events.module.css";
 import bridge from "../assets/images/Bridge.png";
 import allevents from "../assets/images/AllEvents.png";
 import nextevent from "../assets/images/NextEvent.png";
-
-import placeholder from "../assets/images/event-icons/placeholder.png";
 import Button from "../components/Button";
+import eventsData from "../assets/events.json";
 
 const Events: React.FC = () => {
-  const EVENTS = [
-    {
-      name: "First Byte",
-      description: "",
-      image: placeholder,
-    },
-    {
-      name: "BOLT Connect",
-      description: "",
-      image: placeholder,
-    },
-    {
-      name: "BOLT Circuit",
-      description: "",
-      image: placeholder,
-    },
-    {
-      name: "BOLT Bootcamp",
-      description: "",
-      image: placeholder,
-    },
-  ];
+  const EVENTS = eventsData.events;
+  const NEXT_EVENT = EVENTS[eventsData.nextEvent];
 
-  const NEXT_EVENT = EVENTS[3];
+  const NEXT_EVENT_URL = "https://boltubc.com";
 
   return (
     <>
@@ -41,9 +20,12 @@ const Events: React.FC = () => {
         <div className={`${styles.eventContainer} ${styles.left}`}>
           <img src={allevents} alt="All Events" className={styles.eventImage} />
           <div className={styles.eventContent}>
-            {EVENTS.map((event) => (
-              <div className={styles.event}>
-                <img src={event.image} alt={event.name} />
+            {EVENTS.map((event, index) => (
+              <div key={index} className={styles.event}>
+                <img
+                  src={`src/assets/images/event-icons/${event.image}`}
+                  alt={event.name}
+                />
                 <div>{event.name}</div>
               </div>
             ))}
@@ -88,7 +70,7 @@ const Events: React.FC = () => {
             <div className={styles.nextEvent}>
               <div className={styles.nextEventInfo}>
                 <img
-                  src={NEXT_EVENT.image}
+                  src={`src/assets/images/event-icons/${NEXT_EVENT.image}`}
                   alt={NEXT_EVENT.name}
                   className={styles.nextEventImage}
                 />
@@ -97,9 +79,8 @@ const Events: React.FC = () => {
               <div className={styles.buttonContainer}>
                 <Button
                   text="Learn More"
-                  onClick={() => window.open("https://boltubc.com", "_blank")}
+                  onClick={() => window.open(NEXT_EVENT_URL, "_blank")}
                   rounded
-                  outline
                 />
               </div>
             </div>
