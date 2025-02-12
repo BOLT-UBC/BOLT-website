@@ -16,6 +16,8 @@ import FinalPage from "./pages/FinalPage";
 import Portal from "./pages/Portal";
 import UnderConstruction from "./pages/UnderConstruction";
 
+import "./App.css";
+
 export default function App() {
   const isSmallScreen = useMediaQuery({ query: "(max-aspect-ratio: 1/1)" });
 
