@@ -3,51 +3,51 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { supabase } from "../supabase.js";
 
 export default function AuthCallback() {
-  // const navigate = useNavigate();
-  // const location = useLocation();
-  // const redirectTo = new URLSearchParams(location.search).get("redirect");
+  const navigate = useNavigate();
+  const location = useLocation();
+  const redirectTo = new URLSearchParams(location.search).get("redirect");
 
-  // useEffect(() => {
-  //   const handleRedirect = async () => {
-  //     const {
-  //       data: { user },
-  //       error,
-  //     } = await supabase.auth.getUser();
+  useEffect(() => {
+    const handleRedirect = async () => {
+      const {
+        data: { user },
+        error,
+      } = await supabase.auth.getUser();
 
-  //     if (error || !user) {
-  //       // Not Logged In
-  //       navigate("/");
-  //       return;
-  //     }
+      if (error || !user) {
+        // Not Logged In
+        navigate("/");
+        return;
+      }
 
-  //     const userEmail = user.email ?? "";
-  //     localStorage.setItem("user_email", userEmail);
+      const userEmail = user.email ?? "";
+      localStorage.setItem("user_email", userEmail);
 
-  //     // Check if the user is already registered
-  //     const { data: existingUser, error: queryError } = await supabase
-  //       .from("users")
-  //       .select("registered")
-  //       .eq("email", userEmail)
-  //       .single();
+      // Check if the user is already registered
+      const { data: existingUser, error: queryError } = await supabase
+        .from("users")
+        .select("registered")
+        .eq("email", userEmail)
+        .single();
 
-  //     if (queryError || !existingUser || !existingUser.registered) {
-  //       // Haven't registered, redirect to registration
-  //       navigate(redirectTo === "/portal" ? "/registration" : "/registration");
-  //     } else {
-  //       console.log(redirectTo);
-  //       // Registered, redirect to intended page
-  //       navigate(
-  //         redirectTo === "/portal"
-  //           ? "/portal"
-  //           : redirectTo === "/registration"
-  //           ? "/registration/page-4"
-  //           : "/"
-  //       );
-  //     }
-  //   };
+      if (queryError || !existingUser || !existingUser.registered) {
+        // Haven't registered, redirect to registration
+        navigate(redirectTo === "/portal" ? "/registration" : "/registration");
+      } else {
+        console.log(redirectTo);
+        // Registered, redirect to intended page
+        navigate(
+          redirectTo === "/portal"
+            ? "/portal"
+            : redirectTo === "/registration"
+            ? "/registration/page-4"
+            : "/"
+        );
+      }
+    };
 
-  //   handleRedirect();
-  // }, [navigate, location]);
+    handleRedirect();
+  }, [navigate, location]);
 
   return (
     <div
