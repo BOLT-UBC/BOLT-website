@@ -1,0 +1,18 @@
+.schedule-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffb881;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.folder-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}

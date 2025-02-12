@@ -1,0 +1,97 @@
+.portal-bg {
+  background-image: url("../pages/assets/PortalBG.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portal-page {
+  background: linear-gradient(to top, #693b48 0%, #422932 19%, #17161b 81%);
+
+  h1 {
+    font-family: "RobotoMonoBold", sans-serif;
+    text-transform: uppercase;
+  }
+
+  h3,
+  button {
+    font-family: "RobotoMonoBold", sans-serif;
+  }
+
+  button {
+    font-size: 1vw;
+    color: white;
+  }
+
+  a {
+    font-family: "RobotoMonoLight", sans-serif;
+  }
+}
+
+.portal_page__navbar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.95vh;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar__my_portal_wrapper,
+.navbar__general_wrapper {
+  width: 100%;
+}
+
+.navbar__section_title {
+  font-size: 1.2vw;
+  margin-left: 5%;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link {
+  padding: 0.8vw;
+  margin-left: 10%;
+  border-top: 0.01vw solid #ccc;
+  width: 100%;
+  font-size: 0.8vw;
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.link__last {
+  border-bottom:  0.01vw solid #ccc;
+}
+
+.logout_button {
+  width: 90%;
+  padding: 0.5vw 0 0.5vw 0;
+  border-radius: 0.5vw;
+  background-color: #91511a;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.logout_button:hover {
+  background-color: #7c4514;
+  cursor: pointer;
+}
+
+.page-right {
+  flex: 4;
+}

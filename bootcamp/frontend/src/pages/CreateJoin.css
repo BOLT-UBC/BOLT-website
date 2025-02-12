@@ -1,0 +1,77 @@
+.folder-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    margin-left: 5%;
+}
+
+.team-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20rem;
+}
+
+.input-field {
+    /* font-size: 3rem; */
+    font-family: "RobotoMonoRegular", sans-serif;
+    color:rgb(91, 88, 86);
+}
+
+
+.instruction {   
+    font-family: "RobotoMonoLight", sans-serif;
+}
+
+.note, .note-team-members {
+    max-width: 50rem;
+    font-family: "RobotoMonoLight", sans-serif;
+}
+
+.message {
+    font-family: "RobotoMonoLight", sans-serif;
+    font-size: 1.5rem;
+}
+
+.teams-button, .teams-button-join {
+    position: relative;
+    width: 20vw;
+    height: 6vh;
+    border-radius: 1rem;
+    background-color: #91511A;
+    border: none;
+    font-family: "RobotoMonoLight", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.teams__dashboard_return {
+    font-family: "RoboMonoRegular", sans-serif;
+    color: white;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.teams__dashboard_return:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+  
+
+.teams-button:hover, .teams-button-join:hover {
+    background-color: #7c4514;
+    cursor: pointer;
+}
+
+.teams-button-join {
+    margin-left: 2vw;
+}
+
+.team-input-create {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30rem;
+}
+  

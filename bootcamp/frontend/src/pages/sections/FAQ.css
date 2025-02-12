@@ -1,0 +1,135 @@
+.faq-background, .faq-portal-background {
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Righteous", sans-serif;
+}
+
+.faq-background {
+  background-image: url("assets/Brick-Background.png");
+}
+
+.faq-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.631);
+  margin: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.faq-container {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 8rem;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 100%;
+}
+
+.faq-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.631);
+  letter-spacing: 0.3rem;
+  font-family: "Righteous", sans-serif;
+}
+
+.dropdown {
+  border-radius: 1rem;
+  background: white;
+  color: black;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.462);
+  overflow: hidden;
+  width: 100%;
+}
+
+.dropdown-title,
+.dropdown-arrow {
+  color: black;
+}
+
+.dropdown-button {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: 900; /* Try using 300 if 100 is too light */
+}
+
+.dropdown-content {
+  padding: 1rem;
+
+  background: #4e2424;
+  color: white;
+  font-size: 0.8rem;
+
+  font-weight: 100; /* Try using 300 if 100 is too light */
+  font-family: "Roboto Mono", monospace, sans-serif; /* Fallback font */
+}
+
+.dropdown-content ul {
+  margin: 0;
+}
+
+.dropdown-content li {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0;
+  font-weight: 100; /* Try using 300 if 100 is too light */
+  font-family: "Roboto Mono", monospace, sans-serif; /* Fallback font */
+}
+
+@media (min-width: 475px) {
+}
+
+@media (min-width: 768px) {
+  .faq-section {
+    width: 50%;
+  }
+
+  .faq-container {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 8rem;
+    width: 80%;
+    flex-direction: row;
+    align-items: normal;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
+
+@media (min-width: 2100px) {
+}
+
+@media (min-width: 2400px) {
+}
+
+@media (min-width: 3700px) {
+}

@@ -1,0 +1,22 @@
+.input-field {
+  width: 100%; /* Adjust width to match the form padding */
+  height: 6vh;
+  padding: 12px; /* Added more padding for better UX */
+  border-radius: 12px;
+  border: 2px solid #3e2723;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  display: block; /* Ensures inputs are properly aligned */
+  box-sizing: border-box;
+  line-height: 6vh;
+}
+
+.input-field::placeholder {
+  font-size: 1rem;
+  font-style: italic;
+  color: #888;
+}
+
+.input-field:focus {
+  outline: none;
+}

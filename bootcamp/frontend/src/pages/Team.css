@@ -1,0 +1,106 @@
+
+.team-page-wrapper {
+    max-width: 95%;
+    height: 100%;
+    padding-left:2rem;
+}
+
+.team-page__no-team-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 80%;
+    justify-content: center;
+}
+
+.team-page__no-team__button_wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.team__content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.teammate_cards_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    border: 3px solid #fad9834e;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(250, 237, 187, 0.8); 
+}
+
+.team__buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+
+.team_current_teammates__wrapper {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.team_current_teammate__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.teammate_profile_picture {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    max-width: 60%;
+    aspect-ratio: 1;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.member-info {
+    width: 100%;
+}
+
+.teammate-name {
+    max-width: 15rem;
+    overflow-wrap: break-word;
+    font-size: 1.5vw;
+}
+
+.teammate-major {
+    bottom: 5px;
+    font-size: 1vw;
+}
+
+.teammate-widget {
+    width: 15rem;
+    aspect-ratio: 3/4;
+}
+
+.teammate-widget:hover {
+    box-shadow: 10px 10px 20px 5px rgba(154, 79, 33, 0.967);
+    border-radius: 30px;
+}
+
+.leave-team-button {
+    width: 12rem;
+    padding: 1rem 0 1rem 0;
+    border-radius: 1rem;
+    background-color: #943636;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.leave-team-button:hover {
+    background-color: #dc2222;
+    cursor: pointer;
+  }
+

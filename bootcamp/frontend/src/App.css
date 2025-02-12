@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "DigitalNumbers";
+  src: url("/fonts/DigitalNumbers-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMonoBold";
+  src: url("/fonts/RobotoMono-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMonoMedium";
+  src: url("/fonts/RobotoMono-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMonoLight";
+  src: url("/fonts/RobotoMono-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMonoRegular";
+  src: url("/fonts/RobotoMono-Regular.ttf") format("truetype");
+}
+
+body {
+  color: white;
+  width: 100vw;
+  height: auto;
+}
+
+html,
+body {
+  overflow-y: scroll; /* Allows scrolling */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+}
