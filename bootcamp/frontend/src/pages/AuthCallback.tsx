@@ -38,7 +38,7 @@ export default function AuthCallback() {
         // Registered, redirect to intended page
         navigate(
           redirectTo === "/portal"
-            ? "/portal"
+            ? "/portal#dashboard"
             : redirectTo === "/registration"
             ? "/registration/page-4"
             : "/"
