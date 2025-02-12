@@ -39,7 +39,7 @@ const Rocket: FC<RocketProps> = ({ targetDate }) => {
     <div className="title-countdown">
       <img src="/Rocket.png" alt="Rocket" />
       <div className="countdown-label">
-        <h1>Registration ends in</h1>
+        <h1>Case Release</h1>
       </div>
       <div className="countdown">
         <h1>{timeLeft}</h1>

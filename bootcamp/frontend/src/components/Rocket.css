@@ -14,8 +14,8 @@
 .countdown-label {
   position: absolute;
   font-family: "Roboto Mono", monospace;
-  font-size: 0.5rem;
-  left: 7.3rem;
+  font-size: 0.6rem;
+  left: 9rem;
   bottom: 5.9rem;
 }
 
@@ -82,8 +82,8 @@
   }
 
   .countdown-label {
-    font-size: 0.7rem;
-    left: 10.5rem;
+    font-size: 0.8rem;
+    left: 13rem;
     bottom: 8.1rem;
   }
 

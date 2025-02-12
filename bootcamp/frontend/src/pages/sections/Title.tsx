@@ -14,10 +14,10 @@ export default function Title() {
         <div className="title-content">
           <h1>Bootcamp</h1>
           <h2>March 9-10, 2025 | BOLT UBC</h2>
-          <h3>Register by Monday, February 24, 2025!</h3>
+          <h3>Thank you! Registration is now closed.</h3>
           <div className="button-container">
             {/* Replace with custom button component */}
-            <LandingPageButton text="Register Now" path="/registration" />
+            {/* <LandingPageButton text="Register Now" path="/registration" /> */}
             <LandingPageButton text="View Portal" path="/portal#dashboard" />
           </div>
         </div>
