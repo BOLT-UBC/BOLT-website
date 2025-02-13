@@ -15,11 +15,8 @@ import ProtectedFinalPage from "./pages/ProtectedFinalPage";
 import FinalPage from "./pages/FinalPage";
 import Portal from "./pages/Portal";
 import UnderConstruction from "./pages/UnderConstruction";
-import ThankYou from "./pages/ThankYou";
 
 import "./App.css";
-import StartRegistration from "./pages/StartRegistration";
-import Responses from "./pages/Responses";
 
 export default function App() {
   const isSmallScreen = useMediaQuery({ query: "(max-aspect-ratio: 1/1)" });
@@ -28,7 +25,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<ThankYou />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route
           path="/portal"
           element={isSmallScreen ? <UnderConstruction /> : <ProtectedPortal />}
