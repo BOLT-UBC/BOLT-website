@@ -27,6 +27,15 @@
   width: 25%;
 }
 
+@media (max-width: 950px) {
+  .schedule_wide__container {
+    display: none;
+  }
+  .schedule_thin__container {
+    width: 95%;
+  }
+}
+
 .full_folder__background_wrapper {
   position: relative;
   width: 100%;

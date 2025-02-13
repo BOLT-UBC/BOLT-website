@@ -31,7 +31,7 @@
 .login-title {
   color: #fdf9f7;
   text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.631);
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: bold;
   margin: 1rem 0;
   font-family: "Righteous", sans-serif;
@@ -39,7 +39,7 @@
 
 .login-subtitle {
   color: #fdf9f7;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 8px;
   font-weight: 600;
   text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.631);
@@ -69,4 +69,43 @@
 .google-logo {
   width: 24px;
   height: 24px;
+}
+
+@media (min-width: 475px) {
+  .login-title {
+    font-size: 5rem;
+  }
+  .login-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-title {
+    font-size: 7rem;
+  }
+  .login-subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-title {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
+
+@media (min-width: 2100px) {
+}
+
+@media (min-width: 2400px) {
+}
+
+@media (min-width: 3700px) {
 }

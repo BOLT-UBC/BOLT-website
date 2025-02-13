@@ -5,8 +5,8 @@ export default function InProgress() {
   return (
     <div className="ip-background">
       <div className="ip-content">
-        <h1>Hmm... You caught us under construction!</h1>
+        <h1>Please view on desktop! Mobile view is under construction.</h1>
       </div>
     </div>
-  );
+  );``
 }
