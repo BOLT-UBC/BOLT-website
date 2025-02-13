@@ -15,34 +15,31 @@ import ProtectedFinalPage from "./pages/ProtectedFinalPage";
 import FinalPage from "./pages/FinalPage";
 import Portal from "./pages/Portal";
 import UnderConstruction from "./pages/UnderConstruction";
+import ThankYou from "./pages/ThankYou";
 
 import "./App.css";
+import StartRegistration from "./pages/StartRegistration";
+import Responses from "./pages/Responses";
 
 export default function App() {
   const isSmallScreen = useMediaQuery({ query: "(max-aspect-ratio: 1/1)" });
 
   return (
     <Router>
-      {isSmallScreen ? (
-        <Routes>
-          <Route path="*" element={<UnderConstruction />} />
-        </Routes>
-      ) : (
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/portal" element={<ProtectedPortal />} />
-          <Route
-            path="/registration"
-            element={<ProtectedStartRegistration />}
-          />
-          <Route path="/registration/page-1" element={<ProtectedUserInfo />} />
-          <Route path="/registration/page-2" element={<ProtectedResponses />} />
-          <Route path="/registration/page-3" element={<ProtectedFinalPage />} />
-          <Route path="/registration/page-4" element={<ProtectedThankYou />} />
-          <Route path="/auth/callback" element={<AuthCallback />} />
-        </Routes>
-      )}
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<ThankYou />} />
+        <Route
+          path="/portal"
+          element={isSmallScreen ? <UnderConstruction /> : <ProtectedPortal />}
+        />{" "}
+        <Route path="/registration" element={<ProtectedStartRegistration />} />
+        <Route path="/registration/page-1" element={<ProtectedUserInfo />} />
+        <Route path="/registration/page-2" element={<ProtectedResponses />} />
+        <Route path="/registration/page-3" element={<ProtectedFinalPage />} />
+        <Route path="/registration/page-4" element={<ProtectedThankYou />} />
+        <Route path="/auth/callback" element={<AuthCallback />} />
+      </Routes>
     </Router>
   );
 }

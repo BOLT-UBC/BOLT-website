@@ -21,8 +21,8 @@
   display: flex;
   flex-direction: column;
   font-family: "Righteous", sans-serif;
-  padding: 3rem;
-  width: 60%;
+  padding: 2rem;
+  width: 90%;
   z-index: 0;
   justify-content: center;
   color: #17161b;
@@ -31,7 +31,7 @@
 .register-title {
   color: #fdf9f7;
   text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.631);
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700; /* Increased weight for a bolder title */
   margin: 0.5rem 0;
   font-family: "Righteous", sans-serif;
@@ -270,4 +270,35 @@ ul li {
   font-size: 1rem;
   color: #3e2723;
   width: fit-content;
+}
+
+@media (min-width: 475px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .register-content {
+    padding: 2rem;
+    width: 60%;
+  }
+  .register-title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}
+
+@media (min-width: 2100px) {
+}
+
+@media (min-width: 2400px) {
+}
+
+@media (min-width: 3700px) {
 }
