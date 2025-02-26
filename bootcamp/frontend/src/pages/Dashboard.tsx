@@ -163,7 +163,7 @@ const navigate =     useNavigate();
                     overflow: "hidden",
                   }}>
                   <h2 className="dashboard__widget_title">Task Timer</h2>
-                  <p className="dashboard__desc">Team registration deadline is in</p>
+                  <p className="dashboard__desc">Case will be released in</p>
                   <Countdown targetDate={"2025-02-26T16:59:59"} />
                 </div>
               </PortalBoxWidget>
