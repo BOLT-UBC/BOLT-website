@@ -164,7 +164,7 @@ const navigate =     useNavigate();
                   }}>
                   <h2 className="dashboard__widget_title">Task Timer</h2>
                   <p className="dashboard__desc">Team registration deadline is in</p>
-                  <Countdown targetDate={"2025-02-26T23:59:59"} />
+                  <Countdown targetDate={"2025-02-26T16:59:59"} />
                 </div>
               </PortalBoxWidget>
             </div>
