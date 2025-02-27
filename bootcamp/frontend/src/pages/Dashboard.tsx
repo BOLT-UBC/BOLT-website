@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { supabase } from '../supabase'; 
 import PortalBoxWidget from "../components/PortalBoxWidget";
 import "./Dashboard.css"
-import { useNavigate } from "react-router-dom";
 import Countdown from "../components/Countdown";
 
 interface User {
@@ -16,9 +15,6 @@ interface User {
 
 
 export default function Dashboard() {
-    
-const navigate =     useNavigate();
-
     const [email, setEmail] = useState<string>("");
     const [name, setName] = useState<string>("");
     const [major, setMajor] = useState<string>("");
@@ -86,7 +82,7 @@ const navigate =     useNavigate();
         setMajor(userData.major || "");
         setTeamID(userData.team_id || "");
         setYear(userData.year || "");
-        let arr: string[] = teammates ? teammates.map((team) => team.name) : [];
+        let arr: string[] = teammates ? teammates.map((team:User) => team.name) : [];
         setTeammates(arr);
 
     } catch (err: any) {
@@ -101,6 +97,8 @@ const navigate =     useNavigate();
       year: "numeric",
     })
     
+    {/* Link to case package */}
+    const downloadLink = "/assets/case-package.zip";
 
     return (
       <>
@@ -175,8 +173,13 @@ const navigate =     useNavigate();
                 <PortalBoxWidget>
                   <div className="dashboard__case_package_widget">
                     <h2 className="dashboard__widget_title">Case Package</h2>
-                    <div className="submission-status">
-                      <p className="dashboard__desc">release on Feb 26</p>
+                    <div className="dashboard__button-container">
+                      <button onClick={() => window.open("./assets/case-package.pdf", "_blank")} className="button-primary">
+                        View Case
+                      </button>
+                      <a href={downloadLink} download className="button-primary">
+                        Download
+                      </a>
                     </div>
                   </div>
                 </PortalBoxWidget>
