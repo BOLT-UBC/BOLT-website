@@ -174,7 +174,7 @@ export default function Dashboard() {
                   <div className="dashboard__case_package_widget">
                     <h2 className="dashboard__widget_title">Case Package</h2>
                     <div className="dashboard__button-container">
-                      <button onClick={() => window.open("./assets/case-package.pdf", "_blank")} className="button-primary">
+                      <button onClick={() => window.open("./assets/updated_case.pdf", "_blank")} className="button-primary">
                         View Case
                       </button>
                       <a href={downloadLink} download className="button-primary">
