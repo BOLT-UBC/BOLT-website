@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { supabase } from '../supabase'; 
 import PortalBoxWidget from "../components/PortalBoxWidget";
 import "./Dashboard.css"
-import { useNavigate } from "react-router-dom";
 import Countdown from "../components/Countdown";
 
 interface User {
@@ -16,9 +15,6 @@ interface User {
 
 
 export default function Dashboard() {
-    
-const navigate = useNavigate();
-
     const [email, setEmail] = useState<string>("");
     const [name, setName] = useState<string>("");
     const [major, setMajor] = useState<string>("");
