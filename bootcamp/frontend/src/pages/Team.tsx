@@ -167,6 +167,7 @@ const handleLeaveTeam = async () => {
                           {/* <div className="member-info"> */}
                             <h3 className="teammate-name">{member.preferred_name}|{member.pronouns}</h3>
                             <h3 className="teammate-major">Year {member.year} {member.major} </h3>
+                            <h3 className="teammate-major" style={{fontFamily:'RobotoMonoLight'}}>{member.email}</h3>
                           {/* </div> */}
 
                         </PortalBoxWidget>
