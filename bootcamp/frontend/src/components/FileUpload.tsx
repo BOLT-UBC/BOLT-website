@@ -4,7 +4,7 @@ import { supabase } from "../supabase";
 import "./FileUpload.css";
 
 interface FileUploadProps {
-  onUploadComplete: (url: string) => void;
+  onUploadComplete: (url: string, originalFileName: string) => void;
   onError: (error: string) => void;
 }
 
@@ -82,10 +82,11 @@ const FileUpload: FC<FileUploadProps> = ({
         .from("submissions")
         .list(`team_${teamInfo.id}`);
 
-      // Create distinct filename w team info and timestamp
-      const fileName = `team_${teamInfo.id}/${teamInfo.name}_${Date.now()}.pdf`;
+      // Create distinct filename with team info and timestamp
+      const timestamp = Date.now();
+      const originalFileName = file.name;
+      const fileName = `team_${teamInfo.id}/${originalFileName}_${timestamp}.pdf`;
 
-      // Upload new file
       const { error: uploadError } = await supabase.storage
         .from("submissions")
         .upload(fileName, file, {
@@ -94,7 +95,6 @@ const FileUpload: FC<FileUploadProps> = ({
 
       if (uploadError) throw uploadError;
 
-      // Delete old submission if it exists
       if (existingSubmissions && existingSubmissions.length > 0) {
         await supabase.storage
           .from("submissions")
@@ -105,12 +105,11 @@ const FileUpload: FC<FileUploadProps> = ({
           );
       }
 
-      // Get the public URL
       const {
         data: { publicUrl },
       } = supabase.storage.from("submissions").getPublicUrl(fileName);
 
-      onUploadComplete(publicUrl);
+      onUploadComplete(publicUrl, originalFileName);
     } catch (error: any) {
       onError(error.message);
     } finally {

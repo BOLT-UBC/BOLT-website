@@ -7,6 +7,7 @@ export function useSubmission(teamID: string) {
   const [submissionDate, setSubmissionDate] = useState<string>("");
   const [submissionTime, setSubmissionTime] = useState<string>("");
   const [pdfUrl, setPdfUrl] = useState<string>("");
+  const [fileName, setFileName] = useState<string>("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -62,6 +63,16 @@ export function useSubmission(teamID: string) {
         const time = new Date(latestFile.created_at).toLocaleTimeString();
         setSubmissionDate(`${date} at `);
         setSubmissionTime(time);
+        
+        // Extract original filename from stored
+        // Format: originalfilename_timestamp.pdf
+        const fileNameParts = latestFile.name.split('_');
+        if (fileNameParts.length > 1) {
+          const originalName = fileNameParts.slice(0, -1).join('_');
+          setFileName(originalName);
+        } else {
+          setFileName(latestFile.name);
+        }
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to fetch submission date");
@@ -126,8 +137,11 @@ export function useSubmission(teamID: string) {
     }
   };
 
-  const handleSubmissionComplete = async () => {
+  const handleSubmissionComplete = async (originalFileName?: string) => {
     setHasSubmitted(true);
+    if (originalFileName) {
+      setFileName(originalFileName);
+    }
     await fetchSubmissionDetails();
     
     const storedEmail = localStorage.getItem("user_email");
@@ -141,6 +155,7 @@ export function useSubmission(teamID: string) {
     submissionDate,
     submissionTime,
     pdfUrl,
+    fileName,
     isLoading,
     error,
     fetchSubmissionDate,

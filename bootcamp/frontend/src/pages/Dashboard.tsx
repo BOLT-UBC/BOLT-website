@@ -12,7 +12,9 @@ import { useSubmission } from "../hooks/useSubmission";
 
 export default function Dashboard() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [uploadStatus, setUploadStatus] = useState<"initial" | "success">("initial");
+  const [uploadStatus, setUploadStatus] = useState<"initial" | "success">(
+    "initial"
+  );
 
   const {
     email,
@@ -30,6 +32,7 @@ export default function Dashboard() {
     submissionDate,
     submissionTime,
     pdfUrl,
+    fileName,
     isLoading: submissionLoading,
     handleSubmissionComplete,
     fetchPdfUrl,
@@ -159,18 +162,30 @@ export default function Dashboard() {
                   position: "relative",
                 }}
               >
-                <h2 className="dashboard__widget_title project_submission__title">
-                  Submission Status
-                </h2>
+                <h2 className="dashboard__widget_title">Submission Status</h2>
                 <div
                   style={{
                     display: "flex",
-                    flexDirection: "row",
-                    gap: "1rem",
-                    paddingLeft: "1rem",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    padding: "0 0.5rem",
                   }}
                 >
-                  {hasSubmitted && <div>Preview Component</div>}
+                  {hasSubmitted && fileName && (
+                    <p
+                      style={{
+                        fontFamily: "Roboto Mono",
+                        fontSize: "0.8rem",
+                        color: "#ffffff",
+                        backgroundColor: "#cf6f1b",
+                        padding: "0.5rem",
+                        borderRadius: "0.5rem",
+                      }}
+                    >
+                      Submitted file:{" "}
+                      <span style={{ fontWeight: "bold" }}>{fileName}</span>
+                    </p>
+                  )}
                   <div>
                     <div
                       style={{
@@ -186,14 +201,12 @@ export default function Dashboard() {
                         <div
                           style={{
                             fontFamily: "Roboto Mono",
-                            fontSize: "0.8em",
+                            fontSize: "0.8rem",
                             color: "#ffffff",
                           }}
                         >
                           {submissionDate}
-                          <span
-                            style={{ fontSize: "1.2rem", fontWeight: "medium" }}
-                          >
+                          <span style={{ fontWeight: "bold" }}>
                             {submissionTime}
                           </span>
                         </div>
@@ -208,6 +221,7 @@ export default function Dashboard() {
                     gap: "1rem",
                     position: "absolute",
                     bottom: "1rem",
+                    maxWidth: "100%",
                   }}
                 >
                   <button
@@ -225,11 +239,12 @@ export default function Dashboard() {
                         alignItems: "center",
                         justifyContent: "center",
                         padding: "0.6vw 0.8vw",
-                        backgroundColor: "#91511a",
+                        backgroundColor: "#E3AE86",
+                        color: "#BB6413",
                       }}
                       title="View Submission"
                     >
-                      <ExternalLinkIcon size={18} />
+                      <ExternalLinkIcon size={20} />
                     </button>
                   )}
                 </div>
@@ -257,10 +272,10 @@ export default function Dashboard() {
                       Please upload your project submission in PDF format.
                     </p>
                     <FileUpload
-                      onUploadComplete={(url) => {
+                      onUploadComplete={(url, originalFileName) => {
                         console.log("File uploaded:", url);
                         setUploadStatus("success");
-                        handleSubmissionComplete();
+                        handleSubmissionComplete(originalFileName);
                       }}
                       onError={(error) => {
                         console.error("Upload error:", error);
