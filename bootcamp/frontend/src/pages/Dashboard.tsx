@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+// @ts-ignore
 import { supabase } from "../supabase";
 import PortalBoxWidget from "../components/PortalBoxWidget";
 import "./Dashboard.css";
@@ -6,204 +7,43 @@ import Countdown from "../components/Countdown";
 import Modal from "../components/Modal";
 import FileUpload from "../components/FileUpload";
 import { ExternalLinkIcon } from "lucide-react";
-
-interface User {
-  email: string;
-  name: string;
-  accepted: boolean;
-  major: string;
-  year: number;
-  team_id: number;
-}
+import { useUserData } from "../hooks/useUserData";
+import { useSubmission } from "../hooks/useSubmission";
 
 export default function Dashboard() {
-  const [email, setEmail] = useState<string>("");
-  const [name, setName] = useState<string>("");
-  const [major, setMajor] = useState<string>("");
-  const [team, setTeam] = useState<string>("");
-  const [teamID, setTeamID] = useState<string>("");
-  const [year, setYear] = useState<string>("");
-  const [teammates, setTeammates] = useState<string[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [uploadStatus, setUploadStatus] = useState<"initial" | "success">(
-    "initial"
-  );
-  const [hasSubmitted, setHasSubmitted] = useState(false);
-  const [submissionDate, setSubmissionDate] = useState<string>("");
-  const [submissionTime, setSubmissionTime] = useState<string>("");
-  const [pdfUrl, setPdfUrl] = useState<string>("");
+  const [uploadStatus, setUploadStatus] = useState<"initial" | "success">("initial");
 
-  useEffect(() => {
-    const storedEmail = localStorage.getItem("user_email");
-    if (storedEmail) {
-      setEmail(storedEmail);
-      fetchUserData(storedEmail);
-    } else {
-      fetchUserEmail();
-    }
-  }, []);
+  const {
+    email,
+    name,
+    major,
+    team,
+    teamID,
+    year,
+    teammates,
+    isLoading: userLoading,
+  } = useUserData();
 
-  useEffect(() => {
-    checkExistingSubmission();
-  }, []);
+  const {
+    hasSubmitted,
+    submissionDate,
+    submissionTime,
+    pdfUrl,
+    isLoading: submissionLoading,
+    handleSubmissionComplete,
+    fetchPdfUrl,
+  } = useSubmission(teamID);
 
-  useEffect(() => {
-    if (hasSubmitted) {
-      fetchSubmissionDate();
-      fetchPdfUrl();
-    }
-  }, [hasSubmitted]);
-
-  /* Helper to fetch date of last submission */
-  const fetchSubmissionDate = async () => {
-    const storedEmail = localStorage.getItem("user_email");
-    if (!storedEmail) return;
-
-    const { data: userData } = await supabase
-      .from("users")
-      .select("team_id")
-      .eq("email", storedEmail)
-      .single();
-
-    if (!userData?.team_id) return;
-
-    const { data: files } = await supabase.storage
-      .from("submissions")
-      .list(`team_${userData.team_id}`);
-
-    if (files && files.length > 0) {
-      const latestFile = files[files.length - 1];
-      const date = new Date(latestFile.created_at).toLocaleDateString("en-US", {
-        weekday: "long",
-        month: "long",
-        day: "numeric",
-      });
-      const time = new Date(latestFile.created_at).toLocaleTimeString();
-      setSubmissionDate(`${date} at `);
-      setSubmissionTime(time);
-    }
-  };
-
-  /* Helper to fetch user email */
-  const fetchUserEmail = async () => {
-    const { data, error } = await supabase.auth.getUser();
-    if (!error && data?.user) {
-      setEmail(data.user.email ?? "");
-      localStorage.setItem("user_email", data.user.email ?? "");
-      fetchUserData(data.user.email ?? "");
-    }
-  };
-
-  /* Helper to fetch and set current logged in user's data */
-  const fetchUserData = async (userEmail: string) => {
-    try {
-      const { data: userData, error: userError } = await supabase
-        .from("users")
-        .select("*")
-        .eq("email", userEmail)
-        .maybeSingle();
-
-      const { data: teamData, error: teamError } = await supabase
-        .from("teams")
-        .select("*")
-        .eq("id", userData.team_id)
-        .maybeSingle();
-
-      const { data: teammates, error: teammateError } = await supabase
-        .from("users")
-        .select("*")
-        .eq("team_id", userData.team_id);
-
-      if (userError) {
-        console.error("Error fetching responses:", userError.message);
-        return;
-      }
-
-      if (teamError) {
-        console.error("Error fetching responses:", teamError.message);
-        return;
-      }
-
-      if (!userData) {
-        console.log("No previous responses found.");
-        return;
-      }
-
-      setName(userData.preferred_name || "");
-      setTeam(teamData.team_name || "");
-      setMajor(userData.major || "");
-      setTeamID(userData.team_id || "");
-      setYear(userData.year || "");
-      let arr: string[] = teammates
-        ? teammates.map((team: User) => team.name)
-        : [];
-      setTeammates(arr);
-    } catch (err: any) {
-      console.error("Error retrieving responses:", err.message);
-    }
-  };
-
-  /* Helper to check if team has already submitted */
-  const checkExistingSubmission = async () => {
-    const storedEmail = localStorage.getItem("user_email");
-    if (!storedEmail) return;
-
-    const { data: userData } = await supabase
-      .from("users")
-      .select("team_id")
-      .eq("email", storedEmail)
-      .single();
-
-    if (!userData?.team_id) return;
-
-    const { data: existingSubmissions } = await supabase.storage
-      .from("submissions")
-      .list(`team_${userData.team_id}`);
-
-    setHasSubmitted(existingSubmissions && existingSubmissions.length > 0);
-  };
-
+  // Date formatter
   const formatter = new Intl.DateTimeFormat("en-GB", {
     day: "2-digit",
     month: "long",
     year: "numeric",
   });
 
-  {
-    /* Link to case package */
-  }
+  // Link to case package
   const downloadLink = "/assets/case-package.zip";
-
-  /* Helper to fetch PDF URL */
-  const fetchPdfUrl = async () => {
-    const storedEmail = localStorage.getItem("user_email");
-    if (!storedEmail) return;
-
-    // Get user's team_id
-    const { data: userData } = await supabase
-      .from("users")
-      .select("team_id")
-      .eq("email", storedEmail)
-      .single();
-
-    if (!userData?.team_id) return;
-
-    const { data: files } = await supabase.storage
-      .from("submissions")
-      .list(`team_${userData.team_id}`);
-
-    if (files && files.length > 0) {
-      const latestFile = files[files.length - 1];
-      // Signed URL that expires in 1 hour
-      const { data } = await supabase.storage
-        .from("submissions")
-        .createSignedUrl(`team_${userData.team_id}/${latestFile.name}`, 3600);
-
-      if (data?.signedUrl) {
-        setPdfUrl(data.signedUrl);
-      }
-    }
-  };
 
   return (
     <>
@@ -247,14 +87,18 @@ export default function Dashboard() {
               <h2 className="dashboard__widget_title my_team__title">
                 My Team
               </h2>
-              {teamID ? (
-                <h1 className="team-name">
-                  {team} #{teamID}
-                </h1>
-              ) : (
-                <p className="dashboard__desc">You don't have a team!</p>
-              )}
-              {teammates && <h3>{teammates.join(", ")}</h3>}
+              <h1 className="team-name">{team ? team : "No Team"}</h1>
+              <div className="dashboard__desc">
+                {teammates.length > 0 ? (
+                  <ul>
+                    {teammates.map((teammate, index) => (
+                      <li key={index}>{teammate}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>You don't have a team!</p>
+                )}
+              </div>
             </PortalBoxWidget>
           </div>
           <div className="top3">
@@ -326,9 +170,7 @@ export default function Dashboard() {
                     paddingLeft: "1rem",
                   }}
                 >
-                  {hasSubmitted && (
-                    <div>Preview Component</div>
-                  )}
+                  {hasSubmitted && <div>Preview Component</div>}
                   <div>
                     <div
                       style={{
@@ -393,12 +235,15 @@ export default function Dashboard() {
                 </div>
               </PortalBoxWidget>
 
-              {/* Add Modal Component */}
+              {/* Modal Component */}
               <Modal
                 isOpen={isModalOpen}
                 onClose={() => {
                   setIsModalOpen(false);
                   setUploadStatus("initial");
+                  if (hasSubmitted) {
+                    fetchPdfUrl();
+                  }
                 }}
                 title={
                   uploadStatus === "initial"
@@ -415,17 +260,7 @@ export default function Dashboard() {
                       onUploadComplete={(url) => {
                         console.log("File uploaded:", url);
                         setUploadStatus("success");
-                        setHasSubmitted(true);
-                        fetchSubmissionDate();
-                        fetchPdfUrl();
-
-                        const storedEmail = localStorage.getItem("user_email");
-                        if (storedEmail) {
-                          supabase
-                            .from("users")
-                            .update({ submission_status: true })
-                            .eq("email", storedEmail);
-                        }
+                        handleSubmissionComplete();
                       }}
                       onError={(error) => {
                         console.error("Upload error:", error);

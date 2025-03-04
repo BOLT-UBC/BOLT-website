@@ -1,4 +1,5 @@
 import React, { useState, useEffect, FC } from "react";
+// @ts-ignore
 import { supabase } from "../supabase";
 import "./FileUpload.css";
 
