@@ -1,0 +1,58 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background: #17161b;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    background-color: #cf6f1b;
+    position: relative;
+    border: 2px solid #c7512a;
+    color: #fdf9f7;
+  }
+  
+  .closeButton {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: none;
+    border: none;
+    font-size: 5rem;
+    cursor: pointer;
+    color: #c7512a;
+    transition: color 0.3s ease;
+  }
+  
+  .closeButton:hover {
+    color: #a63e1e;
+  }
+  
+  .modalTitle {
+    font-family: "Righteous", sans-serif;
+    margin-top: 0;
+    color: #fdf9f7;
+  }
+  
+  .modalDescription {
+    color: #fdf9f7;
+    font-family: "Roboto Mono", monospace;
+  }
+  
+  .modalImage {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
