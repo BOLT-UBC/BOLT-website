@@ -10,7 +10,7 @@ export default function Title() {
   return (
     <div className="title-gradient">
       <div className="title-background">
-        <Rocket targetDate="2025-02-26T16:59:59" />
+        <Rocket targetDate="2025-03-05T12:00:00" />
         <div className="title-content">
           <h1>Bootcamp</h1>
           <h2>March 9-10, 2025 | BOLT UBC</h2>

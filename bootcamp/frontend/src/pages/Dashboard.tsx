@@ -124,8 +124,8 @@ export default function Dashboard() {
                 }}
               >
                 <h2 className="dashboard__widget_title">Task Timer</h2>
-                <p className="dashboard__desc">Case will be released in</p>
-                <Countdown targetDate={"2025-02-26T16:59:59"} />
+                <p className="dashboard__desc">Submission due in</p>
+                <Countdown targetDate={"2025-03-05T12:00:00"} />
               </div>
             </PortalBoxWidget>
           </div>
@@ -338,8 +338,7 @@ export default function Dashboard() {
               </h2>
               <p className="dashboard__desc right">
                 {" "}
-                ⭐ Registration is now over! Participants without teams will be
-                assigned EOD Feb 25.
+                ⭐ Submission is now live! Please ensure one member uploads your submission by 12PM March 5th!
               </p>
             </PortalBoxWidget>
           </div>
@@ -373,13 +372,13 @@ export default function Dashboard() {
                 <div className="row">
                   <h2
                     className="left dashboard__desc"
-                    style={{ backgroundColor: "#9D5C75" }}
+                    
                   >
                     Feb 26
                   </h2>
                   <h2
                     className="right dashboard__desc"
-                    style={{ backgroundColor: "#9D5C75" }}
+                    
                   >
                     Case Release
                   </h2>
@@ -397,8 +396,8 @@ export default function Dashboard() {
                   </h2>
                 </div>
                 <div className="row">
-                  <h2 className="left dashboard__desc">Mar 5 </h2>
-                  <h2 className="right dashboard__desc">
+                  <h2 className="left dashboard__desc" style={{ backgroundColor: "#9D5C75" }}>Mar 5 </h2>
+                  <h2 className="right dashboard__desc" style={{ backgroundColor: "#9D5C75" }}>
                     Submission Deadline + Finalist Announcement
                   </h2>
                 </div>
