@@ -17,6 +17,7 @@ const FileUpload: FC<FileUploadProps> = ({
   const [teamInfo, setTeamInfo] = useState<{ id: string; name: string } | null>(
     null
   );
+  const [link, setLink] = useState<string>("");
 
   useEffect(() => {
     fetchTeamInfo();
@@ -54,6 +55,7 @@ const FileUpload: FC<FileUploadProps> = ({
     }
 
     setTeamInfo(teamData);
+    setLink(teamData.submission_link || "");
   };
 
   /* Helper for replacing files */
@@ -115,6 +117,16 @@ const FileUpload: FC<FileUploadProps> = ({
     } finally {
       setUploading(false);
     }
+
+    const { error: linkUpdateError } = await supabase
+        .from("teams")
+        .update({ submission_link: link })  // Update the submission link
+        .eq("id", teamInfo.id);
+
+      if (linkUpdateError) {
+        onError("Failed to update the submission link");
+        return;
+      }
   };
 
   return (
@@ -128,7 +140,16 @@ const FileUpload: FC<FileUploadProps> = ({
             disabled={uploading}
             className="fileInput"
           />
+          <input
+            type="url"
+            value={link}
+            onChange={(e) => setLink(e.target.value)}
+            placeholder="Enter sharable link"
+            disabled={uploading}
+            className="fileInput"
+            />
           {file && <div className="fileName">Selected: {file.name}</div>}
+
           <button
             className="button-primary"
             onClick={handleUpload}

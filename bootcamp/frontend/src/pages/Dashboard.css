@@ -211,3 +211,8 @@
   align-items: center;
   margin-top: 1rem;
 }
+
+.submission-display {
+  display: flex;
+  flex-direction: row;
+}
