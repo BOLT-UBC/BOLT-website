@@ -7,6 +7,7 @@ export function useSubmission(teamID: string) {
   const [submissionDate, setSubmissionDate] = useState<string>("");
   const [submissionTime, setSubmissionTime] = useState<string>("");
   const [pdfUrl, setPdfUrl] = useState<string>("");
+  const [link, setLink] = useState<string>("");
   const [fileName, setFileName] = useState<string>("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -113,20 +114,43 @@ export function useSubmission(teamID: string) {
     }
   };
 
+  const fetchLink = async () => {
+    if (!teamID) return;
+
+    try {
+      const { data: teamLink, error } = await supabase
+      .from("teams")
+      .select("submission_link")
+      .eq("id", teamID)
+      .single();
+
+      if (error || !teamLink) {
+        throw error;
+      }
+
+      setLink(teamLink.submission_link);
+    } catch (error: any) {
+      console.error("Failed to fetch link:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const fetchSubmissionDetails = async () => {
     await fetchSubmissionDate();
     await fetchPdfUrl();
+    await fetchLink();
   };
 
-  const updateSubmissionStatus = async (email: string) => {
-    if (!email) return;
+  const updateSubmissionStatus = async () => {
+    if (!teamID) return;
     
     try {
       setIsLoading(true);
       const { error } = await supabase
-        .from("users")
+        .from("team")
         .update({ submission_status: true })
-        .eq("email", email);
+        .eq("id", teamID);
         
       if (error) throw error;
     } catch (err) {
@@ -143,11 +167,7 @@ export function useSubmission(teamID: string) {
       setFileName(originalFileName);
     }
     await fetchSubmissionDetails();
-    
-    const storedEmail = localStorage.getItem("user_email");
-    if (storedEmail) {
-      await updateSubmissionStatus(storedEmail);
-    }
+    await updateSubmissionStatus();
   };
 
   return {
@@ -155,6 +175,7 @@ export function useSubmission(teamID: string) {
     submissionDate,
     submissionTime,
     pdfUrl,
+    link,
     fileName,
     isLoading,
     error,

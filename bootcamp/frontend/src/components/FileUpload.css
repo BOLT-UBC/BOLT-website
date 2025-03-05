@@ -7,10 +7,14 @@
   font-family: "Roboto Mono", monospace;
 }
 
+.fileInput::placeholder {
+  color: #ffffff;                   /* Set placeholder text color */
+}
+
 .fileInput {
   width: 100%;
   padding: 0.8rem;
-  background-color: #17161b;
+  background-color: #c24a28;
   border: 2px dashed #c7512a;
   border-radius: 0.5rem;
   color: #fdf9f7;
@@ -30,7 +34,7 @@
 .fileInput::before {
   content: 'Choose PDF file';
   display: inline-block;
-  background: #91511a;
+  background: #fa8e00;
   color: #fdf9f7;
   padding: 0.6vw 1vw;
   border-radius: 0.4vw;
@@ -40,28 +44,9 @@
 }
 
 .fileInput:hover::before {
-  background: #723e12;
+  background: #ffb14b;
 }
 
-.uploadButton {
-  background-color: #c7512a;
-  color: #fdf9f7;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  width: 100%;
-  margin-top: 0.5rem;
-  font-family: "RobotoMonoBold", sans-serif;
-}
-
-.uploadButton:disabled {
-  background-color: #5c3311;
-  cursor: not-allowed;
-  opacity: 0.7;
-}
 
 .fileName {
   color: #fdf9f7;
@@ -71,13 +56,13 @@
 }
 
 .button-primary:disabled {
-  background-color: #5c3311;
+  background-color: #fa8e00;
   cursor: not-allowed;
   opacity: 0.7;
   transition: none;
 }
 
 .button-primary:disabled:hover {
-  background-color: #5c3311;
+  background-color: #ffb14b;
   transform: none;
 }

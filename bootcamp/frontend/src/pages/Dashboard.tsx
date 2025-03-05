@@ -31,6 +31,7 @@ export default function Dashboard() {
     hasSubmitted,
     submissionDate,
     submissionTime,
+    link,
     pdfUrl,
     fileName,
     isLoading: submissionLoading,
@@ -182,8 +183,9 @@ export default function Dashboard() {
                         borderRadius: "0.5rem",
                       }}
                     >
-                      Submitted file:{" "}
                       <span style={{ fontWeight: "bold" }}>{fileName}</span>
+                      <br />
+                      {link && <a href={link} target="_blank" style={{color:'white'}} rel="noopener noreferrer">{link}</a>}
                     </p>
                   )}
                   <div>
