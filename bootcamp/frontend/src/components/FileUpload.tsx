@@ -19,6 +19,9 @@ const FileUpload: FC<FileUploadProps> = ({
   );
   const [link, setLink] = useState<string>("");
 
+  const submissionCloseTime = new Date("2025-03-06T00:00:00").getTime();
+  const submissionClosed = Date.now() > submissionCloseTime;
+
   useEffect(() => {
     fetchTeamInfo();
   }, []);
@@ -153,7 +156,7 @@ const FileUpload: FC<FileUploadProps> = ({
           <button
             className="button-primary"
             onClick={handleUpload}
-            disabled={!file || uploading}
+            disabled={!file || uploading || submissionClosed}
           >
             {uploading ? "Uploading..." : "Upload PDF"}
           </button>

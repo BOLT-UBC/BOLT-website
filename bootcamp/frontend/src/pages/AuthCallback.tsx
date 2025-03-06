@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+//@ts-ignore
 import { supabase } from "../supabase.js";
 
 export default function AuthCallback() {
@@ -60,7 +61,7 @@ export default function AuthCallback() {
           "linear-gradient(to top, #693b48 0%, #422932 19%, #17161b 81%)",
       }}
     >
-      <div style={{ fontSize: "24px", fontWeight: "bold", color: "#fff", fontFamily: 'Roboto-Mono' }}>
+      <div style={{ fontSize: "24px", fontWeight: "bold", color: "#fff", fontFamily: 'Roboto Mono' }}>
         Authenticating...
       </div>
     </div>

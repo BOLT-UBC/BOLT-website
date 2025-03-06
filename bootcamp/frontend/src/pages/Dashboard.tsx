@@ -16,6 +16,9 @@ export default function Dashboard() {
     "initial"
   );
 
+  const submissionCloseTime = new Date("2025-03-06T00:00:00").getTime();
+  const submissionClosed = Date.now() > submissionCloseTime;
+
   const {
     email,
     name,
@@ -193,10 +196,10 @@ export default function Dashboard() {
                       style={{
                         fontFamily: "Righteous",
                         fontSize: "1.6rem",
-                        color: "#90EE90",
+                        color: !submissionClosed ? (hasSubmitted ? "#90EE90" : "#ffffff") : (hasSubmitted ? "#bcbab0" : "#e41f25"),
                       }}
                     >
-                      {hasSubmitted ? "Submitted" : "No submission"}
+                      {!submissionClosed ? (hasSubmitted ? "Submitted" : "No submission") : (hasSubmitted ? "Pending Review" : "Not under consideration")}
                     </div>
                     <div>
                       {hasSubmitted && (
@@ -222,10 +225,12 @@ export default function Dashboard() {
                     flexDirection: "row",
                     gap: "1rem",
                     position: "absolute",
+                    justifyContent: "center",
                     bottom: "1rem",
-                    maxWidth: "100%",
+                    minWidth: "90%",
                   }}
                 >
+                  {!submissionClosed ? <>
                   <button
                     onClick={() => setIsModalOpen(true)}
                     className="button-primary"
@@ -249,6 +254,17 @@ export default function Dashboard() {
                       <ExternalLinkIcon size={20} />
                     </button>
                   )}
+                  </> : <>
+                    <span style={{
+                      color: "#fdfdfd",
+                      width: "100%",
+                      backgroundColor: "#cf6f1b",
+                      padding: "0.5rem",
+                      fontSize: "0.8rem",
+                      borderRadius: "0.5rem",
+                      fontFamily: "Roboto Mono"
+                    }}>Submission period is now over.</span>
+                  </>}
                 </div>
               </PortalBoxWidget>
 
