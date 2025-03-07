@@ -196,10 +196,10 @@ export default function Dashboard() {
                       style={{
                         fontFamily: "Righteous",
                         fontSize: "1.6rem",
-                        color: !submissionClosed ? (hasSubmitted ? "#90EE90" : "#ffffff") : (hasSubmitted ? "#bcbab0" : "#e41f25"),
+                        color: !submissionClosed ? (hasSubmitted ? "#90EE90" : "#ffffff") : (hasSubmitted ? "#90EE90" : "#e41f25"),
                       }}
                     >
-                      {!submissionClosed ? (hasSubmitted ? "Submitted" : "No submission") : (hasSubmitted ? "Pending Review" : "Not under consideration")}
+                      {!submissionClosed ? (hasSubmitted ? "Submitted" : "No submission") : (hasSubmitted ? "Accepted" : "Not under consideration")}
                     </div>
                     <div>
                       {hasSubmitted && (
