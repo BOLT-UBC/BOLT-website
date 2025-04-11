@@ -23,7 +23,7 @@ const Events: React.FC = () => {
             {EVENTS.map((event, index) => (
               <div key={index} className={styles.event}>
                 <img
-                  src={`src/assets/images/${event.image}`}
+                  src={`/src/assets/images/${event.image}`}
                   alt={event.name}
                 />
                 <div>{event.name}</div>
@@ -70,7 +70,7 @@ const Events: React.FC = () => {
             <div className={styles.nextEvent}>
               <div className={styles.nextEventInfo}>
                 <img
-                  src={`src/assets/images/${NEXT_EVENT.image}`}
+                  src={`/src/assets/images/${NEXT_EVENT.image}`}
                   alt={NEXT_EVENT.name}
                   className={styles.nextEventImage}
                 />
