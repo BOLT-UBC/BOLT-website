@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./About.module.css";
 import clouds from "../assets/images/CloudsLong.webp";
 import moon from "../assets/images/Moon.png";
-import mountainImage from "../assets/images/left-mountain.png";
-import mountainImage2 from "../assets/images/right-mountain.png";
+import mountainImage from "../assets/images/left-mountain.webp";
+import mountainImage2 from "../assets/images/right-mountain.webp";
 import stars from "../assets/images/Stars.webp";
 import { Parallax } from "react-scroll-parallax";
 
@@ -37,6 +37,7 @@ const About: React.FC = () => {
         className={styles.mountainImage2}
         draggable="false"
       />
+
       <Parallax className={styles.cloudsParallax} translateX={[-33, -70]}>
         <img
           src={clouds}
