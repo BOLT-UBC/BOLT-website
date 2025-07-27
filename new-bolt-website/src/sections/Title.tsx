@@ -10,13 +10,22 @@ const Title: React.FC = () => {
   return (
     <>
       <div className={styles.Title} id="Home">
-        <img src={byte} alt="Byte" className={styles.byte} />
-        <img src={boltUBC} alt="Bolt UBC" className={styles.name} />
-        <div className={styles.buttonContainer}>
-          <Button text="Become a Member" onClick={() => {
-            window.open(membershipURL, '_blank');
-          }} />
-          <Button text="Become a Sponsor" onClick={() => {}} outline />
+        <div className={styles.byteContainer}>
+          <img src={byte} alt="Byte" className={styles.byte} />
+        </div>
+        <div className={styles.infoContainer}>
+          <h1 className={styles.title}>
+            BOLT <br></br> UBC
+          </h1>
+          <div className={styles.buttonContainer}>
+            <Button
+              text="Become a Member"
+              onClick={() => {
+                window.open(membershipURL, "_blank");
+              }}
+            />
+            <Button text="Become a Sponsor" onClick={() => {}} outline />
+          </div>
         </div>
       </div>
     </>
