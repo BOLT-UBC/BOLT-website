@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Title.module.css";
-import boltUBC from "../assets/images/BoltUBCText.png";
 import byte from "../assets/images/Byte.webp";
 import Button from "../components/Button";
 
