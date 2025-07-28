@@ -4,21 +4,22 @@
   color: white;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: flex-start;
   /* overflow: hidden; */
   text-align: left;
+  height: 100vh;
   width: 100vw;
 }
 
 .cloudsParallax {
-  top: 70vh;
+  top: 95vh;
   position: absolute;
   z-index: 3;
+  height: 100%;
 }
 
 .clouds {
-  height: 70%;
+  height: 100%;
   z-index: 3;
 }
 
@@ -61,12 +62,14 @@
 .mountainImage {
   position: absolute;
   width: 100vw;
+  height: 100vh;
   z-index: 3;
 }
 
 .mountainImage2 {
   position: absolute;
   width: 100vw;
+  height: 100vh;
   z-index: 2;
 }
 

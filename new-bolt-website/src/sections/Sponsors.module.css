@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  width: 100vw;
+  z-index: 3;
 }
 
 .buildings {
@@ -10,4 +12,14 @@
   z-index: 3;
   position: absolute;
   top: 190vh;
+  background: linear-gradient(
+    100deg,
+    #3e3a79 0%,
+    #3e3a79 17%,
+    #3c3672 27%,
+    #312f67 47%,
+    #2e2a62 65%,
+    #221f50 79%,
+    #1b1942 93%
+  );
 }

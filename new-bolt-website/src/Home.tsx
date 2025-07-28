@@ -14,8 +14,9 @@ const Home: React.FC = () => {
         <Navbar />
         <Title />
         <About />
-        <Sponsors />
       </div>
+      <Sponsors />
+
       <Events />
       <Team />
     </>
