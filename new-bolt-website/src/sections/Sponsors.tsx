@@ -4,6 +4,7 @@ import sponsorsImage from "../assets/images/Sponsors.webp";
 import leftBuilding from "../assets/images/left_ams.webp";
 import middleBuilding from "../assets/images/uoft.webp";
 import frBuilding from "../assets/images/mastercard.webp";
+import eventsBG from "../assets/images/Bridge.png";
 
 const Sponsors: React.FC = () => {
   return (
@@ -33,6 +34,15 @@ const Sponsors: React.FC = () => {
           className={styles.frBuilding}
           loading="lazy"
         />
+
+        <div className={styles.events}>
+          <img
+            src={eventsBG}
+            alt="Sponsors"
+            className={styles.eventsBG}
+            loading="lazy"
+          />
+        </div>
       </div>
     </>
   );

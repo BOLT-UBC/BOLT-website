@@ -31,3 +31,15 @@
   position: absolute;
   left: 0;
 }
+
+.events {
+  width: 100vw;
+  position: absolute;
+  z-index: 7;
+  bottom: 0;
+  background-color: #110b2790;
+}
+
+.eventsBG {
+  width: 100vw;
+}

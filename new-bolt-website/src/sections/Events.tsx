@@ -16,7 +16,7 @@ const Events: React.FC = () => {
     <>
       <div className={styles.Events} id="Events">
         <img src={bridge} alt="Bridge" className={styles.bridge} />
-
+        {/* 
         <div className={`${styles.eventContainer} ${styles.left}`}>
           <img src={allevents} alt="All Events" className={styles.eventImage} />
           <div className={styles.eventContent}>
@@ -85,7 +85,7 @@ const Events: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

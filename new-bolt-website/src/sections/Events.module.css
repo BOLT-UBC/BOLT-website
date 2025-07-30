@@ -1,12 +1,13 @@
 @font-face {
-  font-family: 'Roboto-Mono';
-  src: url('/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf') format('truetype');
+  font-family: "Roboto-Mono";
+  src: url("/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf")
+    format("truetype");
 }
 
 .Events {
   color: white;
-  background-color: transparent;
-  width: 100vw; 
+  background-color: #110b2790;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .event {
-  font-family: 'Roboto-Mono', sans-serif;
+  font-family: "Roboto-Mono", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,8 +84,6 @@
 .bridge {
   position: absolute;
   z-index: 4;
-  right: -10vw;
-  width: 120%;
   top: 291vh;
 }
 
@@ -112,7 +111,7 @@
 }
 
 .nextEvent {
-  background-image: url('/src/assets/images/bootcamp-bg.png');
+  background-image: url("/src/assets/images/bootcamp-bg.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -123,7 +122,7 @@
 }
 
 .eventName {
-  font-family: 'Roboto-Mono', sans-serif;
+  font-family: "Roboto-Mono", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -148,7 +147,7 @@
 .scrollButton {
   background-color: transparent;
   border: 2px solid #493b7b;
-  background-color: #614EA5;
+  background-color: #614ea5;
   font-weight: 700;
   color: white;
   width: 40px;
