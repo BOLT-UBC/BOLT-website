@@ -15,10 +15,11 @@ const Home: React.FC = () => {
         <Title />
         <About />
       </div>
-      <Sponsors />
-
-      <Events />
-      <Team />
+      <div className={styles.skyline}>
+        <Sponsors />
+        {/* <Events /> */}
+      </div>
+      {/* <Team /> */}
     </>
   );
 };
