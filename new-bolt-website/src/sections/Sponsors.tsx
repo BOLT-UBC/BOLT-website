@@ -5,6 +5,7 @@ import leftBuilding from "../assets/images/left_ams.webp";
 import middleBuilding from "../assets/images/uoft.webp";
 import frBuilding from "../assets/images/mastercard.webp";
 import eventsBG from "../assets/images/Bridge.png";
+import Events from "..//sections/Events.tsx";
 
 const Sponsors: React.FC = () => {
   return (
@@ -42,6 +43,11 @@ const Sponsors: React.FC = () => {
             className={styles.eventsBG}
             loading="lazy"
           />
+        </div>
+        <div className={styles.eventContainer}>
+          <div className={styles.eventCenter} id="Events">
+            <Events />
+          </div>
         </div>
       </div>
     </>
