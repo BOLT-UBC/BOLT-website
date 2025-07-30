@@ -5,6 +5,8 @@ import Events from "./sections/Events.tsx";
 import Sponsors from "./sections/Sponsors.tsx";
 import Team from "./sections/Team.tsx";
 import Navbar from "./components/Navbar.tsx";
+import Footer from "./components/Footer.tsx";
+
 import styles from "./Home.module.css";
 
 const Home: React.FC = () => {
@@ -19,7 +21,8 @@ const Home: React.FC = () => {
         <Sponsors />
         {/* <Events /> */}
       </div>
-      {/* <Team /> */}
+      <Team />
+      <Footer />
     </>
   );
 };
