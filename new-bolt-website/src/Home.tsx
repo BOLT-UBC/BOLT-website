@@ -13,11 +13,11 @@ const Home: React.FC = () => {
     <>
       {/* <Navbar /> */}
       <Title />
-      {/* <About />
-      <Sponsors /> */}
+      <About />
+      <Sponsors />
       {/* <Events /> */}
-      {/* <Team />
-      <Footer /> */}
+      <Team />
+      <Footer />
     </>
   );
 };
