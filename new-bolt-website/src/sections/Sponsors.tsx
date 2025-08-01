@@ -44,8 +44,8 @@ const Sponsors: React.FC = () => {
             loading="lazy"
           />
         </div>
-        <div className={styles.eventContainer}>
-          <div className={styles.eventCenter} id="Events">
+        <div className={styles.eventContainer} id="Events">
+          <div className={styles.eventCenter}>
             <Events />
           </div>
         </div>

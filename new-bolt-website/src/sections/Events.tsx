@@ -11,7 +11,7 @@ const Events: React.FC = () => {
 
   return (
     <>
-      <div className={styles.Events} id="Events">
+      <div className={styles.Events}>
         <div className={`${styles.eventContainer}`}>
           <div className={styles.eventTitle}>
             <h2>Our Events</h2>
