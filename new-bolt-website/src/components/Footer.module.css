@@ -1,7 +1,7 @@
 .footer {
+  position: relative;
   width: 100%;
   background-color: #231c45;
-  padding: 16px;
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
@@ -10,6 +10,7 @@
   max-width: 1200px;
   margin: 0 auto;
   color: white;
+  padding: 1rem;
 }
 
 .footerContainer {
