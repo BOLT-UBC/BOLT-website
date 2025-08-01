@@ -30,25 +30,29 @@ const Team: React.FC = () => {
 
       <div className={styles.teamContainer}>
         <div className={styles.boltTeam}>
-          Made With 💜 from the BOLT UBC Team
-        </div>
+          <div className={styles.boltTeam}>
+            <p className={styles.boltTeamText}>
+              Made With 💜 from the BOLT UBC Team
+            </p>
+          </div>
 
-        <div className={styles.scrollContainer}>
-          <div className={styles.scrollTrack}>
-            {[...allMembers, ...allMembers].map((member, index) => (
-              <div key={index} className={styles.memberImage}>
-                <img
-                  src={`${import.meta.env.BASE_URL}profiles/${
-                    member.profilepic
-                  }`}
-                  alt={member.name}
-                />
-                <div className={styles.memberInfo}>
-                  <div className={styles.memberName}>{member.name}</div>
-                  <div className={styles.memberTitle}>{member.title}</div>
+          <div className={styles.scrollContainer}>
+            <div className={styles.scrollTrack}>
+              {[...allMembers, ...allMembers].map((member, index) => (
+                <div key={index} className={styles.memberImage}>
+                  <img
+                    src={`${import.meta.env.BASE_URL}profiles/${
+                      member.profilepic
+                    }`}
+                    alt={member.name}
+                  />
+                  <div className={styles.memberInfo}>
+                    <div className={styles.memberName}>{member.name}</div>
+                    <div className={styles.memberTitle}>{member.title}</div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
