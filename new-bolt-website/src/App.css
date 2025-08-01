@@ -30,3 +30,7 @@ body {
     #17161b 100%
   );
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

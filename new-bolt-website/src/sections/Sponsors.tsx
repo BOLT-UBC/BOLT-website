@@ -45,9 +45,9 @@ const Sponsors: React.FC = () => {
           />
         </div>
         <div className={styles.eventContainer}>
-          <div className={styles.eventCenter} id="Events">
+          {/* <div className={styles.eventCenter} id="Events">
             <Events />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
