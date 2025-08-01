@@ -24,15 +24,16 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  width: 50%;
+  width: 100%;
   z-index: 4;
 }
 
 .title {
   font-family: "Yerk", sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: bold;
   text-shadow: 5px 5px 5px #614ea5;
+  margin: 2rem;
 }
 
 .name {
@@ -48,11 +49,11 @@
 }
 
 .byteContainer {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 40%;
   z-index: 4;
 }
 
@@ -64,6 +65,68 @@
 
 .buttonContainer {
   display: flex;
-  margin-bottom: 5rem;
+  flex-direction: column;
+  margin: 0 2rem;
   gap: 10px;
+}
+
+@media (min-width: 475px) {
+  .title {
+    font-size: 6rem;
+  }
+  .buttonContainer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .byteContainer {
+    display: flex;
+  }
+  .byte {
+    width: 70%;
+  }
+  .infoContainer {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 7rem;
+  }
+  .byteContainer {
+    width: 50%;
+  }
+  .byte {
+    width: 60%;
+  }
+  .infoContainer {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 7rem;
+    margin-left: 0;
+  }
+  .byte {
+    width: 55%;
+  }
+  .buttonContainer {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1536px) {
+}
+
+@media (min-width: 2100px) {
+}
+
+@media (min-width: 2400px) {
+}
+
+@media (min-width: 3700px) {
 }
