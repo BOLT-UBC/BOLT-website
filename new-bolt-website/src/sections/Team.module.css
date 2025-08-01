@@ -15,6 +15,9 @@
 
 .teamBG {
   width: 100vw;
+  height: 110vh;
+  object-fit: cover;
+  object-position: right;
 }
 
 .teamContainer {
