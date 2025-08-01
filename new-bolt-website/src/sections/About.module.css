@@ -111,6 +111,10 @@
 }
 
 @media (min-width: 1536px) {
+  .infoContainer {
+    width: 1500px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 2100px) {
