@@ -1,15 +1,28 @@
 @font-face {
-  font-family: 'Roboto-Mono';
-  src: url('/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf') format('truetype');
+  font-family: "Roboto-Mono";
+  src: url("/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf")
+    format("truetype");
 }
 
 .Team {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  position: relative;
+}
+
+.teamBG {
+  width: 100vw;
+  height: 110vh;
+  object-fit: cover;
+  object-position: right;
+}
+
+.teamContainer {
+  position: absolute;
+  bottom: 0;
 }
 
 .teamTitle {
@@ -21,83 +34,98 @@
 }
 
 .scrollContainer {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20vh;
 }
 
 .scrollTrack {
-    display: flex;
-    gap: 2rem;
-    animation: scroll 70s linear infinite;
-    width: fit-content;
+  display: flex;
+  gap: 2rem;
+  animation: scroll 70s linear infinite;
+  width: fit-content;
 }
 
 .scrollTrack:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .memberImage {
-    flex-shrink: 0;
-    position: relative;
-    cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
 }
 
 .memberImage img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-    transition: all 0.3s ease;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  transition: all 0.3s ease;
 }
 
 .memberInfo {
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    text-align: center;
-    opacity: 0;
-    transition: all 0.3s ease;
-    pointer-events: none;
-    width: max-content;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  width: max-content;
 }
 
 .memberName {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: "Roboto-Mono", sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto-Mono", sans-serif;
 }
 
 .memberTitle {
-    color: #9E8EFF;
-    font-size: 0.8rem;
-    font-family: "Roboto-Mono", sans-serif;
+  color: #9e8eff;
+  font-size: 0.8rem;
+  font-family: "Roboto-Mono", sans-serif;
 }
 
 .memberImage:hover .memberInfo {
-    opacity: 1;
-    bottom: -70px;
+  opacity: 1;
+  bottom: -70px;
 }
 
 .memberImage:hover img {
-    transform: scale(1.1);
-    border-color: #9E8EFF;
+  transform: scale(1.1);
+  border-color: #9e8eff;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .scrollContent:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.boltTeam {
+  position: relative;
+  width: 100vw;
+}
+
+.boltTeamText {
+  color: #fff6f9;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Roboto-Mono", sans-serif;
+  padding: 2rem;
+  margin-bottom: 20vh;
 }

@@ -1,83 +1,80 @@
-@font-face {
-  font-family: 'Roboto-Mono';
-  src: url('/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Yerk';
-  src: url('/src/assets/fonts/Yerk/Yerk-Regular.ttf') format('truetype');
-}
-
 .about {
   align-items: flex-start;
   background-color: transparent;
-  color: white;
+  color: #fff6f9;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: flex-start;
-  /* overflow: hidden; */
+  /* overflow-x: hidden; */
   text-align: left;
+  height: 100vh;
   width: 100vw;
 }
 
 .cloudsParallax {
-  bottom: 360vh;
-  position: relative;
-  z-index: 2;
+  top: 95vh;
+  position: absolute;
+  z-index: 3;
+  height: 100%;
 }
 
 .clouds {
-  height: 80%;
-  z-index: 2;
+  height: 100%;
+  z-index: 3;
+}
+
+.infoContainer {
+  z-index: 5;
 }
 
 .description {
-  font-family: 'Roboto-Mono', sans-serif;
+  font-family: "Roboto-Mono", sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
+  margin: 2rem;
   max-width: 600px;
-  padding-bottom: 5%;
-  padding-left: 20%;
-  z-index: 5;
 }
 
 .title {
-  font-family: 'Yerk', sans-serif;
+  font-family: "Yerk", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
-  padding-left: 20%;
-  padding-top: 7%;
-  z-index: 5;
+  margin: 2rem;
+  margin-top: 6rem;
 }
 
 .moon {
   height: 50%;
-  z-index: 10;
+  z-index: 1;
 }
 
 .moonParallax {
   bottom: 60vh;
   left: 130vh;
   position: relative;
-  z-index: 10;
+  z-index: 1;
+}
+
+.mountainContainer {
+  position: relative;
 }
 
 .mountainImage {
-  bottom: 70vh;
-  height: 150%;
-  position: relative;
-  width: 100%;
-  z-index: 2;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: 3;
+  object-fit: cover;
+  object-position: center;
 }
 
 .mountainImage2 {
-  bottom: 220vh;
-  height: 150%;
-  position: relative;
-  width: 100%;
-  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  object-fit: cover;
+  object-position: left;
 }
 
 .stars {
@@ -90,4 +87,41 @@
   left: -10vw;
   position: absolute;
   z-index: 0;
+}
+
+@media (min-width: 475px) {
+}
+
+@media (min-width: 768px) {
+  .infoContainer {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .infoContainer {
+    margin-left: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .infoContainer {
+    margin-left: 9rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .infoContainer {
+    width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 2100px) {
+}
+
+@media (min-width: 2400px) {
+}
+
+@media (min-width: 3700px) {
 }
