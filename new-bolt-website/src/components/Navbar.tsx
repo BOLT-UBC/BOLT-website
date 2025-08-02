@@ -1,36 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Navbar.module.css";
 
-const HamburgerIcon: React.FC = () => (
-  <svg width="23" height="23" viewBox="0 0 23 23">
-    <path
-      fill="transparent"
-      strokeWidth="3"
-      strokeLinecap="round"
-      stroke="white"
-      style={{ transition: "stroke 0.3s" }}
-      d="M 2 2.5 L 20 2.5"
-    />
-    <path
-      fill="transparent"
-      strokeWidth="3"
-      strokeLinecap="round"
-      stroke="white"
-      d="M 2 9.423 L 20 9.423"
-      style={{ transition: "stroke 0.3s" }}
-      opacity="1"
-    />
-    <path
-      fill="transparent"
-      strokeWidth="3"
-      strokeLinecap="round"
-      stroke="white"
-      style={{ transition: "stroke 0.3s" }}
-      d="M 2 16.346 L 20 16.346"
-    />
-  </svg>
-);
-
 const Navbar: React.FC = () => {
   const sections = ["Home", "About", "Sponsors", "Events", "Team"];
   const [activeSection, setActiveSection] = useState("Home");

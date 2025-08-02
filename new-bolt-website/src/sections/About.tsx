@@ -6,8 +6,11 @@ import mountainImage from "../assets/images/left-mountain.webp";
 import mountainImage2 from "../assets/images/right-mountain.webp";
 import stars from "../assets/images/Stars.webp";
 import { Parallax } from "react-scroll-parallax";
+import useIsMobile from "../hooks/useIsMobile"; // Adjust path as needed
 
 const About: React.FC = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div className={styles.about} id="About">
       <div className={styles.infoContainer}>
@@ -20,14 +23,6 @@ const About: React.FC = () => {
           dynamic realm of business technology.
         </p>
       </div>
-
-      <Parallax
-        className={styles.moonParallax}
-        translateX={[-20, 20]}
-        translateY={[-50, 50]}
-      >
-        <img src={moon} alt="Moon" className={styles.moon} draggable="false" />
-      </Parallax>
       <img
         src={mountainImage}
         alt="Left Mountain"
@@ -40,28 +35,44 @@ const About: React.FC = () => {
         className={styles.mountainImage2}
         draggable="false"
       />
+      {!isMobile && (
+        <>
+          <Parallax
+            className={styles.moonParallax}
+            translateX={[-20, 20]}
+            translateY={[-50, 50]}
+          >
+            <img
+              src={moon}
+              alt="Moon"
+              className={styles.moon}
+              draggable="false"
+            />
+          </Parallax>
 
-      <Parallax className={styles.cloudsParallax} translateX={[-33, -70]}>
-        <img
-          src={clouds}
-          alt="Clouds"
-          draggable="false"
-          className={styles.clouds}
-        />
-      </Parallax>
-      <Parallax
-        className={styles.starsParallax}
-        rotate={[-30, 30]}
-        translateX={[-20, 20]}
-        translateY={[5, -5]}
-      >
-        <img
-          src={stars}
-          alt="Stars"
-          draggable="false"
-          className={styles.stars}
-        />
-      </Parallax>
+          <Parallax className={styles.cloudsParallax} translateX={[-33, -70]}>
+            <img
+              src={clouds}
+              alt="Clouds"
+              draggable="false"
+              className={styles.clouds}
+            />
+          </Parallax>
+          <Parallax
+            className={styles.starsParallax}
+            rotate={[-30, 30]}
+            translateX={[-20, 20]}
+            translateY={[5, -5]}
+          >
+            <img
+              src={stars}
+              alt="Stars"
+              draggable="false"
+              className={styles.stars}
+            />
+          </Parallax>
+        </>
+      )}
     </div>
   );
 };
