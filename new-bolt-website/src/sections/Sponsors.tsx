@@ -4,7 +4,7 @@ import sponsorsImage from "../assets/images/Sponsors.webp";
 import leftBuilding from "../assets/images/left_ams.webp";
 import middleBuilding from "../assets/images/uoft.webp";
 import frBuilding from "../assets/images/mastercard.webp";
-import eventsBG from "../assets/images/Bridge.png";
+import eventsBG from "../assets/images/Bridge.webp";
 import Events from "..//sections/Events.tsx";
 
 const Sponsors: React.FC = () => {

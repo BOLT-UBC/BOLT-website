@@ -1,9 +1,5 @@
 import React from "react";
 import styles from "./Events.module.css";
-import bridge from "../assets/images/Bridge.png";
-import allevents from "../assets/images/AllEvents.png";
-import nextevent from "../assets/images/NextEvent.png";
-import Button from "../components/Button";
 import eventsData from "../assets/events.json";
 
 const Events: React.FC = () => {

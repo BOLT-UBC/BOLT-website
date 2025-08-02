@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Team.module.css";
 import teamData from "../assets/team.json";
-import teamBG from "../assets/images/teamBG.png";
+import teamBG from "../assets/images/teamBG.webp";
 
 const Team: React.FC = () => {
   const [allMembers, setAllMembers] = useState<
