@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Sponsors.module.css";
-import sponsorsImage from "../assets/images/Sponsors.webp";
+import sponsorsImage from "../assets/images/sponsors.webp";
 import leftBuilding from "../assets/images/left_ams.webp";
 import middleBuilding from "../assets/images/uoft.webp";
 import frBuilding from "../assets/images/mastercard.webp";
 import eventsBG from "../assets/images/Bridge.webp";
-import Events from "..//sections/Events.tsx";
+import Events from "../sections/Events.tsx";
 
 const Sponsors: React.FC = () => {
   return (
