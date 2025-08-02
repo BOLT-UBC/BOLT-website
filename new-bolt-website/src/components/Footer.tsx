@@ -13,6 +13,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/bolt-ubc/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="linkedin"
               >
                 {/* LinkedIn SVG */}
                 <svg
@@ -29,7 +30,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:boltubc@gmail.com">
+              <a href="mailto:boltubc@gmail.com" aria-label="mail">
                 {/* Email SVG */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +50,7 @@ export default function Footer() {
                 href="https://www.instagram.com/bolt.ubc/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="insta"
               >
                 {/* Instagram SVG */}
                 <svg
@@ -69,6 +71,7 @@ export default function Footer() {
                 href="https://www.facebook.com/BOLTUBC"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="facebook"
               >
                 {/* Facebook SVG */}
                 <svg

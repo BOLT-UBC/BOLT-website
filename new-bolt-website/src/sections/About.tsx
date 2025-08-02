@@ -6,11 +6,9 @@ import mountainImage from "../assets/images/left-mountain.webp";
 import mountainImage2 from "../assets/images/right-mountain.webp";
 import stars from "../assets/images/Stars.webp";
 import { Parallax } from "react-scroll-parallax";
-import useIsMobile from "../hooks/useIsMobile"; // Adjust path as needed
+import { isMobile } from "react-device-detect";
 
 const About: React.FC = () => {
-  const isMobile = useIsMobile();
-
   return (
     <div className={styles.about} id="About">
       <div className={styles.infoContainer}>
