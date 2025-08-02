@@ -16,7 +16,7 @@ const Events: React.FC = () => {
             {EVENTS.map((event, index) => (
               <div key={index} className={styles.event}>
                 <img
-                  src={`/src/assets/images/${event.image}`}
+                  src={`${import.meta.env.BASE_URL}events/${event.image}`}
                   alt={event.name}
                 />
                 <div>{event.name}</div>
