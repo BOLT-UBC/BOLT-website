@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Team.module.css";
 import teamBG from "../assets/images/teamBG.webp";
 import { Member, TeamData } from "../types";
+import { getProfileUrl } from "../utils";
 
 // Import with type assertion for JSON data
 import teamDataJson from "../assets/team.json";
@@ -54,9 +55,7 @@ const Team: React.FC = () => {
                     }`}
                   >
                     <img
-                      src={`${import.meta.env.BASE_URL}profiles/${
-                        member.profilepic
-                      }`}
+                      src={getProfileUrl(member.profilepic)}
                       alt={member.name}
                       loading="lazy"
                       onLoad={() => handleImageLoad(index)}

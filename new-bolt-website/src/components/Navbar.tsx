@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Navbar.module.css";
 import { NAVIGATION } from "../constants/layout";
+import { scrollToElement } from "../utils";
 
 const Navbar: React.FC = () => {
   const sections = ["Home", "About", "Sponsors", "Events", "Team"];
@@ -32,19 +33,10 @@ const Navbar: React.FC = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
+    const success = scrollToElement(sectionId, NAVIGATION.NAVBAR_HEIGHT);
+
+    if (success) {
       isScrolling.current = true;
-
-      const elementPosition =
-        element.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - NAVIGATION.NAVBAR_HEIGHT;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-
       setActiveSection(sectionId);
       setMenuOpen(false);
 

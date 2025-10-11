@@ -3,6 +3,7 @@ import styles from "./Events.module.css";
 import eventsBG from "../assets/images/Bridge.webp";
 import { CAROUSEL } from "../constants/layout";
 import { Event, EventsData } from "../types";
+import { getEventImageUrl, scrollHorizontal } from "../utils";
 
 // Import with type assertion for JSON data
 import eventsDataJson from "../assets/events.json";
@@ -31,7 +32,7 @@ const Events: React.FC = () => {
               {EVENTS.map((event, index) => (
                 <div key={index} className={styles.event}>
                   <img
-                    src={`${import.meta.env.BASE_URL}events/${event.image}`}
+                    src={getEventImageUrl(event.image)}
                     alt={event.name}
                     loading="lazy"
                   />
@@ -42,27 +43,19 @@ const Events: React.FC = () => {
             <div className={styles.scrollButtonContainer}>
               <button
                 className={styles.scrollButton}
-                onClick={() => {
-                  const content = document.querySelector(
-                    `.${styles.eventContent}`
-                  );
-                  if (content) {
-                    content.scrollLeft -= CAROUSEL.SCROLL_AMOUNT;
-                  }
-                }}
+                onClick={() =>
+                  scrollHorizontal(`.${styles.eventContent}`, -CAROUSEL.SCROLL_AMOUNT)
+                }
+                aria-label="Scroll events left"
               >
                 &lt;
               </button>
               <button
                 className={styles.scrollButton}
-                onClick={() => {
-                  const content = document.querySelector(
-                    `.${styles.eventContent}`
-                  );
-                  if (content) {
-                    content.scrollLeft += CAROUSEL.SCROLL_AMOUNT;
-                  }
-                }}
+                onClick={() =>
+                  scrollHorizontal(`.${styles.eventContent}`, CAROUSEL.SCROLL_AMOUNT)
+                }
+                aria-label="Scroll events right"
               >
                 &gt;
               </button>
