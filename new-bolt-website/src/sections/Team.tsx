@@ -3,10 +3,15 @@ import styles from "./Team.module.css";
 import teamData from "../assets/team.json";
 import teamBG from "../assets/images/teamBG.webp";
 
+interface Member {
+  name: string;
+  profilepic: string;
+  title: string;
+}
+
 const Team: React.FC = () => {
-  const [allMembers, setAllMembers] = useState<
-    { name: string; profilepic: string; title: string }[]
-  >([]);
+  const [allMembers, setAllMembers] = useState<Member[]>([]);
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
 
   useEffect(() => {
     const members = teamData.teams.flatMap((team) =>
@@ -19,13 +24,18 @@ const Team: React.FC = () => {
     setAllMembers(members);
   }, []);
 
+  const handleImageLoad = (index: number) => {
+    setLoadedImages((prev) => new Set(prev).add(index));
+  };
+
   return (
     <div className={styles.Team} id="Team">
       <img
         src={teamBG}
-        alt="Right Mountain"
+        alt="Team Background"
         className={styles.teamBG}
         draggable="false"
+        loading="eager"
       />
 
       <div className={styles.teamContainer}>
@@ -40,12 +50,21 @@ const Team: React.FC = () => {
             <div className={styles.scrollTrack}>
               {[...allMembers, ...allMembers].map((member, index) => (
                 <div key={index} className={styles.memberImage}>
-                  <img
-                    src={`${import.meta.env.BASE_URL}profiles/${
-                      member.profilepic
+                  <div
+                    className={`${styles.imagePlaceholder} ${
+                      loadedImages.has(index) ? styles.loaded : ""
                     }`}
-                    alt={member.name}
-                  />
+                  >
+                    <img
+                      src={`${import.meta.env.BASE_URL}profiles/${
+                        member.profilepic
+                      }`}
+                      alt={member.name}
+                      loading="lazy"
+                      onLoad={() => handleImageLoad(index)}
+                      className={styles.profileImage}
+                    />
+                  </div>
                   <div className={styles.memberInfo}>
                     <div className={styles.memberName}>{member.name}</div>
                     <div className={styles.memberTitle}>{member.title}</div>
