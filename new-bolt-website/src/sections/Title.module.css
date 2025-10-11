@@ -12,7 +12,7 @@
 
 .Title {
   display: flex;
-  color: #fff6f9;
+  color: var(--color-text-primary);
   background-color: transparent;
   text-align: left;
   width: 100vw;
@@ -29,11 +29,11 @@
 }
 
 .title {
-  font-family: "Yerk", sans-serif;
+  font-family: var(--font-display);
   font-size: 5rem;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px #614ea5;
-  margin: 2rem;
+  font-weight: var(--font-weight-bold);
+  text-shadow: var(--shadow-text);
+  margin: var(--spacing-lg);
 }
 
 .name {

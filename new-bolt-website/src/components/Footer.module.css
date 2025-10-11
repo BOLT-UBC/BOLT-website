@@ -1,16 +1,16 @@
 .footer {
   position: relative;
   width: 100%;
-  background-color: #231c45;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  background-color: var(--color-bg-dark);
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-xl);
 }
 
 .footerNav {
   max-width: 1200px;
   margin: 0 auto;
-  color: white;
-  padding: 1rem;
+  color: var(--color-text-white);
+  padding: var(--spacing-md);
 }
 
 .footerContainer {
@@ -21,7 +21,7 @@
 }
 
 .footerCopy {
-  font-size: 14px;
+  font-size: var(--font-size-sm);
   margin: 0;
 }
 
@@ -34,12 +34,12 @@
 }
 
 .footerLinks a {
-  color: white;
-  transition: color 0.3s ease;
+  color: var(--color-text-white);
+  transition: color var(--transition-normal);
 }
 
 .footerLinks a:hover {
-  color: white;
+  color: var(--color-text-white);
 }
 
 .footerLinks svg {

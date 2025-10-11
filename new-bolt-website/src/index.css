@@ -1,7 +1,10 @@
+/* Import CSS Variables */
+@import './styles/variables.css';
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: var(--font-system);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-regular);
   background-color: transparent;
 }
 
@@ -24,8 +27,8 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-tight);
 }
 
 @media (prefers-color-scheme: light) {

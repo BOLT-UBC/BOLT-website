@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "Roboto-Mono";
-  src: url("/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf")
-    format("truetype");
-}
+/* Font face is already declared in App.css */
 
 .Team {
   width: 100vw;
@@ -26,10 +22,10 @@
 }
 
 .teamTitle {
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: "Roboto-Mono", sans-serif;
-  color: white;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-primary);
+  color: var(--color-text-white);
   margin: 12rem 0 4rem 0;
 }
 
@@ -125,16 +121,16 @@
 }
 
 .memberName {
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: "Roboto-Mono", sans-serif;
+  color: var(--color-text-white);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-primary);
 }
 
 .memberTitle {
-  color: #9e8eff;
+  color: var(--color-accent);
   font-size: 0.8rem;
-  font-family: "Roboto-Mono", sans-serif;
+  font-family: var(--font-primary);
 }
 
 .memberImage:hover .memberInfo {
@@ -144,7 +140,7 @@
 
 .memberImage:hover .profileImage {
   transform: scale(1.1);
-  border-color: #9e8eff;
+  border-color: var(--color-accent);
 }
 
 @keyframes scroll {
@@ -166,10 +162,10 @@
 }
 
 .boltTeamText {
-  color: #fff6f9;
-  font-size: 2rem;
-  font-weight: 800;
-  font-family: "Roboto-Mono", sans-serif;
-  padding: 2rem;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  font-family: var(--font-primary);
+  padding: var(--spacing-lg);
   margin-bottom: 20vh;
 }

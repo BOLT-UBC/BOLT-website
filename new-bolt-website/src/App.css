@@ -1,7 +1,7 @@
+/* Font Face Declarations */
 @font-face {
   font-family: "Roboto-Mono";
-  src: url("/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf")
-    format("truetype");
+  src: url("/src/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -21,14 +21,7 @@
 html,
 body {
   overflow-x: hidden;
-  background: linear-gradient(
-    360deg,
-    #231c45 0%,
-    #7d58d6 39%,
-    #01004a 74%,
-    #150d36 89%,
-    #17161b 100%
-  );
+  background: var(--gradient-background);
 }
 
 ::-webkit-scrollbar {
