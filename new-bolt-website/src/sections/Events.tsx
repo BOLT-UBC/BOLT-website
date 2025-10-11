@@ -1,11 +1,15 @@
 import React from "react";
 import styles from "./Events.module.css";
-import eventsData from "../assets/events.json";
 import eventsBG from "../assets/images/Bridge.webp";
 import { CAROUSEL } from "../constants/layout";
+import { Event, EventsData } from "../types";
+
+// Import with type assertion for JSON data
+import eventsDataJson from "../assets/events.json";
+const eventsData = eventsDataJson as EventsData;
 
 const Events: React.FC = () => {
-  const EVENTS = eventsData.events;
+  const EVENTS: Event[] = eventsData.events;
 
   return (
     <div className={styles.EventsSection} id="Events">

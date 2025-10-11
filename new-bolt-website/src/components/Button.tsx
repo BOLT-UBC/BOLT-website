@@ -1,15 +1,10 @@
 import styles from "./Button.module.css";
+import { ButtonProps } from "../types";
 
-interface ButtonProps {
-  text: string;
-  onClick: () => void;
-  outline?: boolean;
-  rounded?: boolean;
-}
-
-function Button({ text, onClick, outline, rounded }: ButtonProps) {
+function Button({ text, onClick, outline, rounded, type = 'button' }: ButtonProps) {
   return (
     <button
+      type={type}
       className={`${styles.button} ${outline ? styles.outline : ""} ${rounded ? styles.rounded : ""}`}
       onClick={onClick}
     >

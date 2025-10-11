@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Team.module.css";
-import teamData from "../assets/team.json";
 import teamBG from "../assets/images/teamBG.webp";
+import { Member, TeamData } from "../types";
 
-interface Member {
-  name: string;
-  profilepic: string;
-  title: string;
-}
+// Import with type assertion for JSON data
+import teamDataJson from "../assets/team.json";
+const teamData = teamDataJson as TeamData;
 
 const Team: React.FC = () => {
   const [allMembers, setAllMembers] = useState<Member[]>([]);
