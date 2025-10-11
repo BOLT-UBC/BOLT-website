@@ -2,10 +2,9 @@ import React from "react";
 import styles from "./Title.module.css";
 import byte from "../assets/images/Byte.webp";
 import Button from "../components/Button";
+import { SITE_URLS } from "../config";
 
 const Title: React.FC = () => {
-  const membershipURL = "https://tr.ee/aHbQ0EMil7";
-  const sponsorEmail = "mailto:boltubc@gmail.com?subject=Sponsorship Inquiry";
 
   return (
     <>
@@ -26,13 +25,13 @@ const Title: React.FC = () => {
             <Button
               text="Become a Member"
               onClick={() => {
-                window.open(membershipURL, "_blank");
+                window.open(SITE_URLS.membership, "_blank");
               }}
             />
             <Button
               text="Become a Sponsor"
               onClick={() => {
-                window.location.href = sponsorEmail;
+                window.location.href = SITE_URLS.sponsorEmail;
               }}
               outline
             />

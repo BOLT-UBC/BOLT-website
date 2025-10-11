@@ -1,15 +1,16 @@
 import styles from "./Footer.module.css";
+import { SOCIAL_LINKS, SITE_URLS, getCopyrightText } from "../config";
 
 export default function Footer() {
   return (
     <div className={styles.footer}>
       <nav className={styles.footerNav}>
         <div className={styles.footerContainer}>
-          <p className={styles.footerCopy}>Copyright © BoltUBC 2025</p>
+          <p className={styles.footerCopy}>{getCopyrightText()}</p>
           <ul className={styles.footerLinks}>
             <li>
               <a
-                href="https://www.linkedin.com/company/bolt-ubc/"
+                href={SOCIAL_LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="linkedin"
@@ -29,7 +30,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:boltubc@gmail.com" aria-label="mail">
+              <a href={SITE_URLS.contactEmail} aria-label="mail">
                 {/* Email SVG */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +47,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/bolt.ubc/"
+                href={SOCIAL_LINKS.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="insta"
@@ -67,7 +68,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/BOLTUBC"
+                href={SOCIAL_LINKS.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="facebook"
