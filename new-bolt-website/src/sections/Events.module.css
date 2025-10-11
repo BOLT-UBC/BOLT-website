@@ -1,7 +1,42 @@
+.EventsSection {
+  width: 100vw;
+  height: 73vh;
+  position: relative;
+  z-index: 7;
+}
+
+.eventsBackground {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: 7;
+  background-color: #110b2790;
+}
+
+.eventsBG {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.eventsContent {
+  width: 100vw;
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Events {
   color: #fff6f9;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .eventContainer {

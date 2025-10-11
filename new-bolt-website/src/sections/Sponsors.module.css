@@ -2,7 +2,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 173vh;
+  height: 100vh;
   z-index: 3;
   position: relative;
 }
@@ -41,35 +41,6 @@
   bottom: 0rem;
   height: 100vh;
   width: auto;
-}
-
-.events {
-  width: 100vw;
-  height: 73vh;
-  position: absolute;
-  z-index: 7;
-  bottom: 0;
-  background-color: #110b2790;
-}
-
-.eventsBG {
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
-  object-position: center bottom;
-}
-
-.eventContainer {
-  width: 100vw;
-  position: absolute;
-  z-index: 8;
-  bottom: 0;
-  background-color: transparent;
-}
-
-.eventCenter {
-  display: flex;
-  justify-content: center;
 }
 
 @media (min-width: 475px) {
