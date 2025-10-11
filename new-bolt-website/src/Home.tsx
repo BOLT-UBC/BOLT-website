@@ -1,11 +1,11 @@
 import React from "react";
-import Title from "./sections/Title";
-import About from "./sections/About.tsx";
-import Sponsors from "./sections/Sponsors.tsx";
-import Events from "./sections/Events.tsx";
-import Team from "./sections/Team.tsx";
-import Navbar from "./components/Navbar.tsx";
-import Footer from "./components/Footer.tsx";
+import Title from "./sections/Title/Title";
+import About from "./sections/About/About";
+import Sponsors from "./sections/Sponsors/Sponsors";
+import Events from "./sections/Events/Events";
+import Team from "./sections/Team/Team";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const Home: React.FC = () => {
   return (

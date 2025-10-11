@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { SOCIAL_LINKS, SITE_URLS, getCopyrightText } from "../config";
+import { SOCIAL_LINKS, SITE_URLS, getCopyrightText } from "../../config";
 
 export default function Footer() {
   return (

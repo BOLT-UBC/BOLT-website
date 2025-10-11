@@ -1,5 +1,5 @@
 import styles from "./Button.module.css";
-import { ButtonProps } from "../types";
+import { ButtonProps } from "../../types";
 
 function Button({ text, onClick, outline, rounded, type = 'button' }: ButtonProps) {
   return (

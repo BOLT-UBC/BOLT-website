@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Navbar.module.css";
-import { NAVIGATION } from "../constants/layout";
-import { scrollToElement } from "../utils";
+import { NAVIGATION } from "../../constants/layout";
+import { scrollToElement } from "../../utils";
 
 const Navbar: React.FC = () => {
   const sections = ["Home", "About", "Sponsors", "Events", "Team"];

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Team.module.css";
-import teamBG from "../assets/images/teamBG.webp";
-import { Member, TeamData } from "../types";
-import { getProfileUrl } from "../utils";
+import teamBG from "../../assets/images/teamBG.webp";
+import { Member, TeamData } from "../../types";
+import { getProfileUrl } from "../../utils";
 
 // Import with type assertion for JSON data
-import teamDataJson from "../assets/team.json";
+import teamDataJson from "../../assets/team.json";
 const teamData = teamDataJson as TeamData;
 
 const Team: React.FC = () => {

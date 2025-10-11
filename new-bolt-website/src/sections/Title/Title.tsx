@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Title.module.css";
-import byte from "../assets/images/Byte.webp";
-import Button from "../components/Button";
-import { SITE_URLS } from "../config";
+import byte from "../../assets/images/Byte.webp";
+import Button from "../../components/Button";
+import { SITE_URLS } from "../../config";
 
 const Title: React.FC = () => {
 

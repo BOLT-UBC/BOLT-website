@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Sponsors.module.css";
-import sponsorsImage from "../assets/images/sponsors.webp";
-import leftBuilding from "../assets/images/left_ams.webp";
-import middleBuilding from "../assets/images/uoft.webp";
-import frBuilding from "../assets/images/mastercard.webp";
+import sponsorsImage from "../../assets/images/sponsors.webp";
+import leftBuilding from "../../assets/images/left_ams.webp";
+import middleBuilding from "../../assets/images/uoft.webp";
+import frBuilding from "../../assets/images/mastercard.webp";
 
 const Sponsors: React.FC = () => {
   return (

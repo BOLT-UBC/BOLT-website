@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./Events.module.css";
-import eventsBG from "../assets/images/Bridge.webp";
-import { CAROUSEL } from "../constants/layout";
-import { Event, EventsData } from "../types";
-import { getEventImageUrl, scrollHorizontal } from "../utils";
+import eventsBG from "../../assets/images/Bridge.webp";
+import { CAROUSEL } from "../../constants/layout";
+import { Event, EventsData } from "../../types";
+import { getEventImageUrl, scrollHorizontal } from "../../utils";
 
 // Import with type assertion for JSON data
-import eventsDataJson from "../assets/events.json";
+import eventsDataJson from "../../assets/events.json";
 const eventsData = eventsDataJson as EventsData;
 
 const Events: React.FC = () => {

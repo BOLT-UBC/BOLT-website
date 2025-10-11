@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./About.module.css";
-import clouds from "../assets/images/CloudsLong.webp";
-import moon from "../assets/images/Moon.webp";
-import mountainImage from "../assets/images/left-mountain.webp";
-import mountainImage2 from "../assets/images/right-mountain.webp";
-import stars from "../assets/images/Stars.webp";
+import clouds from "../../assets/images/CloudsLong.webp";
+import moon from "../../assets/images/Moon.webp";
+import mountainImage from "../../assets/images/left-mountain.webp";
+import mountainImage2 from "../../assets/images/right-mountain.webp";
+import stars from "../../assets/images/Stars.webp";
 import { Parallax } from "react-scroll-parallax";
 import { isMobile } from "react-device-detect";
-import { PARALLAX } from "../constants/layout";
+import { PARALLAX } from "../../constants/layout";
 
 const About: React.FC = () => {
   return (
