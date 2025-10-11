@@ -5,6 +5,7 @@ import Button from "../components/Button";
 
 const Title: React.FC = () => {
   const membershipURL = "https://tr.ee/aHbQ0EMil7";
+  const sponsorEmail = "mailto:boltubc@gmail.com?subject=Sponsorship Inquiry";
 
   return (
     <>
@@ -28,7 +29,13 @@ const Title: React.FC = () => {
                 window.open(membershipURL, "_blank");
               }}
             />
-            <Button text="Become a Sponsor" onClick={() => {}} outline />
+            <Button
+              text="Become a Sponsor"
+              onClick={() => {
+                window.location.href = sponsorEmail;
+              }}
+              outline
+            />
           </div>
         </div>
       </div>
