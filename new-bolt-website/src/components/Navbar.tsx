@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Navbar.module.css";
+import { NAVIGATION } from "../constants/layout";
 
 const Navbar: React.FC = () => {
   const sections = ["Home", "About", "Sponsors", "Events", "Team"];
@@ -17,8 +18,8 @@ const Navbar: React.FC = () => {
         if (element) {
           const { offsetTop, offsetHeight } = element;
           if (
-            scrollPosition >= offsetTop - 200 &&
-            scrollPosition < offsetTop + offsetHeight - 200
+            scrollPosition >= offsetTop - NAVIGATION.SECTION_DETECTION_OFFSET &&
+            scrollPosition < offsetTop + offsetHeight - NAVIGATION.SECTION_DETECTION_OFFSET
           ) {
             setActiveSection(section);
           }
@@ -37,7 +38,7 @@ const Navbar: React.FC = () => {
 
       const elementPosition =
         element.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - 60;
+      const offsetPosition = elementPosition - NAVIGATION.NAVBAR_HEIGHT;
 
       window.scrollTo({
         top: offsetPosition,
@@ -50,7 +51,7 @@ const Navbar: React.FC = () => {
       setTimeout(() => {
         isScrolling.current = false;
         setActiveSection(sectionId);
-      }, 700);
+      }, NAVIGATION.SCROLL_ANIMATION_DURATION);
     }
   };
   const HamburgerIcon = () => (

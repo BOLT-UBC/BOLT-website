@@ -7,6 +7,7 @@ import mountainImage2 from "../assets/images/right-mountain.webp";
 import stars from "../assets/images/Stars.webp";
 import { Parallax } from "react-scroll-parallax";
 import { isMobile } from "react-device-detect";
+import { PARALLAX } from "../constants/layout";
 
 const About: React.FC = () => {
   return (
@@ -37,8 +38,8 @@ const About: React.FC = () => {
         <>
           <Parallax
             className={styles.moonParallax}
-            translateX={[-20, 20]}
-            translateY={[-50, 50]}
+            translateX={PARALLAX.moon.translateX}
+            translateY={PARALLAX.moon.translateY}
           >
             <img
               src={moon}
@@ -48,7 +49,10 @@ const About: React.FC = () => {
             />
           </Parallax>
 
-          <Parallax className={styles.cloudsParallax} translateX={[-33, -70]}>
+          <Parallax
+            className={styles.cloudsParallax}
+            translateX={PARALLAX.clouds.translateX}
+          >
             <img
               src={clouds}
               alt="Clouds"
@@ -58,9 +62,9 @@ const About: React.FC = () => {
           </Parallax>
           <Parallax
             className={styles.starsParallax}
-            rotate={[-30, 30]}
-            translateX={[-20, 20]}
-            translateY={[5, -5]}
+            rotate={PARALLAX.stars.rotate}
+            translateX={PARALLAX.stars.translateX}
+            translateY={PARALLAX.stars.translateY}
           >
             <img
               src={stars}

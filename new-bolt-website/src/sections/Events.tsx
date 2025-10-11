@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Events.module.css";
 import eventsData from "../assets/events.json";
 import eventsBG from "../assets/images/Bridge.webp";
+import { CAROUSEL } from "../constants/layout";
 
 const Events: React.FC = () => {
   const EVENTS = eventsData.events;
@@ -42,7 +43,7 @@ const Events: React.FC = () => {
                     `.${styles.eventContent}`
                   );
                   if (content) {
-                    content.scrollLeft -= 200;
+                    content.scrollLeft -= CAROUSEL.SCROLL_AMOUNT;
                   }
                 }}
               >
@@ -55,7 +56,7 @@ const Events: React.FC = () => {
                     `.${styles.eventContent}`
                   );
                   if (content) {
-                    content.scrollLeft += 200;
+                    content.scrollLeft += CAROUSEL.SCROLL_AMOUNT;
                   }
                 }}
               >
